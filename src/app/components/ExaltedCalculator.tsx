@@ -96,11 +96,14 @@ export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }
         // Skip if the name is empty or contains only special characters
         if (name && !/^[^a-zA-Z0-9]*$/.test(name)) {
           console.log('Found stat:', { name, currentValue, minValue, maxValue });
+          const min = parseInt(minValue);
+          const max = parseInt(maxValue);
+          
           newStats.push({
             name: name,
             currentValue: parseInt(currentValue),
-            minValue: parseInt(minValue),
-            maxValue: parseInt(maxValue),
+            minValue: min,
+            maxValue: max,
             selected: false,
             desiredValue: parseInt(currentValue)
           });
@@ -127,8 +130,11 @@ export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }
 
     let totalProbability = 1;
     for (const stat of selectedStats) {
-      const favorableOutcomes = stat.maxValue - stat.desiredValue + 1;
-      const totalRange = stat.maxValue - stat.minValue + 1;
+      const isReversed = stat.maxValue < stat.minValue; // For reversed ranges (where higher is worse), we need to count outcomes differently
+      const favorableOutcomes = isReversed 
+        ? Math.abs(stat.maxValue - stat.desiredValue) + 1  // Count from desired value up to min - reversed stats
+        : stat.maxValue - stat.desiredValue + 1; // Count from desired value up to max - normal stats
+      const totalRange = Math.abs(stat.maxValue - stat.minValue) + 1;
       const probability = favorableOutcomes / totalRange;
       totalProbability *= probability;
     }
@@ -159,7 +165,13 @@ export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }
             console.log('Textarea changed:', e.target.value);
             setItemData(e.target.value);
           }}
-          placeholder="Paste item data here..."
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+              e.preventDefault();
+              handleParseClick();
+            }
+          }}
+          placeholder="Paste item data here... (Press Enter to parse)"
           className="w-full h-32 p-2 border rounded"
         />
         <button
@@ -186,10 +198,11 @@ export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }
               setStats(newStats);
             }}
             itemImage={itemImage}
+            onCalculate={calculateProbability}
           />
           <button
             onClick={calculateProbability}
-            className="w-full px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+            className="w-full px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 cursor-pointer transition-colors"
           >
             Calculate Probability
           </button>

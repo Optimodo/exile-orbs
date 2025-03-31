@@ -17,14 +17,8 @@ export const ExaltedResults: React.FC<ExaltedResultsProps> = ({ result }) => {
   }
 
   // Format probability with appropriate decimal places
-  let formattedProbability: string;
-  if (result.probability < 0.0001) {
-    formattedProbability = (result.probability * 100).toFixed(8); // Show 8 decimal places for extremely small probabilities
-  } else if (result.probability < 0.01) {
-    formattedProbability = (result.probability * 100).toFixed(6); // Show 6 decimal places for very small probabilities
-  } else {
-    formattedProbability = (result.probability * 100).toFixed(2); // Show 2 decimal places for larger probabilities
-  }
+  const probabilityPercentage = result.probability * 100;
+  const formattedProbability = probabilityPercentage < 0.01 ? '0.01' : probabilityPercentage.toFixed(2);
 
   return (
     <div className="space-y-4">
