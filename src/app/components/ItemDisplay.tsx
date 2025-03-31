@@ -29,31 +29,37 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
         <p className="text-sm text-slate-400">Select stats to calculate probability</p>
       </div>
 
-      <div className="space-y-2">
+      <div className="space-y-4">
         {stats.map((stat, index) => (
-          <div key={index} className="flex items-center space-x-4">
-            <input
-              type="checkbox"
-              checked={stat.selected}
-              onChange={(e) => onStatChange(index, e.target.checked)}
-              className="w-4 h-4 text-amber-500 rounded focus:ring-amber-500"
-            />
-            <span className="text-white">{stat.name}:</span>
-            <div className="flex-1">
+          <div key={index} className="space-y-2">
+            <div className="flex items-center space-x-4">
               <input
-                type="range"
-                value={stat.desiredValue}
-                onChange={(e) => onDesiredValueChange(index, parseInt(e.target.value))}
-                min={stat.minValue}
-                max={stat.maxValue}
-                className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                type="checkbox"
+                checked={stat.selected}
+                onChange={(e) => onStatChange(index, e.target.checked)}
+                className="w-4 h-4 text-amber-500 rounded focus:ring-amber-500"
               />
-              <div className="flex justify-between text-xs text-slate-400 mt-1">
-                <span>{stat.minValue}</span>
-                <span>{stat.desiredValue}</span>
-                <span>{stat.maxValue}</span>
-              </div>
+              <span className="text-white">{stat.name}</span>
+              <span className="text-slate-400">({stat.minValue} - {stat.maxValue})</span>
             </div>
+            
+            {stat.selected && (
+              <div className="pl-8 space-y-1">
+                <input
+                  type="range"
+                  value={stat.desiredValue}
+                  onChange={(e) => onDesiredValueChange(index, parseInt(e.target.value))}
+                  min={stat.minValue}
+                  max={stat.maxValue}
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                />
+                <div className="flex justify-between text-sm text-slate-400">
+                  <span>Min: {stat.minValue}</span>
+                  <span>Current: {stat.desiredValue}</span>
+                  <span>Max: {stat.maxValue}</span>
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </div>

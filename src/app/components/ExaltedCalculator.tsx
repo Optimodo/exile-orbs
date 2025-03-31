@@ -60,8 +60,8 @@ export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }
       if (line.includes('--------')) continue;
       
       console.log('Processing line:', line);
-      // Match both formats: +X(Y-Z) to stat and X(Y-Z)% increased stat
-      const statMatch = line.match(/(?:\+)?(\d+)\((\d+)-(\d+)\)(?:\s*to\s*|\s*%\s*increased\s*)(.*)/);
+      // Match both formats: +X(Y-Z) to stat and X(Y-Z)% to stat
+      const statMatch = line.match(/(?:\+)?(\d+)\((\d+)-(\d+)\)(?:\s*to\s*|\s*%\s*to\s*)(.*)/);
       console.log('Stat match result:', statMatch);
       if (statMatch) {
         const [, currentValue, minValue, maxValue, name] = statMatch;
