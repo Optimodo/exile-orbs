@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { ExaltedResult } from '../types/calculator';
 import { ItemDisplay } from './ItemDisplay';
+import itemDatabase from '../../data/items_data.json';
 
 interface Stat {
   name: string;
@@ -27,6 +28,7 @@ export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }
   const [itemData, setItemData] = useState('');
   const [stats, setStats] = useState<Stat[]>([]);
   const [itemName, setItemName] = useState('');
+  const [itemImage, setItemImage] = useState<string | null>(null);
 
   const handleParseClick = () => {
     console.log('Parse button clicked');
@@ -39,40 +41,70 @@ export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }
     console.log('Split lines:', lines);
     const newStats: Stat[] = [];
     let currentItemName = '';
+    let rarity = '';
 
-    // Find item name from the first line
-    let lineCount = 0;
+    // Find rarity and item name
     for (const line of lines) {
-      if (line.trim() && !line.includes('--------') && !line.includes('Item Level:')) {
-        lineCount++;
-        if (lineCount === 4) {  // Get the fourth line which is the base item name
-          currentItemName = line.trim();
-          console.log('Found item name:', currentItemName);
-          break;
+      if (line.trim()) {
+        if (line.includes('Rarity: Rare')) {
+          rarity = 'Rare';
+          // For Rare items, base item is on line 4 (index 3)
+          const baseItemLine = lines[3];
+          if (baseItemLine && baseItemLine.trim()) {
+            currentItemName = baseItemLine.trim();
+            console.log('Found Rare item name:', currentItemName);
+            break;
+          }
+        } else if (line.includes('Rarity: Unique')) {
+          rarity = 'Unique';
+          // For Unique items, base item is on line 3 (index 2)
+          const baseItemLine = lines[2];
+          if (baseItemLine && baseItemLine.trim()) {
+            currentItemName = baseItemLine.trim();
+            console.log('Found Unique item name:', currentItemName);
+            break;
+          }
         }
       }
     }
 
     setItemName(currentItemName);
 
+    // Find the item in the database
+    const foundItem = itemDatabase.find(item => item.name === currentItemName);
+    if (foundItem) {
+      console.log('Found item in database:', foundItem);
+      setItemImage(foundItem.inventory_icon);
+    } else {
+      console.log('Item not found in database');
+      setItemImage(null);
+    }
+
     // Parse stats
     for (const line of lines) {
       if (line.includes('--------')) continue;
       
       console.log('Processing line:', line);
-      // Match both formats: +X(Y-Z) to stat and X(Y-Z)% to stat
-      const statMatch = line.match(/(?:\+)?(\d+)\((\d+)-(\d+)\)(?:\s*to\s*|\s*%\s*to\s*)(.*)/);
-      console.log('Stat match result:', statMatch);
-      if (statMatch) {
-        const [, currentValue, minValue, maxValue, name] = statMatch;
-        newStats.push({
-          name: name.trim(),
-          currentValue: parseInt(currentValue),
-          minValue: parseInt(minValue),
-          maxValue: parseInt(maxValue),
-          selected: false,
-          desiredValue: parseInt(currentValue)
-        });
+      
+      // Look for any line containing a number range in parentheses
+      const rangeMatch = line.match(/(\d+)\((\d+)-(\d+)\)/);
+      if (rangeMatch) {
+        const [, currentValue, minValue, maxValue] = rangeMatch;
+        // Get the full line as the stat name, but remove the range part
+        const name = line.replace(/\d+\(\d+-\d+\)/, '').trim();
+        
+        // Skip if the name is empty or contains only special characters
+        if (name && !/^[^a-zA-Z0-9]*$/.test(name)) {
+          console.log('Found stat:', { name, currentValue, minValue, maxValue });
+          newStats.push({
+            name: name,
+            currentValue: parseInt(currentValue),
+            minValue: parseInt(minValue),
+            maxValue: parseInt(maxValue),
+            selected: false,
+            desiredValue: parseInt(currentValue)
+          });
+        }
       }
     }
 
@@ -153,6 +185,7 @@ export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }
               newStats[index].desiredValue = value;
               setStats(newStats);
             }}
+            itemImage={itemImage}
           />
           <button
             onClick={calculateProbability}

@@ -14,19 +14,40 @@ interface ItemDisplayProps {
   stats: Stat[];
   onStatChange: (index: number, selected: boolean) => void;
   onDesiredValueChange: (index: number, value: number) => void;
+  itemImage?: string | null;
 }
 
 export const ItemDisplay: React.FC<ItemDisplayProps> = ({
   itemName,
   stats,
   onStatChange,
-  onDesiredValueChange
+  onDesiredValueChange,
+  itemImage
 }) => {
   return (
     <div className="bg-slate-800 p-4 rounded-lg">
-      <div className="mb-4">
-        <h3 className="text-lg font-bold text-white">{itemName}</h3>
-        <p className="text-sm text-slate-400">Select stats to calculate probability</p>
+      <div className="flex items-start space-x-4 mb-4">
+        <div className="flex-shrink-0">
+          {itemImage ? (
+            <img
+              src={`/images/items/${itemImage}`}
+              alt={itemName}
+              className="w-16 h-16 object-contain"
+              onError={(e) => {
+                console.error('Failed to load image:', itemImage);
+                (e.target as HTMLImageElement).style.display = 'none';
+              }}
+            />
+          ) : (
+            <div className="w-16 h-16 bg-slate-700 rounded flex items-center justify-center">
+              <span className="text-slate-500 text-xs">No Image</span>
+            </div>
+          )}
+        </div>
+        <div className="flex-grow">
+          <h3 className="text-lg font-bold text-white">{itemName}</h3>
+          <p className="text-sm text-slate-400">Select stats to calculate probability</p>
+        </div>
       </div>
 
       <div className="space-y-4">
