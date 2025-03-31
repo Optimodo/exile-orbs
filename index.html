@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exile Orbs - Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a0f0f;
+            color: white;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: 0.1em;
+            background: linear-gradient(to right, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background-color: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(30, 41, 59, 0.5);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            background-color: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+
+        .feature h3 {
+            font-family: 'Cinzel', serif;
+            color: #f59e0b;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            color: #94a3b8;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exile Orbs</h1>
+        <p class="subtitle">Path of Exile Crafting Tools</p>
+        
+        <div class="card">
+            <h2 style="font-family: 'Cinzel', serif; color: #f59e0b; margin-bottom: 1rem;">Coming Soon</h2>
+            <p style="color: #94a3b8; margin-bottom: 1.5rem;">
+                We're working on something exciting! Our suite of Path of Exile crafting tools will help you make better decisions with your currency.
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>Exalted Calculator</h3>
+                    <p>Calculate the probability of getting your desired rolls with an Exalted Orb</p>
+                </div>
+                <div class="feature">
+                    <h3>Currency Guide</h3>
+                    <p>Learn the best ways to earn and spend your currency</p>
+                </div>
+                <div class="feature">
+                    <h3>Strategy Planner</h3>
+                    <p>Plan your crafting strategy with detailed cost analysis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
