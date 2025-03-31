@@ -1,73 +1,64 @@
 'use client';
 
+import React from 'react';
+import { ExaltedResult } from '../types/calculator';
+
 interface ExaltedResultsProps {
-  result: {
-    probability: number;
-    averageAttempts: number;
-    costEstimate: number;
-    standardDeviation: number;
-    confidenceInterval: {
-      lower: number;
-      upper: number;
-    };
-  } | null;
+  result: ExaltedResult | null;
 }
 
-export default function ExaltedResults({ result }: ExaltedResultsProps) {
+export const ExaltedResults: React.FC<ExaltedResultsProps> = ({ result }) => {
   if (!result) {
     return (
-      <div className="text-center p-4 bg-slate-800/50 rounded-lg">
-        <p className="text-slate-400">Paste item data to see predictions</p>
+      <div className="text-center text-slate-400 p-4 bg-slate-800 rounded">
+        Select stats and calculate to see predictions
       </div>
     );
   }
 
+  // Format probability with appropriate decimal places
+  let formattedProbability: string;
+  if (result.probability < 0.0001) {
+    formattedProbability = (result.probability * 100).toFixed(8); // Show 8 decimal places for extremely small probabilities
+  } else if (result.probability < 0.01) {
+    formattedProbability = (result.probability * 100).toFixed(6); // Show 6 decimal places for very small probabilities
+  } else {
+    formattedProbability = (result.probability * 100).toFixed(2); // Show 2 decimal places for larger probabilities
+  }
+
   return (
     <div className="space-y-4">
-      <div className="text-center p-4 bg-slate-800/50 rounded-lg">
-        <div className="text-2xl font-bold text-amber-500">
-          {result.probability.toFixed(2)}% chance
-        </div>
-        <div className="text-sm text-slate-400">
-          Probability of getting desired rolls or better with a single Exalted Orb
-        </div>
+      <div className="bg-slate-800 p-4 rounded">
+        <h3 className="text-lg font-bold text-white mb-2">Probability</h3>
+        <p className="text-2xl text-amber-500">{formattedProbability}%</p>
+        <p className="text-sm text-slate-400">Chance of getting desired rolls</p>
       </div>
 
-      <div className="text-center p-4 bg-slate-800/50 rounded-lg">
-        <div className="text-2xl font-bold text-amber-500">
-          {result.averageAttempts.toFixed(1)} attempts
-        </div>
-        <div className="text-sm text-slate-400">
-          Average number of Exalted Orbs needed
-        </div>
+      <div className="bg-slate-800 p-4 rounded">
+        <h3 className="text-lg font-bold text-white mb-2">Average Attempts</h3>
+        <p className="text-2xl text-amber-500">{result.averageAttempts.toFixed(1)}</p>
+        <p className="text-sm text-slate-400">Expected number of Exalted Orbs needed</p>
       </div>
 
-      <div className="text-center p-4 bg-slate-800/50 rounded-lg">
-        <div className="text-2xl font-bold text-amber-500">
-          {result.standardDeviation.toFixed(1)} attempts
-        </div>
-        <div className="text-sm text-slate-400">
-          Standard deviation in number of attempts
-        </div>
+      <div className="bg-slate-800 p-4 rounded">
+        <h3 className="text-lg font-bold text-white mb-2">Cost Estimate</h3>
+        <p className="text-2xl text-amber-500">{result.costEstimate.toFixed(1)} Exalted Orbs</p>
+        <p className="text-sm text-slate-400">Estimated cost based on average attempts</p>
       </div>
 
-      <div className="text-center p-4 bg-slate-800/50 rounded-lg">
-        <div className="text-2xl font-bold text-amber-500">
-          {result.confidenceInterval.lower.toFixed(1)} - {result.confidenceInterval.upper.toFixed(1)} attempts
-        </div>
-        <div className="text-sm text-slate-400">
-          95% confidence interval for number of attempts needed
-        </div>
+      <div className="bg-slate-800 p-4 rounded">
+        <h3 className="text-lg font-bold text-white mb-2">Standard Deviation</h3>
+        <p className="text-2xl text-amber-500">{result.standardDeviation.toFixed(1)}</p>
+        <p className="text-sm text-slate-400">Measure of variance in attempts needed</p>
       </div>
 
-      <div className="text-center p-4 bg-slate-800/50 rounded-lg">
-        <div className="text-2xl font-bold text-amber-500">
-          {result.costEstimate.toFixed(0)} chaos
-        </div>
-        <div className="text-sm text-slate-400">
-          Estimated cost based on current Exalted Orb price
-        </div>
+      <div className="bg-slate-800 p-4 rounded">
+        <h3 className="text-lg font-bold text-white mb-2">95% Confidence Interval</h3>
+        <p className="text-2xl text-amber-500">
+          {result.confidenceInterval.min.toFixed(1)} - {result.confidenceInterval.max.toFixed(1)}
+        </p>
+        <p className="text-sm text-slate-400">Range of attempts needed with 95% confidence</p>
       </div>
     </div>
   );
-} 
+}; 

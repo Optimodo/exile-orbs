@@ -1,6 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { ExaltedResult } from '../types/calculator';
+import { ItemDisplay } from './ItemDisplay';
 
 interface Stat {
   name: string;
@@ -12,31 +14,58 @@ interface Stat {
 }
 
 interface ExaltedCalculatorProps {
-  onResult: (result: {
-    probability: number;
-    averageAttempts: number;
-    costEstimate: number;
-    standardDeviation: number;
-    confidenceInterval: {
-      lower: number;
-      upper: number;
-    };
-  } | null) => void;
+  onResult: (result: ExaltedResult) => void;
 }
 
-export default function ExaltedCalculator({ onResult }: ExaltedCalculatorProps) {
+export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }) => {
+  console.log('ExaltedCalculator component rendering');
+  
+  useEffect(() => {
+    console.log('ExaltedCalculator component mounted');
+  }, []);
+
   const [itemData, setItemData] = useState('');
   const [stats, setStats] = useState<Stat[]>([]);
+  const [itemName, setItemName] = useState('');
+
+  const handleParseClick = () => {
+    console.log('Parse button clicked');
+    parseItemData();
+  };
 
   const parseItemData = () => {
+    console.log('Parsing item data:', itemData);
     const lines = itemData.split('\n');
-    const parsedStats: Stat[] = [];
-    
+    console.log('Split lines:', lines);
+    const newStats: Stat[] = [];
+    let currentItemName = '';
+
+    // Find item name from the first line
+    let lineCount = 0;
     for (const line of lines) {
-      const match = line.match(/(\d+)\((\d+)-(\d+)\)\s*(.*)/);
-      if (match) {
-        const [, currentValue, minValue, maxValue, name] = match;
-        parsedStats.push({
+      if (line.trim() && !line.includes('--------') && !line.includes('Item Level:')) {
+        lineCount++;
+        if (lineCount === 4) {  // Get the fourth line which is the base item name
+          currentItemName = line.trim();
+          console.log('Found item name:', currentItemName);
+          break;
+        }
+      }
+    }
+
+    setItemName(currentItemName);
+
+    // Parse stats
+    for (const line of lines) {
+      if (line.includes('--------')) continue;
+      
+      console.log('Processing line:', line);
+      // Match both formats: +X(Y-Z) to stat and X(Y-Z)% increased stat
+      const statMatch = line.match(/(?:\+)?(\d+)\((\d+)-(\d+)\)(?:\s*to\s*|\s*%\s*increased\s*)(.*)/);
+      console.log('Stat match result:', statMatch);
+      if (statMatch) {
+        const [, currentValue, minValue, maxValue, name] = statMatch;
+        newStats.push({
           name: name.trim(),
           currentValue: parseInt(currentValue),
           minValue: parseInt(minValue),
@@ -46,42 +75,42 @@ export default function ExaltedCalculator({ onResult }: ExaltedCalculatorProps) 
         });
       }
     }
-    
-    setStats(parsedStats);
-    onResult(null);
+
+    console.log('Parsed stats:', newStats);
+    setStats(newStats);
   };
 
   const calculateProbability = () => {
     const selectedStats = stats.filter(stat => stat.selected);
-    if (selectedStats.length === 0) return;
+    if (selectedStats.length === 0) {
+      onResult({
+        probability: 0,
+        averageAttempts: 0,
+        costEstimate: 0,
+        standardDeviation: 0,
+        confidenceInterval: { min: 0, max: 0 }
+      });
+      return;
+    }
 
-    // Calculate probability for each selected stat
-    const probabilities = selectedStats.map(stat => {
-      const totalRange = stat.maxValue - stat.minValue;
-      const desiredRange = stat.maxValue - stat.desiredValue;
-      return desiredRange / totalRange;
-    });
+    let totalProbability = 1;
+    for (const stat of selectedStats) {
+      const favorableOutcomes = stat.maxValue - stat.desiredValue + 1;
+      const totalRange = stat.maxValue - stat.minValue + 1;
+      const probability = favorableOutcomes / totalRange;
+      totalProbability *= probability;
+    }
 
-    // Combined probability (assuming independent events)
-    const combinedProbability = probabilities.reduce((acc, prob) => acc * prob, 1) * 100;
-
-    // Calculate average attempts needed
-    const averageAttempts = 1 / (combinedProbability / 100);
-
-    // Calculate standard deviation (geometric distribution)
-    const standardDeviation = Math.sqrt((1 - combinedProbability / 100) / Math.pow(combinedProbability / 100, 2));
-
-    // Calculate 95% confidence interval
+    const averageAttempts = 1 / totalProbability;
+    const costEstimate = averageAttempts * 1; // Assuming 1 Exalted Orb per attempt
+    const standardDeviation = Math.sqrt((1 - totalProbability) / (totalProbability * totalProbability));
     const confidenceInterval = {
-      lower: averageAttempts - 1.96 * standardDeviation,
-      upper: averageAttempts + 1.96 * standardDeviation
+      min: Math.max(0, averageAttempts - 2 * standardDeviation),
+      max: averageAttempts + 2 * standardDeviation
     };
 
-    // Estimate cost (assuming 1 Exalted = 100 chaos)
-    const costEstimate = averageAttempts * 100;
-
     onResult({
-      probability: combinedProbability,
+      probability: totalProbability,
       averageAttempts,
       costEstimate,
       standardDeviation,
@@ -91,16 +120,19 @@ export default function ExaltedCalculator({ onResult }: ExaltedCalculatorProps) 
 
   return (
     <div className="space-y-4">
-      <div className="space-y-4">
+      <div className="flex flex-col space-y-4">
         <textarea
           value={itemData}
-          onChange={(e) => setItemData(e.target.value)}
+          onChange={(e) => {
+            console.log('Textarea changed:', e.target.value);
+            setItemData(e.target.value);
+          }}
           placeholder="Paste item data here..."
-          className="w-full h-32 p-4 bg-slate-900 text-white rounded-lg border border-slate-700 focus:border-amber-500 focus:ring-1 focus:ring-amber-500"
+          className="w-full h-32 p-2 border rounded"
         />
         <button
-          onClick={parseItemData}
-          className="w-full py-2 px-4 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors"
+          onClick={handleParseClick}
+          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer transition-colors"
         >
           Parse Item Data
         </button>
@@ -108,42 +140,23 @@ export default function ExaltedCalculator({ onResult }: ExaltedCalculatorProps) 
 
       {stats.length > 0 && (
         <div className="space-y-4">
-          <h3 className="text-lg font-semibold text-white">Select Stats to Calculate</h3>
-          {stats.map((stat, index) => (
-            <div key={index} className="flex items-center space-x-4 p-4 bg-slate-800/50 rounded-lg">
-              <input
-                type="checkbox"
-                checked={stat.selected}
-                onChange={(e) => {
-                  const newStats = [...stats];
-                  newStats[index].selected = e.target.checked;
-                  setStats(newStats);
-                }}
-                className="w-4 h-4 text-amber-500 rounded border-slate-700 focus:ring-amber-500"
-              />
-              <div className="flex-1">
-                <div className="text-white">{stat.name}</div>
-                <div className="text-sm text-slate-400">
-                  Current: {stat.currentValue} | Range: {stat.minValue}-{stat.maxValue}
-                </div>
-              </div>
-              <input
-                type="number"
-                value={stat.desiredValue}
-                onChange={(e) => {
-                  const newStats = [...stats];
-                  newStats[index].desiredValue = parseInt(e.target.value);
-                  setStats(newStats);
-                }}
-                min={stat.minValue}
-                max={stat.maxValue}
-                className="w-20 p-1 bg-slate-900 text-white rounded border border-slate-700 focus:border-amber-500 focus:ring-1 focus:ring-amber-500"
-              />
-            </div>
-          ))}
+          <ItemDisplay
+            itemName={itemName}
+            stats={stats}
+            onStatChange={(index, selected) => {
+              const newStats = [...stats];
+              newStats[index].selected = selected;
+              setStats(newStats);
+            }}
+            onDesiredValueChange={(index, value) => {
+              const newStats = [...stats];
+              newStats[index].desiredValue = value;
+              setStats(newStats);
+            }}
+          />
           <button
             onClick={calculateProbability}
-            className="w-full py-2 px-4 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors"
+            className="w-full px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
           >
             Calculate Probability
           </button>
@@ -151,4 +164,4 @@ export default function ExaltedCalculator({ onResult }: ExaltedCalculatorProps) 
       )}
     </div>
   );
-} 
+}; 

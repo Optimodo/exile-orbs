@@ -1,0 +1,4222 @@
+[
+    {
+        "name": "Crude Bow",
+        "inventory_icon": "Crude Bow_inventory.png",
+        "large_image": "Crude Bow_large.png"
+    },
+    {
+        "name": "Shortbow",
+        "inventory_icon": "Shortbow_inventory.png",
+        "large_image": "Shortbow_large.png"
+    },
+    {
+        "name": "Warden Bow",
+        "inventory_icon": "Warden Bow_inventory.png",
+        "large_image": "Warden Bow_large.png"
+    },
+    {
+        "name": "Recurve Bow",
+        "inventory_icon": "Recurve Bow_inventory.png",
+        "large_image": "Recurve Bow_large.png"
+    },
+    {
+        "name": "Composite Bow",
+        "inventory_icon": "Composite Bow_inventory.png",
+        "large_image": "Composite Bow_large.png"
+    },
+    {
+        "name": "Dualstring Bow",
+        "inventory_icon": "Dualstring Bow_inventory.png",
+        "large_image": "Dualstring Bow_large.png"
+    },
+    {
+        "name": "Cultist Bow",
+        "inventory_icon": "Cultist Bow_inventory.png",
+        "large_image": "Cultist Bow_large.png"
+    },
+    {
+        "name": "Zealot Bow",
+        "inventory_icon": "Zealot Bow_inventory.png",
+        "large_image": "Zealot Bow_large.png"
+    },
+    {
+        "name": "Advanced Shortbow",
+        "inventory_icon": "Advanced Shortbow_inventory.png",
+        "large_image": "Advanced Shortbow_large.png"
+    },
+    {
+        "name": "Advanced Warden Bow",
+        "inventory_icon": "Advanced Warden Bow_inventory.png",
+        "large_image": "Advanced Warden Bow_large.png"
+    },
+    {
+        "name": "Advanced Composite Bow",
+        "inventory_icon": "Advanced Composite Bow_inventory.png",
+        "large_image": "Advanced Composite Bow_large.png"
+    },
+    {
+        "name": "Advanced Dualstring Bow",
+        "inventory_icon": "Advanced Dualstring Bow_inventory.png",
+        "large_image": "Advanced Dualstring Bow_large.png"
+    },
+    {
+        "name": "Advanced Cultist Bow",
+        "inventory_icon": "Advanced Cultist Bow_inventory.png",
+        "large_image": "Advanced Cultist Bow_large.png"
+    },
+    {
+        "name": "Advanced Zealot Bow",
+        "inventory_icon": "Advanced Zealot Bow_inventory.png",
+        "large_image": "Advanced Zealot Bow_large.png"
+    },
+    {
+        "name": "Expert Shortbow",
+        "inventory_icon": "Expert Shortbow_inventory.png",
+        "large_image": "Expert Shortbow_large.png"
+    },
+    {
+        "name": "Expert Composite Bow",
+        "inventory_icon": "Expert Composite Bow_inventory.png",
+        "large_image": "Expert Composite Bow_large.png"
+    },
+    {
+        "name": "Expert Warden Bow",
+        "inventory_icon": "Expert Warden Bow_inventory.png",
+        "large_image": "Expert Warden Bow_large.png"
+    },
+    {
+        "name": "Expert Zealot Bow",
+        "inventory_icon": "Expert Zealot Bow_inventory.png",
+        "large_image": "Expert Zealot Bow_large.png"
+    },
+    {
+        "name": "Expert Dualstring Bow",
+        "inventory_icon": "Expert Dualstring Bow_inventory.png",
+        "large_image": "Expert Dualstring Bow_large.png"
+    },
+    {
+        "name": "Expert Cultist Bow",
+        "inventory_icon": "Expert Cultist Bow_inventory.png",
+        "large_image": "Expert Cultist Bow_large.png"
+    },
+    {
+        "name": "Widowhail",
+        "inventory_icon": "Widowhail_inventory.png",
+        "large_image": "Widowhail_large.png"
+    },
+    {
+        "name": "Quill Rain",
+        "inventory_icon": "Quill Rain_inventory.png",
+        "large_image": "Quill Rain_large.png"
+    },
+    {
+        "name": "Splinterheart",
+        "inventory_icon": "Splinterheart_inventory.png",
+        "large_image": "Splinterheart_large.png"
+    },
+    {
+        "name": "Death's Harp",
+        "inventory_icon": "Deaths Harp_inventory.png",
+        "large_image": "Deaths Harp_large.png"
+    },
+    {
+        "name": "Makeshift Crossbow",
+        "inventory_icon": "Makeshift Crossbow_inventory.png",
+        "large_image": "Makeshift Crossbow_large.png"
+    },
+    {
+        "name": "Tense Crossbow",
+        "inventory_icon": "Tense Crossbow_inventory.png",
+        "large_image": "Tense Crossbow_large.png"
+    },
+    {
+        "name": "Sturdy Crossbow",
+        "inventory_icon": "Sturdy Crossbow_inventory.png",
+        "large_image": "Sturdy Crossbow_large.png"
+    },
+    {
+        "name": "Varnished Crossbow",
+        "inventory_icon": "Varnished Crossbow_inventory.png",
+        "large_image": "Varnished Crossbow_large.png"
+    },
+    {
+        "name": "Dyad Crossbow",
+        "inventory_icon": "Dyad Crossbow_inventory.png",
+        "large_image": "Dyad Crossbow_large.png"
+    },
+    {
+        "name": "Alloy Crossbow",
+        "inventory_icon": "Alloy Crossbow_inventory.png",
+        "large_image": "Alloy Crossbow_large.png"
+    },
+    {
+        "name": "Bombard Crossbow",
+        "inventory_icon": "Bombard Crossbow_inventory.png",
+        "large_image": "Bombard Crossbow_large.png"
+    },
+    {
+        "name": "Construct Crossbow",
+        "inventory_icon": "Construct Crossbow_inventory.png",
+        "large_image": "Construct Crossbow_large.png"
+    },
+    {
+        "name": "Advanced Tense Crossbow",
+        "inventory_icon": "Advanced Tense Crossbow_inventory.png",
+        "large_image": "Advanced Tense Crossbow_large.png"
+    },
+    {
+        "name": "Advanced Sturdy Crossbow",
+        "inventory_icon": "Advanced Sturdy Crossbow_inventory.png",
+        "large_image": "Advanced Sturdy Crossbow_large.png"
+    },
+    {
+        "name": "Advanced Varnished Crossbow",
+        "inventory_icon": "Advanced Varnished Crossbow_inventory.png",
+        "large_image": "Advanced Varnished Crossbow_large.png"
+    },
+    {
+        "name": "Advanced Dyad Crossbow",
+        "inventory_icon": "Advanced Dyad Crossbow_inventory.png",
+        "large_image": "Advanced Dyad Crossbow_large.png"
+    },
+    {
+        "name": "Advanced Bombard Crossbow",
+        "inventory_icon": "Advanced Bombard Crossbow_inventory.png",
+        "large_image": "Advanced Bombard Crossbow_large.png"
+    },
+    {
+        "name": "Advanced Forlorn Crossbow",
+        "inventory_icon": "Advanced Forlorn Crossbow_inventory.png",
+        "large_image": "Advanced Forlorn Crossbow_large.png"
+    },
+    {
+        "name": "Expert Sturdy Crossbow",
+        "inventory_icon": "Expert Sturdy Crossbow_inventory.png",
+        "large_image": "Expert Sturdy Crossbow_large.png"
+    },
+    {
+        "name": "Expert Varnished Crossbow",
+        "inventory_icon": "Expert Varnished Crossbow_inventory.png",
+        "large_image": "Expert Varnished Crossbow_large.png"
+    },
+    {
+        "name": "Expert Forlorn Crossbow",
+        "inventory_icon": "Expert Forlorn Crossbow_inventory.png",
+        "large_image": "Expert Forlorn Crossbow_large.png"
+    },
+    {
+        "name": "Expert Tense Crossbow",
+        "inventory_icon": "Expert Tense Crossbow_inventory.png",
+        "large_image": "Expert Tense Crossbow_large.png"
+    },
+    {
+        "name": "Expert Dyad Crossbow",
+        "inventory_icon": "Expert Dyad Crossbow_inventory.png",
+        "large_image": "Expert Dyad Crossbow_large.png"
+    },
+    {
+        "name": "Expert Bombard Crossbow",
+        "inventory_icon": "Expert Bombard Crossbow_inventory.png",
+        "large_image": "Expert Bombard Crossbow_large.png"
+    },
+    {
+        "name": "Mist Whisper",
+        "inventory_icon": "Mist Whisper_inventory.png",
+        "large_image": "Mist Whisper_large.png"
+    },
+    {
+        "name": "Rampart Raptor",
+        "inventory_icon": "Rampart Raptor_inventory.png",
+        "large_image": "Rampart Raptor_large.png"
+    },
+    {
+        "name": "Winter's Bite",
+        "inventory_icon": "Winters Bite_inventory.png",
+        "large_image": "Winters Bite_large.png"
+    },
+    {
+        "name": "Wooden Club",
+        "inventory_icon": "Wooden Club_inventory.png",
+        "large_image": "Wooden Club_large.png"
+    },
+    {
+        "name": "Smithing Hammer",
+        "inventory_icon": "Smithing Hammer_inventory.png",
+        "large_image": "Smithing Hammer_large.png"
+    },
+    {
+        "name": "Slim Mace",
+        "inventory_icon": "Slim Mace_inventory.png",
+        "large_image": "Slim Mace_large.png"
+    },
+    {
+        "name": "Spiked Club",
+        "inventory_icon": "Spiked Club_inventory.png",
+        "large_image": "Spiked Club_large.png"
+    },
+    {
+        "name": "Warpick",
+        "inventory_icon": "Warpick_inventory.png",
+        "large_image": "Warpick_large.png"
+    },
+    {
+        "name": "Plated Mace",
+        "inventory_icon": "Plated Mace_inventory.png",
+        "large_image": "Plated Mace_large.png"
+    },
+    {
+        "name": "Brigand Mace",
+        "inventory_icon": "Brigand Mace_inventory.png",
+        "large_image": "Brigand Mace_large.png"
+    },
+    {
+        "name": "Construct Hammer",
+        "inventory_icon": "Construct Hammer_inventory.png",
+        "large_image": "Construct Hammer_large.png"
+    },
+    {
+        "name": "Advanced Smithing Hammer",
+        "inventory_icon": "Advanced Smithing Hammer_inventory.png",
+        "large_image": "Advanced Smithing Hammer_large.png"
+    },
+    {
+        "name": "Advanced Slim Mace",
+        "inventory_icon": "Advanced Slim Mace_inventory.png",
+        "large_image": "Advanced Slim Mace_large.png"
+    },
+    {
+        "name": "Advanced Warpick",
+        "inventory_icon": "Advanced Warpick_inventory.png",
+        "large_image": "Advanced Warpick_large.png"
+    },
+    {
+        "name": "Advanced Plated Mace",
+        "inventory_icon": "Advanced Plated Mace_inventory.png",
+        "large_image": "Advanced Plated Mace_large.png"
+    },
+    {
+        "name": "Advanced Brigand Mace",
+        "inventory_icon": "Advanced Brigand Mace_inventory.png",
+        "large_image": "Advanced Brigand Mace_large.png"
+    },
+    {
+        "name": "Advanced Construct Hammer",
+        "inventory_icon": "Advanced Construct Hammer_inventory.png",
+        "large_image": "Advanced Construct Hammer_large.png"
+    },
+    {
+        "name": "Expert Slim Mace",
+        "inventory_icon": "Expert Slim Mace_inventory.png",
+        "large_image": "Expert Slim Mace_large.png"
+    },
+    {
+        "name": "Expert Plated Mace",
+        "inventory_icon": "Expert Plated Mace_inventory.png",
+        "large_image": "Expert Plated Mace_large.png"
+    },
+    {
+        "name": "Expert Brigand Mace",
+        "inventory_icon": "Expert Brigand Mace_inventory.png",
+        "large_image": "Expert Brigand Mace_large.png"
+    },
+    {
+        "name": "Expert Smithing Hammer",
+        "inventory_icon": "Expert Smithing Hammer_inventory.png",
+        "large_image": "Expert Smithing Hammer_large.png"
+    },
+    {
+        "name": "Expert Warpick",
+        "inventory_icon": "Expert Warpick_inventory.png",
+        "large_image": "Expert Warpick_large.png"
+    },
+    {
+        "name": "Expert Construct Hammer",
+        "inventory_icon": "Expert Construct Hammer_inventory.png",
+        "large_image": "Expert Construct Hammer_large.png"
+    },
+    {
+        "name": "Felled Greatclub",
+        "inventory_icon": "Felled Greatclub_inventory.png",
+        "large_image": "Felled Greatclub_large.png"
+    },
+    {
+        "name": "Oak Greathammer",
+        "inventory_icon": "Oak Greathammer_inventory.png",
+        "large_image": "Oak Greathammer_large.png"
+    },
+    {
+        "name": "Forge Maul",
+        "inventory_icon": "Forge Maul_inventory.png",
+        "large_image": "Forge Maul_large.png"
+    },
+    {
+        "name": "Studded Greatclub",
+        "inventory_icon": "Studded Greatclub_inventory.png",
+        "large_image": "Studded Greatclub_large.png"
+    },
+    {
+        "name": "Cultist Greathammer",
+        "inventory_icon": "Cultist Greathammer_inventory.png",
+        "large_image": "Cultist Greathammer_large.png"
+    },
+    {
+        "name": "Temple Maul",
+        "inventory_icon": "Temple Maul_inventory.png",
+        "large_image": "Temple Maul_large.png"
+    },
+    {
+        "name": "Leaden Greathammer",
+        "inventory_icon": "Leaden Greathammer_inventory.png",
+        "large_image": "Leaden Greathammer_large.png"
+    },
+    {
+        "name": "Crumbling Maul",
+        "inventory_icon": "Crumbling Maul_inventory.png",
+        "large_image": "Crumbling Maul_large.png"
+    },
+    {
+        "name": "Advanced Oak Greathammer",
+        "inventory_icon": "Advanced Oak Greathammer_inventory.png",
+        "large_image": "Advanced Oak Greathammer_large.png"
+    },
+    {
+        "name": "Advanced Forge Maul",
+        "inventory_icon": "Advanced Forge Maul_inventory.png",
+        "large_image": "Advanced Forge Maul_large.png"
+    },
+    {
+        "name": "Advanced Cultist Greathammer",
+        "inventory_icon": "Advanced Cultist Greathammer_inventory.png",
+        "large_image": "Advanced Cultist Greathammer_large.png"
+    },
+    {
+        "name": "Advanced Temple Maul",
+        "inventory_icon": "Advanced Temple Maul_inventory.png",
+        "large_image": "Advanced Temple Maul_large.png"
+    },
+    {
+        "name": "Advanced Leaden Greathammer",
+        "inventory_icon": "Advanced Leaden Greathammer_inventory.png",
+        "large_image": "Advanced Leaden Greathammer_large.png"
+    },
+    {
+        "name": "Advanced Crumbling Maul",
+        "inventory_icon": "Advanced Crumbling Maul_inventory.png",
+        "large_image": "Advanced Crumbling Maul_large.png"
+    },
+    {
+        "name": "Expert Forge Maul",
+        "inventory_icon": "Expert Forge Maul_inventory.png",
+        "large_image": "Expert Forge Maul_large.png"
+    },
+    {
+        "name": "Expert Temple Maul",
+        "inventory_icon": "Expert Temple Maul_inventory.png",
+        "large_image": "Expert Temple Maul_large.png"
+    },
+    {
+        "name": "Expert Leaden Greathammer",
+        "inventory_icon": "Expert Leaden Greathammer_inventory.png",
+        "large_image": "Expert Leaden Greathammer_large.png"
+    },
+    {
+        "name": "Expert Oak Greathammer",
+        "inventory_icon": "Expert Oak Greathammer_inventory.png",
+        "large_image": "Expert Oak Greathammer_large.png"
+    },
+    {
+        "name": "Expert Cultist Greathammer",
+        "inventory_icon": "Expert Cultist Greathammer_inventory.png",
+        "large_image": "Expert Cultist Greathammer_large.png"
+    },
+    {
+        "name": "Expert Crumbling Maul",
+        "inventory_icon": "Expert Crumbling Maul_inventory.png",
+        "large_image": "Expert Crumbling Maul_large.png"
+    },
+    {
+        "name": "Brynhand's Mark",
+        "inventory_icon": "Brynhands Mark_inventory.png",
+        "large_image": "Brynhands Mark_large.png"
+    },
+    {
+        "name": "Wylund's Stake",
+        "inventory_icon": "Wylunds Stake_inventory.png",
+        "large_image": "Wylunds Stake_large.png"
+    },
+    {
+        "name": "Frostbreath",
+        "inventory_icon": "Frostbreath_inventory.png",
+        "large_image": "Frostbreath_large.png"
+    },
+    {
+        "name": "Trenchtimbre",
+        "inventory_icon": "Trenchtimbre_inventory.png",
+        "large_image": "Trenchtimbre_large.png"
+    },
+    {
+        "name": "Seeing Stars",
+        "inventory_icon": "Seeing Stars_inventory.png",
+        "large_image": "Seeing Stars_large.png"
+    },
+    {
+        "name": "Olrovasara",
+        "inventory_icon": "Olrovasara_inventory.png",
+        "large_image": "Olrovasara_large.png"
+    },
+    {
+        "name": "Hoghunt",
+        "inventory_icon": "Hoghunt_inventory.png",
+        "large_image": "Hoghunt_large.png"
+    },
+    {
+        "name": "Hrimnor's Hymn",
+        "inventory_icon": "Hrimnors Hymn_inventory.png",
+        "large_image": "Hrimnors Hymn_large.png"
+    },
+    {
+        "name": "Trephina",
+        "inventory_icon": "Trephina_inventory.png",
+        "large_image": "Trephina_large.png"
+    },
+    {
+        "name": "Brain Rattler",
+        "inventory_icon": "Brain Rattler_inventory.png",
+        "large_image": "Brain Rattler_large.png"
+    },
+    {
+        "name": "Chober Chaber",
+        "inventory_icon": "Chober Chaber_inventory.png",
+        "large_image": "Chober Chaber_large.png"
+    },
+    {
+        "name": "Quecholli",
+        "inventory_icon": "Quecholli_inventory.png",
+        "large_image": "Quecholli_large.png"
+    },
+    {
+        "name": "Long Quarterstaff",
+        "inventory_icon": "Long Quarterstaff_inventory.png",
+        "large_image": "Long Quarterstaff_large.png"
+    },
+    {
+        "name": "Wrapped Quarterstaff",
+        "inventory_icon": "Wrapped Quarterstaff_inventory.png",
+        "large_image": "Wrapped Quarterstaff_large.png"
+    },
+    {
+        "name": "Gothic Quarterstaff",
+        "inventory_icon": "Gothic Quarterstaff_inventory.png",
+        "large_image": "Gothic Quarterstaff_large.png"
+    },
+    {
+        "name": "Crackling Quarterstaff",
+        "inventory_icon": "Crackling Quarterstaff_inventory.png",
+        "large_image": "Crackling Quarterstaff_large.png"
+    },
+    {
+        "name": "Crescent Quarterstaff",
+        "inventory_icon": "Crescent Quarterstaff_inventory.png",
+        "large_image": "Crescent Quarterstaff_large.png"
+    },
+    {
+        "name": "Steelpoint Quarterstaff",
+        "inventory_icon": "Steelpoint Quarterstaff_inventory.png",
+        "large_image": "Steelpoint Quarterstaff_large.png"
+    },
+    {
+        "name": "Slicing Quarterstaff",
+        "inventory_icon": "Slicing Quarterstaff_inventory.png",
+        "large_image": "Slicing Quarterstaff_large.png"
+    },
+    {
+        "name": "Barrier Quarterstaff",
+        "inventory_icon": "Barrier Quarterstaff_inventory.png",
+        "large_image": "Barrier Quarterstaff_large.png"
+    },
+    {
+        "name": "Advanced Long Quarterstaff",
+        "inventory_icon": "Advanced Long Quarterstaff_inventory.png",
+        "large_image": "Advanced Long Quarterstaff_large.png"
+    },
+    {
+        "name": "Advanced Gothic Quarterstaff",
+        "inventory_icon": "Advanced Gothic Quarterstaff_inventory.png",
+        "large_image": "Advanced Gothic Quarterstaff_large.png"
+    },
+    {
+        "name": "Advanced Crackling Quarterstaff",
+        "inventory_icon": "Advanced Crackling Quarterstaff_inventory.png",
+        "large_image": "Advanced Crackling Quarterstaff_large.png"
+    },
+    {
+        "name": "Advanced Crescent Quarterstaff",
+        "inventory_icon": "Advanced Crescent Quarterstaff_inventory.png",
+        "large_image": "Advanced Crescent Quarterstaff_large.png"
+    },
+    {
+        "name": "Advanced Slicing Quarterstaff",
+        "inventory_icon": "Advanced Slicing Quarterstaff_inventory.png",
+        "large_image": "Advanced Slicing Quarterstaff_large.png"
+    },
+    {
+        "name": "Advanced Barrier Quarterstaff",
+        "inventory_icon": "Advanced Barrier Quarterstaff_inventory.png",
+        "large_image": "Advanced Barrier Quarterstaff_large.png"
+    },
+    {
+        "name": "Expert Gothic Quarterstaff",
+        "inventory_icon": "Expert Gothic Quarterstaff_inventory.png",
+        "large_image": "Expert Gothic Quarterstaff_large.png"
+    },
+    {
+        "name": "Expert Crescent Quarterstaff",
+        "inventory_icon": "Expert Crescent Quarterstaff_inventory.png",
+        "large_image": "Expert Crescent Quarterstaff_large.png"
+    },
+    {
+        "name": "Expert Long Quarterstaff",
+        "inventory_icon": "Expert Long Quarterstaff_inventory.png",
+        "large_image": "Expert Long Quarterstaff_large.png"
+    },
+    {
+        "name": "Expert Slicing Quarterstaff",
+        "inventory_icon": "Expert Slicing Quarterstaff_inventory.png",
+        "large_image": "Expert Slicing Quarterstaff_large.png"
+    },
+    {
+        "name": "Expert Crackling Quarterstaff",
+        "inventory_icon": "Expert Crackling Quarterstaff_inventory.png",
+        "large_image": "Expert Crackling Quarterstaff_large.png"
+    },
+    {
+        "name": "Expert Barrier Quarterstaff",
+        "inventory_icon": "Expert Barrier Quarterstaff_inventory.png",
+        "large_image": "Expert Barrier Quarterstaff_large.png"
+    },
+    {
+        "name": "Pillar of the Caged God",
+        "inventory_icon": "Pillar of the Caged God_inventory.png",
+        "large_image": "Pillar of the Caged God_large.png"
+    },
+    {
+        "name": "The Blood Thorn",
+        "inventory_icon": "The Blood Thorn_inventory.png",
+        "large_image": "The Blood Thorn_large.png"
+    },
+    {
+        "name": "The Sentry",
+        "inventory_icon": "The Sentry_inventory.png",
+        "large_image": "The Sentry_large.png"
+    },
+    {
+        "name": "Matsya",
+        "inventory_icon": "Matsya_inventory.png",
+        "large_image": "Matsya_large.png"
+    },
+    {
+        "name": "Nazir's Judgement",
+        "inventory_icon": "Nazirs Judgement_inventory.png",
+        "large_image": "Nazirs Judgement_large.png"
+    },
+    {
+        "name": "Collapsing Horizon",
+        "inventory_icon": "Collapsing Horizon_inventory.png",
+        "large_image": "Collapsing Horizon_large.png"
+    },
+    {
+        "name": "Rattling Sceptre",
+        "inventory_icon": "Rattling Sceptre_inventory.png",
+        "large_image": "Rattling Sceptre_large.png"
+    },
+    {
+        "name": "Stoic Sceptre",
+        "inventory_icon": "Stoic Sceptre_inventory.png",
+        "large_image": "Stoic Sceptre_large.png"
+    },
+    {
+        "name": "Omen Sceptre",
+        "inventory_icon": "Omen Sceptre_inventory.png",
+        "large_image": "Omen Sceptre_large.png"
+    },
+    {
+        "name": "Shrine Sceptre (Fire)",
+        "inventory_icon": "Shrine Sceptre Fire_inventory.png",
+        "large_image": "Shrine Sceptre Fire_large.png"
+    },
+    {
+        "name": "Shrine Sceptre (Cold)",
+        "inventory_icon": "Shrine Sceptre Cold_inventory.png",
+        "large_image": "Shrine Sceptre Cold_large.png"
+    },
+    {
+        "name": "Shrine Sceptre (Lightning)",
+        "inventory_icon": "Shrine Sceptre Lightning_inventory.png",
+        "large_image": "Shrine Sceptre Lightning_large.png"
+    },
+    {
+        "name": "The Dark Defiler",
+        "inventory_icon": "The Dark Defiler_inventory.png",
+        "large_image": "The Dark Defiler_large.png"
+    },
+    {
+        "name": "Font of Power",
+        "inventory_icon": "Font of Power_inventory.png",
+        "large_image": "Font of Power_large.png"
+    },
+    {
+        "name": "Guiding Palm (Cold)",
+        "inventory_icon": "Guiding Palm Cold_inventory.png",
+        "large_image": "Guiding Palm Cold_large.png"
+    },
+    {
+        "name": "Guiding Palm (Lightning)",
+        "inventory_icon": "Guiding Palm Lightning_inventory.png",
+        "large_image": "Guiding Palm Lightning_large.png"
+    },
+    {
+        "name": "Guiding Palm (Fire)",
+        "inventory_icon": "Guiding Palm Fire_inventory.png",
+        "large_image": "Guiding Palm Fire_large.png"
+    },
+    {
+        "name": "Sacred Flame",
+        "inventory_icon": "Sacred Flame_inventory.png",
+        "large_image": "Sacred Flame_large.png"
+    },
+    {
+        "name": "Hardwood Spear",
+        "inventory_icon": "Hardwood Spear_inventory.png",
+        "large_image": "Hardwood Spear_large.png"
+    },
+    {
+        "name": "Splinter of Loratta",
+        "inventory_icon": "Splinter of Loratta_inventory.png",
+        "large_image": "Splinter of Loratta_large.png"
+    },
+    {
+        "name": "Skysliver",
+        "inventory_icon": "Skysliver_inventory.png",
+        "large_image": "Skysliver_large.png"
+    },
+    {
+        "name": "Solar Lance",
+        "inventory_icon": "Solar Lance_inventory.png",
+        "large_image": "Solar Lance_large.png"
+    },
+    {
+        "name": "Ashen Staff",
+        "inventory_icon": "Ashen Staff_inventory.png",
+        "large_image": "Ashen Staff_large.png"
+    },
+    {
+        "name": "Gelid Staff",
+        "inventory_icon": "Gelid Staff_inventory.png",
+        "large_image": "Gelid Staff_large.png"
+    },
+    {
+        "name": "Voltaic Staff",
+        "inventory_icon": "Voltaic Staff_inventory.png",
+        "large_image": "Voltaic Staff_large.png"
+    },
+    {
+        "name": "Pyrophyte Staff",
+        "inventory_icon": "Pyrophyte Staff_inventory.png",
+        "large_image": "Pyrophyte Staff_large.png"
+    },
+    {
+        "name": "Chiming Staff",
+        "inventory_icon": "Chiming Staff_inventory.png",
+        "large_image": "Chiming Staff_large.png"
+    },
+    {
+        "name": "Dusk Vigil",
+        "inventory_icon": "Dusk Vigil_inventory.png",
+        "large_image": "Dusk Vigil_large.png"
+    },
+    {
+        "name": "Earthbound",
+        "inventory_icon": "Earthbound_inventory.png",
+        "large_image": "Earthbound_large.png"
+    },
+    {
+        "name": "Taryn's Shiver",
+        "inventory_icon": "Taryns Shiver_inventory.png",
+        "large_image": "Taryns Shiver_large.png"
+    },
+    {
+        "name": "The Searing Touch",
+        "inventory_icon": "The Searing Touch_inventory.png",
+        "large_image": "The Searing Touch_large.png"
+    },
+    {
+        "name": "The Burden of Shadows",
+        "inventory_icon": "The Burden of Shadows_inventory.png",
+        "large_image": "The Burden of Shadows_large.png"
+    },
+    {
+        "name": "Bluetongue",
+        "inventory_icon": "Bluetongue_inventory.png",
+        "large_image": "Bluetongue_large.png"
+    },
+    {
+        "name": "Redbeak",
+        "inventory_icon": "Redbeak_inventory.png",
+        "large_image": "Redbeak_large.png"
+    },
+    {
+        "name": "The Dancing Dervish",
+        "inventory_icon": "The Dancing Dervish_inventory.png",
+        "large_image": "The Dancing Dervish_large.png"
+    },
+    {
+        "name": "Attuned Wand",
+        "inventory_icon": "Attuned Wand_inventory.png",
+        "large_image": "Attuned Wand_large.png"
+    },
+    {
+        "name": "Bone Wand",
+        "inventory_icon": "Bone Wand_inventory.png",
+        "large_image": "Bone Wand_large.png"
+    },
+    {
+        "name": "Withered Wand",
+        "inventory_icon": "Withered Wand_inventory.png",
+        "large_image": "Withered Wand_large.png"
+    },
+    {
+        "name": "Siphoning Wand",
+        "inventory_icon": "Siphoning Wand_inventory.png",
+        "large_image": "Siphoning Wand_large.png"
+    },
+    {
+        "name": "Volatile Wand",
+        "inventory_icon": "Volatile Wand_inventory.png",
+        "large_image": "Volatile Wand_large.png"
+    },
+    {
+        "name": "Lifesprig",
+        "inventory_icon": "Lifesprig_inventory.png",
+        "large_image": "Lifesprig_large.png"
+    },
+    {
+        "name": "Sanguine Diviner",
+        "inventory_icon": "Sanguine Diviner_inventory.png",
+        "large_image": "Sanguine Diviner_large.png"
+    },
+    {
+        "name": "Enezun's Charge",
+        "inventory_icon": "Enezuns Charge_inventory.png",
+        "large_image": "Enezuns Charge_large.png"
+    },
+    {
+        "name": "Splintered Tower Shield",
+        "inventory_icon": "Splintered Tower Shield_inventory.png",
+        "large_image": "Splintered Tower Shield_large.png"
+    },
+    {
+        "name": "Painted Tower Shield",
+        "inventory_icon": "Painted Tower Shield_inventory.png",
+        "large_image": "Painted Tower Shield_large.png"
+    },
+    {
+        "name": "Braced Tower Shield",
+        "inventory_icon": "Braced Tower Shield_inventory.png",
+        "large_image": "Braced Tower Shield_large.png"
+    },
+    {
+        "name": "Barricade Tower Shield",
+        "inventory_icon": "Barricade Tower Shield_inventory.png",
+        "large_image": "Barricade Tower Shield_large.png"
+    },
+    {
+        "name": "Effigial Tower Shield",
+        "inventory_icon": "Effigial Tower Shield_inventory.png",
+        "large_image": "Effigial Tower Shield_large.png"
+    },
+    {
+        "name": "Rampart Tower Shield",
+        "inventory_icon": "Rampart Tower Shield_inventory.png",
+        "large_image": "Rampart Tower Shield_large.png"
+    },
+    {
+        "name": "Heraldric Tower Shield",
+        "inventory_icon": "Heraldric Tower Shield_inventory.png",
+        "large_image": "Heraldric Tower Shield_large.png"
+    },
+    {
+        "name": "Stone Tower Shield",
+        "inventory_icon": "Stone Tower Shield_inventory.png",
+        "large_image": "Stone Tower Shield_large.png"
+    },
+    {
+        "name": "Advanced Painted Tower Shield",
+        "inventory_icon": "Advanced Painted Tower Shield_inventory.png",
+        "large_image": "Advanced Painted Tower Shield_large.png"
+    },
+    {
+        "name": "Advanced Braced Tower Shield",
+        "inventory_icon": "Advanced Braced Tower Shield_inventory.png",
+        "large_image": "Advanced Braced Tower Shield_large.png"
+    },
+    {
+        "name": "Advanced Effigial Tower Shield",
+        "inventory_icon": "Advanced Effigial Tower Shield_inventory.png",
+        "large_image": "Advanced Effigial Tower Shield_large.png"
+    },
+    {
+        "name": "Advanced Rampart Tower Shield",
+        "inventory_icon": "Advanced Rampart Tower Shield_inventory.png",
+        "large_image": "Advanced Rampart Tower Shield_large.png"
+    },
+    {
+        "name": "Advanced Heraldric Tower Shield",
+        "inventory_icon": "Advanced Heraldric Tower Shield_inventory.png",
+        "large_image": "Advanced Heraldric Tower Shield_large.png"
+    },
+    {
+        "name": "Advanced Stone Tower Shield",
+        "inventory_icon": "Advanced Stone Tower Shield_inventory.png",
+        "large_image": "Advanced Stone Tower Shield_large.png"
+    },
+    {
+        "name": "Expert Braced Tower Shield",
+        "inventory_icon": "Expert Braced Tower Shield_inventory.png",
+        "large_image": "Expert Braced Tower Shield_large.png"
+    },
+    {
+        "name": "Expert Rampart Tower Shield",
+        "inventory_icon": "Expert Rampart Tower Shield_inventory.png",
+        "large_image": "Expert Rampart Tower Shield_large.png"
+    },
+    {
+        "name": "Expert Stone Tower Shield",
+        "inventory_icon": "Expert Stone Tower Shield_inventory.png",
+        "large_image": "Expert Stone Tower Shield_large.png"
+    },
+    {
+        "name": "Hardwood Targe",
+        "inventory_icon": "Hardwood Targe_inventory.png",
+        "large_image": "Hardwood Targe_large.png"
+    },
+    {
+        "name": "Pelage Targe",
+        "inventory_icon": "Pelage Targe_inventory.png",
+        "large_image": "Pelage Targe_large.png"
+    },
+    {
+        "name": "Studded Targe",
+        "inventory_icon": "Studded Targe_inventory.png",
+        "large_image": "Studded Targe_large.png"
+    },
+    {
+        "name": "Crescent Targe",
+        "inventory_icon": "Crescent Targe_inventory.png",
+        "large_image": "Crescent Targe_large.png"
+    },
+    {
+        "name": "Chiseled Targe",
+        "inventory_icon": "Chiseled Targe_inventory.png",
+        "large_image": "Chiseled Targe_large.png"
+    },
+    {
+        "name": "Feathered Targe",
+        "inventory_icon": "Feathered Targe_inventory.png",
+        "large_image": "Feathered Targe_large.png"
+    },
+    {
+        "name": "Advanced Hardwood Targe",
+        "inventory_icon": "Advanced Hardwood Targe_inventory.png",
+        "large_image": "Advanced Hardwood Targe_large.png"
+    },
+    {
+        "name": "Advanced Pelage Targe",
+        "inventory_icon": "Advanced Pelage Targe_inventory.png",
+        "large_image": "Advanced Pelage Targe_large.png"
+    },
+    {
+        "name": "Advanced Studded Targe",
+        "inventory_icon": "Advanced Studded Targe_inventory.png",
+        "large_image": "Advanced Studded Targe_large.png"
+    },
+    {
+        "name": "Advanced Crescent Targe",
+        "inventory_icon": "Advanced Crescent Targe_inventory.png",
+        "large_image": "Advanced Crescent Targe_large.png"
+    },
+    {
+        "name": "Advanced Chiseled Targe",
+        "inventory_icon": "Advanced Chiseled Targe_inventory.png",
+        "large_image": "Advanced Chiseled Targe_large.png"
+    },
+    {
+        "name": "Advanced Feathered Targe",
+        "inventory_icon": "Advanced Feathered Targe_inventory.png",
+        "large_image": "Advanced Feathered Targe_large.png"
+    },
+    {
+        "name": "Expert Pelage Targe",
+        "inventory_icon": "Expert Pelage Targe_inventory.png",
+        "large_image": "Expert Pelage Targe_large.png"
+    },
+    {
+        "name": "Expert Crescent Targe",
+        "inventory_icon": "Expert Crescent Targe_inventory.png",
+        "large_image": "Expert Crescent Targe_large.png"
+    },
+    {
+        "name": "Expert Feathered Targe",
+        "inventory_icon": "Expert Feathered Targe_inventory.png",
+        "large_image": "Expert Feathered Targe_large.png"
+    },
+    {
+        "name": "Blazon Crest Shield",
+        "inventory_icon": "Blazon Crest Shield_inventory.png",
+        "large_image": "Blazon Crest Shield_large.png"
+    },
+    {
+        "name": "Sigil Crest Shield",
+        "inventory_icon": "Sigil Crest Shield_inventory.png",
+        "large_image": "Sigil Crest Shield_large.png"
+    },
+    {
+        "name": "Emblem Crest Shield",
+        "inventory_icon": "Emblem Crest Shield_inventory.png",
+        "large_image": "Emblem Crest Shield_large.png"
+    },
+    {
+        "name": "Jingling Crest Shield",
+        "inventory_icon": "Jingling Crest Shield_inventory.png",
+        "large_image": "Jingling Crest Shield_large.png"
+    },
+    {
+        "name": "Sectarian Crest Shield",
+        "inventory_icon": "Sectarian Crest Shield_inventory.png",
+        "large_image": "Sectarian Crest Shield_large.png"
+    },
+    {
+        "name": "Omen Crest Shield",
+        "inventory_icon": "Omen Crest Shield_inventory.png",
+        "large_image": "Omen Crest Shield_large.png"
+    },
+    {
+        "name": "Advanced Blazon Crest Shield",
+        "inventory_icon": "Advanced Blazon Crest Shield_inventory.png",
+        "large_image": "Advanced Blazon Crest Shield_large.png"
+    },
+    {
+        "name": "Advanced Sigil Crest Shield",
+        "inventory_icon": "Advanced Sigil Crest Shield_inventory.png",
+        "large_image": "Advanced Sigil Crest Shield_large.png"
+    },
+    {
+        "name": "Advanced Emblem Crest Shield",
+        "inventory_icon": "Advanced Emblem Crest Shield_inventory.png",
+        "large_image": "Advanced Emblem Crest Shield_large.png"
+    },
+    {
+        "name": "Advanced Jingling Crest Shield",
+        "inventory_icon": "Advanced Jingling Crest Shield_inventory.png",
+        "large_image": "Advanced Jingling Crest Shield_large.png"
+    },
+    {
+        "name": "Advanced Sectarian Crest Shield",
+        "inventory_icon": "Advanced Sectarian Crest Shield_inventory.png",
+        "large_image": "Advanced Sectarian Crest Shield_large.png"
+    },
+    {
+        "name": "Advanced Omen Crest Shield",
+        "inventory_icon": "Advanced Omen Crest Shield_inventory.png",
+        "large_image": "Advanced Omen Crest Shield_large.png"
+    },
+    {
+        "name": "Expert Sigil Crest Shield",
+        "inventory_icon": "Expert Sigil Crest Shield_inventory.png",
+        "large_image": "Expert Sigil Crest Shield_large.png"
+    },
+    {
+        "name": "Expert Jingling Crest Shield",
+        "inventory_icon": "Expert Jingling Crest Shield_inventory.png",
+        "large_image": "Expert Jingling Crest Shield_large.png"
+    },
+    {
+        "name": "Expert Omen Crest Shield",
+        "inventory_icon": "Expert Omen Crest Shield_inventory.png",
+        "large_image": "Expert Omen Crest Shield_large.png"
+    },
+    {
+        "name": "Leather Buckler",
+        "inventory_icon": "Leather Buckler_inventory.png",
+        "large_image": "Leather Buckler_large.png"
+    },
+    {
+        "name": "Ringed Buckler",
+        "inventory_icon": "Ringed Buckler_inventory.png",
+        "large_image": "Ringed Buckler_large.png"
+    },
+    {
+        "name": "Twig Focus",
+        "inventory_icon": "Twig Focus_inventory.png",
+        "large_image": "Twig Focus_large.png"
+    },
+    {
+        "name": "Woven Focus",
+        "inventory_icon": "Woven Focus_inventory.png",
+        "large_image": "Woven Focus_large.png"
+    },
+    {
+        "name": "Antler Focus",
+        "inventory_icon": "Antler Focus_inventory.png",
+        "large_image": "Antler Focus_large.png"
+    },
+    {
+        "name": "Engraved Focus",
+        "inventory_icon": "Engraved Focus_inventory.png",
+        "large_image": "Engraved Focus_large.png"
+    },
+    {
+        "name": "Tonal Focus",
+        "inventory_icon": "Tonal Focus_inventory.png",
+        "large_image": "Tonal Focus_large.png"
+    },
+    {
+        "name": "Crystal Focus",
+        "inventory_icon": "Crystal Focus_inventory.png",
+        "large_image": "Crystal Focus_large.png"
+    },
+    {
+        "name": "Voodoo Focus",
+        "inventory_icon": "Voodoo Focus_inventory.png",
+        "large_image": "Voodoo Focus_large.png"
+    },
+    {
+        "name": "Plumed Focus",
+        "inventory_icon": "Plumed Focus_inventory.png",
+        "large_image": "Plumed Focus_large.png"
+    },
+    {
+        "name": "Advanced Woven Focus",
+        "inventory_icon": "Advanced Woven Focus_inventory.png",
+        "large_image": "Advanced Woven Focus_large.png"
+    },
+    {
+        "name": "Advanced Antler Focus",
+        "inventory_icon": "Advanced Antler Focus_inventory.png",
+        "large_image": "Advanced Antler Focus_large.png"
+    },
+    {
+        "name": "Advanced Tonal Focus",
+        "inventory_icon": "Advanced Tonal Focus_inventory.png",
+        "large_image": "Advanced Tonal Focus_large.png"
+    },
+    {
+        "name": "Advanced Crystal Focus",
+        "inventory_icon": "Advanced Crystal Focus_inventory.png",
+        "large_image": "Advanced Crystal Focus_large.png"
+    },
+    {
+        "name": "Advanced Voodoo Focus",
+        "inventory_icon": "Advanced Voodoo Focus_inventory.png",
+        "large_image": "Advanced Voodoo Focus_large.png"
+    },
+    {
+        "name": "Advanced Plumed Focus",
+        "inventory_icon": "Advanced Plumed Focus_inventory.png",
+        "large_image": "Advanced Plumed Focus_large.png"
+    },
+    {
+        "name": "Expert Antler Focus",
+        "inventory_icon": "Expert Antler Focus_inventory.png",
+        "large_image": "Expert Antler Focus_large.png"
+    },
+    {
+        "name": "Expert Crystal Focus",
+        "inventory_icon": "Expert Crystal Focus_inventory.png",
+        "large_image": "Expert Crystal Focus_large.png"
+    },
+    {
+        "name": "Expert Plumed Focus",
+        "inventory_icon": "Expert Plumed Focus_inventory.png",
+        "large_image": "Expert Plumed Focus_large.png"
+    },
+    {
+        "name": "Broadhead Quiver",
+        "inventory_icon": "Broadhead Quiver_inventory.png",
+        "large_image": "Broadhead Quiver_large.png"
+    },
+    {
+        "name": "Fire Quiver",
+        "inventory_icon": "Fire Quiver_inventory.png",
+        "large_image": "Fire Quiver_large.png"
+    },
+    {
+        "name": "Sacral Quiver",
+        "inventory_icon": "Sacral Quiver_inventory.png",
+        "large_image": "Sacral Quiver_large.png"
+    },
+    {
+        "name": "Two-Point Quiver",
+        "inventory_icon": "Two-Point Quiver_inventory.png",
+        "large_image": "Two-Point Quiver_large.png"
+    },
+    {
+        "name": "Blunt Quiver",
+        "inventory_icon": "Blunt Quiver_inventory.png",
+        "large_image": "Blunt Quiver_large.png"
+    },
+    {
+        "name": "Toxic Quiver",
+        "inventory_icon": "Toxic Quiver_inventory.png",
+        "large_image": "Toxic Quiver_large.png"
+    },
+    {
+        "name": "Serrated Quiver",
+        "inventory_icon": "Serrated Quiver_inventory.png",
+        "large_image": "Serrated Quiver_large.png"
+    },
+    {
+        "name": "Primed Quiver",
+        "inventory_icon": "Primed Quiver_inventory.png",
+        "large_image": "Primed Quiver_large.png"
+    },
+    {
+        "name": "Penetrating Quiver",
+        "inventory_icon": "Penetrating Quiver_inventory.png",
+        "large_image": "Penetrating Quiver_large.png"
+    },
+    {
+        "name": "Volant Quiver",
+        "inventory_icon": "Volant Quiver_inventory.png",
+        "large_image": "Volant Quiver_large.png"
+    },
+    {
+        "name": "Visceral Quiver",
+        "inventory_icon": "Visceral Quiver_inventory.png",
+        "large_image": "Visceral Quiver_large.png"
+    },
+    {
+        "name": "Asphyxia's Wrath",
+        "inventory_icon": "Asphyxias Wrath_inventory.png",
+        "large_image": "Asphyxias Wrath_large.png"
+    },
+    {
+        "name": "Blackgleam",
+        "inventory_icon": "Blackgleam_inventory.png",
+        "large_image": "Blackgleam_large.png"
+    },
+    {
+        "name": "Beyond Reach",
+        "inventory_icon": "Beyond Reach_inventory.png",
+        "large_image": "Beyond Reach_large.png"
+    },
+    {
+        "name": "Fur Plate",
+        "inventory_icon": "Fur Plate_inventory.png",
+        "large_image": "Fur Plate_large.png"
+    },
+    {
+        "name": "Rusted Cuirass",
+        "inventory_icon": "Rusted Cuirass_inventory.png",
+        "large_image": "Rusted Cuirass_large.png"
+    },
+    {
+        "name": "Iron Cuirass",
+        "inventory_icon": "Iron Cuirass_inventory.png",
+        "large_image": "Iron Cuirass_large.png"
+    },
+    {
+        "name": "Raider Plate",
+        "inventory_icon": "Raider Plate_inventory.png",
+        "large_image": "Raider Plate_large.png"
+    },
+    {
+        "name": "Maraketh Cuirass",
+        "inventory_icon": "Maraketh Cuirass_inventory.png",
+        "large_image": "Maraketh Cuirass_large.png"
+    },
+    {
+        "name": "Steel Plate",
+        "inventory_icon": "Steel Plate_inventory.png",
+        "large_image": "Steel Plate_large.png"
+    },
+    {
+        "name": "Full Plate",
+        "inventory_icon": "Full Plate_inventory.png",
+        "large_image": "Full Plate_large.png"
+    },
+    {
+        "name": "Vaal Cuirass",
+        "inventory_icon": "Vaal Cuirass_inventory.png",
+        "large_image": "Vaal Cuirass_large.png"
+    },
+    {
+        "name": "Advanced Fur Plate",
+        "inventory_icon": "Advanced Fur Plate_inventory.png",
+        "large_image": "Advanced Fur Plate_large.png"
+    },
+    {
+        "name": "Advanced Iron Cuirass",
+        "inventory_icon": "Advanced Iron Cuirass_inventory.png",
+        "large_image": "Advanced Iron Cuirass_large.png"
+    },
+    {
+        "name": "Advanced Maraketh Cuirass",
+        "inventory_icon": "Advanced Maraketh Cuirass_inventory.png",
+        "large_image": "Advanced Maraketh Cuirass_large.png"
+    },
+    {
+        "name": "Advanced Steel Plate",
+        "inventory_icon": "Advanced Steel Plate_inventory.png",
+        "large_image": "Advanced Steel Plate_large.png"
+    },
+    {
+        "name": "Advanced Full Plate",
+        "inventory_icon": "Advanced Full Plate_inventory.png",
+        "large_image": "Advanced Full Plate_large.png"
+    },
+    {
+        "name": "Advanced Vaal Cuirass",
+        "inventory_icon": "Advanced Vaal Cuirass_inventory.png",
+        "large_image": "Advanced Vaal Cuirass_large.png"
+    },
+    {
+        "name": "Expert Iron Cuirass",
+        "inventory_icon": "Expert Iron Cuirass_inventory.png",
+        "large_image": "Expert Iron Cuirass_large.png"
+    },
+    {
+        "name": "Expert Steel Plate",
+        "inventory_icon": "Expert Steel Plate_inventory.png",
+        "large_image": "Expert Steel Plate_large.png"
+    },
+    {
+        "name": "Expert Vaal Cuirass",
+        "inventory_icon": "Expert Vaal Cuirass_inventory.png",
+        "large_image": "Expert Vaal Cuirass_large.png"
+    },
+    {
+        "name": "Leather Vest",
+        "inventory_icon": "Leather Vest_inventory.png",
+        "large_image": "Leather Vest_large.png"
+    },
+    {
+        "name": "Quilted Vest",
+        "inventory_icon": "Quilted Vest_inventory.png",
+        "large_image": "Quilted Vest_large.png"
+    },
+    {
+        "name": "Pathfinder Coat",
+        "inventory_icon": "Pathfinder Coat_inventory.png",
+        "large_image": "Pathfinder Coat_large.png"
+    },
+    {
+        "name": "Shrouded Vest",
+        "inventory_icon": "Shrouded Vest_inventory.png",
+        "large_image": "Shrouded Vest_large.png"
+    },
+    {
+        "name": "Rhoahide Coat",
+        "inventory_icon": "Rhoahide Coat_inventory.png",
+        "large_image": "Rhoahide Coat_large.png"
+    },
+    {
+        "name": "Studded Vest",
+        "inventory_icon": "Studded Vest_inventory.png",
+        "large_image": "Studded Vest_large.png"
+    },
+    {
+        "name": "Scout's Vest",
+        "inventory_icon": "Scouts Vest_inventory.png",
+        "large_image": "Scouts Vest_large.png"
+    },
+    {
+        "name": "Serpentscale Coat",
+        "inventory_icon": "Serpentscale Coat_inventory.png",
+        "large_image": "Serpentscale Coat_large.png"
+    },
+    {
+        "name": "Advanced Quilted Vest",
+        "inventory_icon": "Advanced Quilted Vest_inventory.png",
+        "large_image": "Advanced Quilted Vest_large.png"
+    },
+    {
+        "name": "Advanced Pathfinder Coat",
+        "inventory_icon": "Advanced Pathfinder Coat_inventory.png",
+        "large_image": "Advanced Pathfinder Coat_large.png"
+    },
+    {
+        "name": "Advanced Rhoahide Coat",
+        "inventory_icon": "Advanced Rhoahide Coat_inventory.png",
+        "large_image": "Advanced Rhoahide Coat_large.png"
+    },
+    {
+        "name": "Advanced Studded Vest",
+        "inventory_icon": "Advanced Studded Vest_inventory.png",
+        "large_image": "Advanced Studded Vest_large.png"
+    },
+    {
+        "name": "Advanced Scout's Vest",
+        "inventory_icon": "Advanced Scouts Vest_inventory.png",
+        "large_image": "Advanced Scouts Vest_large.png"
+    },
+    {
+        "name": "Advanced Serpentscale Coat",
+        "inventory_icon": "Advanced Serpentscale Coat_inventory.png",
+        "large_image": "Advanced Serpentscale Coat_large.png"
+    },
+    {
+        "name": "Expert Pathfinder Coat",
+        "inventory_icon": "Expert Pathfinder Coat_inventory.png",
+        "large_image": "Expert Pathfinder Coat_large.png"
+    },
+    {
+        "name": "Expert Studded Vest",
+        "inventory_icon": "Expert Studded Vest_inventory.png",
+        "large_image": "Expert Studded Vest_large.png"
+    },
+    {
+        "name": "Expert Serpentscale Coat",
+        "inventory_icon": "Expert Serpentscale Coat_inventory.png",
+        "large_image": "Expert Serpentscale Coat_large.png"
+    },
+    {
+        "name": "Tattered Robe",
+        "inventory_icon": "Tattered Robe_inventory.png",
+        "large_image": "Tattered Robe_large.png"
+    },
+    {
+        "name": "Feathered Robe",
+        "inventory_icon": "Feathered Robe_inventory.png",
+        "large_image": "Feathered Robe_large.png"
+    },
+    {
+        "name": "Hexer's Robe",
+        "inventory_icon": "Hexers Robe_inventory.png",
+        "large_image": "Hexers Robe_large.png"
+    },
+    {
+        "name": "Bone Raiment",
+        "inventory_icon": "Bone Raiment_inventory.png",
+        "large_image": "Bone Raiment_large.png"
+    },
+    {
+        "name": "Silk Robe",
+        "inventory_icon": "Silk Robe_inventory.png",
+        "large_image": "Silk Robe_large.png"
+    },
+    {
+        "name": "Keth Raiment",
+        "inventory_icon": "Keth Raiment_inventory.png",
+        "large_image": "Keth Raiment_large.png"
+    },
+    {
+        "name": "Votive Raiment",
+        "inventory_icon": "Votive Raiment_inventory.png",
+        "large_image": "Votive Raiment_large.png"
+    },
+    {
+        "name": "Altar Robe",
+        "inventory_icon": "Altar Robe_inventory.png",
+        "large_image": "Altar Robe_large.png"
+    },
+    {
+        "name": "Advanced Feathered Robe",
+        "inventory_icon": "Advanced Feathered Robe_inventory.png",
+        "large_image": "Advanced Feathered Robe_large.png"
+    },
+    {
+        "name": "Advanced Hexer's Robe",
+        "inventory_icon": "Advanced Hexers Robe_inventory.png",
+        "large_image": "Advanced Hexers Robe_large.png"
+    },
+    {
+        "name": "Advanced Silk Robe",
+        "inventory_icon": "Advanced Silk Robe_inventory.png",
+        "large_image": "Advanced Silk Robe_large.png"
+    },
+    {
+        "name": "Advanced Keth Raiment",
+        "inventory_icon": "Advanced Keth Raiment_inventory.png",
+        "large_image": "Advanced Keth Raiment_large.png"
+    },
+    {
+        "name": "Advanced Votive Raiment",
+        "inventory_icon": "Advanced Votive Raiment_inventory.png",
+        "large_image": "Advanced Votive Raiment_large.png"
+    },
+    {
+        "name": "Advanced Altar Robe",
+        "inventory_icon": "Advanced Altar Robe_inventory.png",
+        "large_image": "Advanced Altar Robe_large.png"
+    },
+    {
+        "name": "Expert Hexer's Robe",
+        "inventory_icon": "Expert Hexers Robe_inventory.png",
+        "large_image": "Expert Hexers Robe_large.png"
+    },
+    {
+        "name": "Expert Keth Raiment",
+        "inventory_icon": "Expert Keth Raiment_inventory.png",
+        "large_image": "Expert Keth Raiment_large.png"
+    },
+    {
+        "name": "Expert Altar Robe",
+        "inventory_icon": "Expert Altar Robe_inventory.png",
+        "large_image": "Expert Altar Robe_large.png"
+    },
+    {
+        "name": "Chain Mail",
+        "inventory_icon": "Chain Mail_inventory.png",
+        "large_image": "Chain Mail_large.png"
+    },
+    {
+        "name": "Rogue Armour",
+        "inventory_icon": "Rogue Armour_inventory.png",
+        "large_image": "Rogue Armour_large.png"
+    },
+    {
+        "name": "Vagabond Armour",
+        "inventory_icon": "Vagabond Armour_inventory.png",
+        "large_image": "Vagabond Armour_large.png"
+    },
+    {
+        "name": "Cloaked Mail",
+        "inventory_icon": "Cloaked Mail_inventory.png",
+        "large_image": "Cloaked Mail_large.png"
+    },
+    {
+        "name": "Explorer Armour",
+        "inventory_icon": "Explorer Armour_inventory.png",
+        "large_image": "Explorer Armour_large.png"
+    },
+    {
+        "name": "Scale Mail",
+        "inventory_icon": "Scale Mail_inventory.png",
+        "large_image": "Scale Mail_large.png"
+    },
+    {
+        "name": "Advanced Chain Mail",
+        "inventory_icon": "Advanced Chain Mail_inventory.png",
+        "large_image": "Advanced Chain Mail_large.png"
+    },
+    {
+        "name": "Advanced Rogue Armour",
+        "inventory_icon": "Advanced Rogue Armour_inventory.png",
+        "large_image": "Advanced Rogue Armour_large.png"
+    },
+    {
+        "name": "Advanced Vagabond Armour",
+        "inventory_icon": "Advanced Vagabond Armour_inventory.png",
+        "large_image": "Advanced Vagabond Armour_large.png"
+    },
+    {
+        "name": "Advanced Cloaked Mail",
+        "inventory_icon": "Advanced Cloaked Mail_inventory.png",
+        "large_image": "Advanced Cloaked Mail_large.png"
+    },
+    {
+        "name": "Advanced Explorer Armour",
+        "inventory_icon": "Advanced Explorer Armour_inventory.png",
+        "large_image": "Advanced Explorer Armour_large.png"
+    },
+    {
+        "name": "Advanced Scale Mail",
+        "inventory_icon": "Advanced Scale Mail_inventory.png",
+        "large_image": "Advanced Scale Mail_large.png"
+    },
+    {
+        "name": "Expert Rogue Armour",
+        "inventory_icon": "Expert Rogue Armour_inventory.png",
+        "large_image": "Expert Rogue Armour_large.png"
+    },
+    {
+        "name": "Expert Cloaked Mail (Fire)",
+        "inventory_icon": "Expert Cloaked Mail Fire_inventory.png",
+        "large_image": "Expert Cloaked Mail Fire_large.png"
+    },
+    {
+        "name": "Expert Cloaked Mail (Cold)",
+        "inventory_icon": "Expert Cloaked Mail Cold_inventory.png",
+        "large_image": "Expert Cloaked Mail Cold_large.png"
+    },
+    {
+        "name": "Expert Cloaked Mail (Lightning)",
+        "inventory_icon": "Expert Cloaked Mail Lightning_inventory.png",
+        "large_image": "Expert Cloaked Mail Lightning_large.png"
+    },
+    {
+        "name": "Expert Scale Mail",
+        "inventory_icon": "Expert Scale Mail_inventory.png",
+        "large_image": "Expert Scale Mail_large.png"
+    },
+    {
+        "name": "Pilgrim Vestments",
+        "inventory_icon": "Pilgrim Vestments_inventory.png",
+        "large_image": "Pilgrim Vestments_large.png"
+    },
+    {
+        "name": "Pelt Mantle",
+        "inventory_icon": "Pelt Mantle_inventory.png",
+        "large_image": "Pelt Mantle_large.png"
+    },
+    {
+        "name": "Mail Vestments",
+        "inventory_icon": "Mail Vestments_inventory.png",
+        "large_image": "Mail Vestments_large.png"
+    },
+    {
+        "name": "Shaman Mantle",
+        "inventory_icon": "Shaman Mantle_inventory.png",
+        "large_image": "Shaman Mantle_large.png"
+    },
+    {
+        "name": "Ironclad Vestments",
+        "inventory_icon": "Ironclad Vestments_inventory.png",
+        "large_image": "Ironclad Vestments_large.png"
+    },
+    {
+        "name": "Sacrificial Mantle",
+        "inventory_icon": "Sacrificial Mantle_inventory.png",
+        "large_image": "Sacrificial Mantle_large.png"
+    },
+    {
+        "name": "Advanced Pilgrim Vestments",
+        "inventory_icon": "Advanced Pilgrim Vestments_inventory.png",
+        "large_image": "Advanced Pilgrim Vestments_large.png"
+    },
+    {
+        "name": "Advanced Pelt Mantle",
+        "inventory_icon": "Advanced Pelt Mantle_inventory.png",
+        "large_image": "Advanced Pelt Mantle_large.png"
+    },
+    {
+        "name": "Advanced Mail Vestments",
+        "inventory_icon": "Advanced Mail Vestments_inventory.png",
+        "large_image": "Advanced Mail Vestments_large.png"
+    },
+    {
+        "name": "Advanced Shaman Mantle",
+        "inventory_icon": "Advanced Shaman Mantle_inventory.png",
+        "large_image": "Advanced Shaman Mantle_large.png"
+    },
+    {
+        "name": "Advanced Ironclad Vestments",
+        "inventory_icon": "Advanced Ironclad Vestments_inventory.png",
+        "large_image": "Advanced Ironclad Vestments_large.png"
+    },
+    {
+        "name": "Advanced Sacrificial Mantle",
+        "inventory_icon": "Advanced Sacrificial Mantle_inventory.png",
+        "large_image": "Advanced Sacrificial Mantle_large.png"
+    },
+    {
+        "name": "Expert Pelt Mantle",
+        "inventory_icon": "Expert Pelt Mantle_inventory.png",
+        "large_image": "Expert Pelt Mantle_large.png"
+    },
+    {
+        "name": "Expert Shaman Mantle",
+        "inventory_icon": "Expert Shaman Mantle_inventory.png",
+        "large_image": "Expert Shaman Mantle_large.png"
+    },
+    {
+        "name": "Expert Sacrificial Mantle",
+        "inventory_icon": "Expert Sacrificial Mantle_inventory.png",
+        "large_image": "Expert Sacrificial Mantle_large.png"
+    },
+    {
+        "name": "Hermit Garb",
+        "inventory_icon": "Hermit Garb_inventory.png",
+        "large_image": "Hermit Garb_large.png"
+    },
+    {
+        "name": "Waxed Jacket",
+        "inventory_icon": "Waxed Jacket_inventory.png",
+        "large_image": "Waxed Jacket_large.png"
+    },
+    {
+        "name": "Marabout Garb",
+        "inventory_icon": "Marabout Garb_inventory.png",
+        "large_image": "Marabout Garb_large.png"
+    },
+    {
+        "name": "Wayfarer Jacket",
+        "inventory_icon": "Wayfarer Jacket_inventory.png",
+        "large_image": "Wayfarer Jacket_large.png"
+    },
+    {
+        "name": "Anchorite Garb",
+        "inventory_icon": "Anchorite Garb_inventory.png",
+        "large_image": "Anchorite Garb_large.png"
+    },
+    {
+        "name": "Scalper's Jacket",
+        "inventory_icon": "Scalpers Jacket_inventory.png",
+        "large_image": "Scalpers Jacket_large.png"
+    },
+    {
+        "name": "Advanced Hermit Garb",
+        "inventory_icon": "Advanced Hermit Garb_inventory.png",
+        "large_image": "Advanced Hermit Garb_large.png"
+    },
+    {
+        "name": "Advanced Waxed Jacket",
+        "inventory_icon": "Advanced Waxed Jacket_inventory.png",
+        "large_image": "Advanced Waxed Jacket_large.png"
+    },
+    {
+        "name": "Advanced Marabout Garb",
+        "inventory_icon": "Advanced Marabout Garb_inventory.png",
+        "large_image": "Advanced Marabout Garb_large.png"
+    },
+    {
+        "name": "Advanced Wayfarer Jacket",
+        "inventory_icon": "Advanced Wayfarer Jacket_inventory.png",
+        "large_image": "Advanced Wayfarer Jacket_large.png"
+    },
+    {
+        "name": "Advanced Anchorite Garb",
+        "inventory_icon": "Advanced Anchorite Garb_inventory.png",
+        "large_image": "Advanced Anchorite Garb_large.png"
+    },
+    {
+        "name": "Advanced Scalper's Jacket",
+        "inventory_icon": "Advanced Scalpers Jacket_inventory.png",
+        "large_image": "Advanced Scalpers Jacket_large.png"
+    },
+    {
+        "name": "Expert Waxed Jacket",
+        "inventory_icon": "Expert Waxed Jacket_inventory.png",
+        "large_image": "Expert Waxed Jacket_large.png"
+    },
+    {
+        "name": "Expert Wayfarer Jacket",
+        "inventory_icon": "Expert Wayfarer Jacket_inventory.png",
+        "large_image": "Expert Wayfarer Jacket_large.png"
+    },
+    {
+        "name": "Expert Scalper's Jacket",
+        "inventory_icon": "Expert Scalpers Jacket_inventory.png",
+        "large_image": "Expert Scalpers Jacket_large.png"
+    },
+    {
+        "name": "Rough Greaves",
+        "inventory_icon": "Rough Greaves_inventory.png",
+        "large_image": "Rough Greaves_large.png"
+    },
+    {
+        "name": "Iron Greaves",
+        "inventory_icon": "Iron Greaves_inventory.png",
+        "large_image": "Iron Greaves_large.png"
+    },
+    {
+        "name": "Bronze Greaves",
+        "inventory_icon": "Bronze Greaves_inventory.png",
+        "large_image": "Bronze Greaves_large.png"
+    },
+    {
+        "name": "Trimmed Greaves",
+        "inventory_icon": "Trimmed Greaves_inventory.png",
+        "large_image": "Trimmed Greaves_large.png"
+    },
+    {
+        "name": "Stone Greaves",
+        "inventory_icon": "Stone Greaves_inventory.png",
+        "large_image": "Stone Greaves_large.png"
+    },
+    {
+        "name": "Advanced Iron Greaves",
+        "inventory_icon": "Advanced Iron Greaves_inventory.png",
+        "large_image": "Advanced Iron Greaves_large.png"
+    },
+    {
+        "name": "Advanced Bronze Greaves",
+        "inventory_icon": "Advanced Bronze Greaves_inventory.png",
+        "large_image": "Advanced Bronze Greaves_large.png"
+    },
+    {
+        "name": "Advanced Trimmed Greaves",
+        "inventory_icon": "Advanced Trimmed Greaves_inventory.png",
+        "large_image": "Advanced Trimmed Greaves_large.png"
+    },
+    {
+        "name": "Advanced Stone Greaves",
+        "inventory_icon": "Advanced Stone Greaves_inventory.png",
+        "large_image": "Advanced Stone Greaves_large.png"
+    },
+    {
+        "name": "Expert Iron Greaves",
+        "inventory_icon": "Expert Iron Greaves_inventory.png",
+        "large_image": "Expert Iron Greaves_large.png"
+    },
+    {
+        "name": "Expert Trimmed Greaves",
+        "inventory_icon": "Expert Trimmed Greaves_inventory.png",
+        "large_image": "Expert Trimmed Greaves_large.png"
+    },
+    {
+        "name": "Expert Stone Greaves",
+        "inventory_icon": "Expert Stone Greaves_inventory.png",
+        "large_image": "Expert Stone Greaves_large.png"
+    },
+    {
+        "name": "Rawhide Boots",
+        "inventory_icon": "Rawhide Boots_inventory.png",
+        "large_image": "Rawhide Boots_large.png"
+    },
+    {
+        "name": "Laced Boots",
+        "inventory_icon": "Laced Boots_inventory.png",
+        "large_image": "Laced Boots_large.png"
+    },
+    {
+        "name": "Embossed Boots",
+        "inventory_icon": "Embossed Boots_inventory.png",
+        "large_image": "Embossed Boots_large.png"
+    },
+    {
+        "name": "Steeltoe Boots",
+        "inventory_icon": "Steeltoe Boots_inventory.png",
+        "large_image": "Steeltoe Boots_large.png"
+    },
+    {
+        "name": "Lizardscale Boots",
+        "inventory_icon": "Lizardscale Boots_inventory.png",
+        "large_image": "Lizardscale Boots_large.png"
+    },
+    {
+        "name": "Advanced Laced Boots",
+        "inventory_icon": "Advanced Laced Boots_inventory.png",
+        "large_image": "Advanced Laced Boots_large.png"
+    },
+    {
+        "name": "Advanced Embossed Boots",
+        "inventory_icon": "Advanced Embossed Boots_inventory.png",
+        "large_image": "Advanced Embossed Boots_large.png"
+    },
+    {
+        "name": "Advanced Steeltoe Boots",
+        "inventory_icon": "Advanced Steeltoe Boots_inventory.png",
+        "large_image": "Advanced Steeltoe Boots_large.png"
+    },
+    {
+        "name": "Advanced Lizardscale Boots",
+        "inventory_icon": "Advanced Lizardscale Boots_inventory.png",
+        "large_image": "Advanced Lizardscale Boots_large.png"
+    },
+    {
+        "name": "Expert Laced Boots",
+        "inventory_icon": "Expert Laced Boots_inventory.png",
+        "large_image": "Expert Laced Boots_large.png"
+    },
+    {
+        "name": "Expert Steeltoe Boots",
+        "inventory_icon": "Expert Steeltoe Boots_inventory.png",
+        "large_image": "Expert Steeltoe Boots_large.png"
+    },
+    {
+        "name": "Expert Lizardscale Boots",
+        "inventory_icon": "Expert Lizardscale Boots_inventory.png",
+        "large_image": "Expert Lizardscale Boots_large.png"
+    },
+    {
+        "name": "Straw Sandals",
+        "inventory_icon": "Straw Sandals_inventory.png",
+        "large_image": "Straw Sandals_large.png"
+    },
+    {
+        "name": "Wrapped Sandals",
+        "inventory_icon": "Wrapped Sandals_inventory.png",
+        "large_image": "Wrapped Sandals_large.png"
+    },
+    {
+        "name": "Lattice Sandals",
+        "inventory_icon": "Lattice Sandals_inventory.png",
+        "large_image": "Lattice Sandals_large.png"
+    },
+    {
+        "name": "Silk Slippers",
+        "inventory_icon": "Silk Slippers_inventory.png",
+        "large_image": "Silk Slippers_large.png"
+    },
+    {
+        "name": "Feathered Sandals",
+        "inventory_icon": "Feathered Sandals_inventory.png",
+        "large_image": "Feathered Sandals_large.png"
+    },
+    {
+        "name": "Advanced Wrapped Sandals",
+        "inventory_icon": "Advanced Wrapped Sandals_inventory.png",
+        "large_image": "Advanced Wrapped Sandals_large.png"
+    },
+    {
+        "name": "Advanced Lattice Sandals",
+        "inventory_icon": "Advanced Lattice Sandals_inventory.png",
+        "large_image": "Advanced Lattice Sandals_large.png"
+    },
+    {
+        "name": "Advanced Silk Slippers",
+        "inventory_icon": "Advanced Silk Slippers_inventory.png",
+        "large_image": "Advanced Silk Slippers_large.png"
+    },
+    {
+        "name": "Advanced Feathered Sandals",
+        "inventory_icon": "Advanced Feathered Sandals_inventory.png",
+        "large_image": "Advanced Feathered Sandals_large.png"
+    },
+    {
+        "name": "Expert Wrapped Sandals",
+        "inventory_icon": "Expert Wrapped Sandals_inventory.png",
+        "large_image": "Expert Wrapped Sandals_large.png"
+    },
+    {
+        "name": "Expert Silk Slippers",
+        "inventory_icon": "Expert Silk Slippers_inventory.png",
+        "large_image": "Expert Silk Slippers_large.png"
+    },
+    {
+        "name": "Expert Feathered Sandals",
+        "inventory_icon": "Expert Feathered Sandals_inventory.png",
+        "large_image": "Expert Feathered Sandals_large.png"
+    },
+    {
+        "name": "Mail Sabatons",
+        "inventory_icon": "Mail Sabatons_inventory.png",
+        "large_image": "Mail Sabatons_large.png"
+    },
+    {
+        "name": "Braced Sabatons",
+        "inventory_icon": "Braced Sabatons_inventory.png",
+        "large_image": "Braced Sabatons_large.png"
+    },
+    {
+        "name": "Stacked Sabatons",
+        "inventory_icon": "Stacked Sabatons_inventory.png",
+        "large_image": "Stacked Sabatons_large.png"
+    },
+    {
+        "name": "Advanced Mail Sabatons",
+        "inventory_icon": "Advanced Mail Sabatons_inventory.png",
+        "large_image": "Advanced Mail Sabatons_large.png"
+    },
+    {
+        "name": "Advanced Braced Sabatons",
+        "inventory_icon": "Advanced Braced Sabatons_inventory.png",
+        "large_image": "Advanced Braced Sabatons_large.png"
+    },
+    {
+        "name": "Advanced Stacked Sabatons",
+        "inventory_icon": "Advanced Stacked Sabatons_inventory.png",
+        "large_image": "Advanced Stacked Sabatons_large.png"
+    },
+    {
+        "name": "Expert Mail Sabatons",
+        "inventory_icon": "Expert Mail Sabatons_inventory.png",
+        "large_image": "Expert Mail Sabatons_large.png"
+    },
+    {
+        "name": "Expert Braced Sabatons",
+        "inventory_icon": "Expert Braced Sabatons_inventory.png",
+        "large_image": "Expert Braced Sabatons_large.png"
+    },
+    {
+        "name": "Expert Stacked Sabatons",
+        "inventory_icon": "Expert Stacked Sabatons_inventory.png",
+        "large_image": "Expert Stacked Sabatons_large.png"
+    },
+    {
+        "name": "Padded Leggings",
+        "inventory_icon": "Padded Leggings_inventory.png",
+        "large_image": "Padded Leggings_large.png"
+    },
+    {
+        "name": "Secured Leggings",
+        "inventory_icon": "Secured Leggings_inventory.png",
+        "large_image": "Secured Leggings_large.png"
+    },
+    {
+        "name": "Pelt Leggings",
+        "inventory_icon": "Pelt Leggings_inventory.png",
+        "large_image": "Pelt Leggings_large.png"
+    },
+    {
+        "name": "Advanced Padded Leggings",
+        "inventory_icon": "Advanced Padded Leggings_inventory.png",
+        "large_image": "Advanced Padded Leggings_large.png"
+    },
+    {
+        "name": "Advanced Secured Leggings",
+        "inventory_icon": "Advanced Secured Leggings_inventory.png",
+        "large_image": "Advanced Secured Leggings_large.png"
+    },
+    {
+        "name": "Advanced Pelt Leggings",
+        "inventory_icon": "Advanced Pelt Leggings_inventory.png",
+        "large_image": "Advanced Pelt Leggings_large.png"
+    },
+    {
+        "name": "Expert Padded Leggings",
+        "inventory_icon": "Expert Padded Leggings_inventory.png",
+        "large_image": "Expert Padded Leggings_large.png"
+    },
+    {
+        "name": "Expert Secured Leggings",
+        "inventory_icon": "Expert Secured Leggings_inventory.png",
+        "large_image": "Expert Secured Leggings_large.png"
+    },
+    {
+        "name": "Expert Pelt Leggings",
+        "inventory_icon": "Expert Pelt Leggings_inventory.png",
+        "large_image": "Expert Pelt Leggings_large.png"
+    },
+    {
+        "name": "Frayed Shoes",
+        "inventory_icon": "Frayed Shoes_inventory.png",
+        "large_image": "Frayed Shoes_large.png"
+    },
+    {
+        "name": "Threaded Shoes",
+        "inventory_icon": "Threaded Shoes_inventory.png",
+        "large_image": "Threaded Shoes_large.png"
+    },
+    {
+        "name": "Hunting Shoes",
+        "inventory_icon": "Hunting Shoes_inventory.png",
+        "large_image": "Hunting Shoes_large.png"
+    },
+    {
+        "name": "Advanced Frayed Shoes",
+        "inventory_icon": "Advanced Frayed Shoes_inventory.png",
+        "large_image": "Advanced Frayed Shoes_large.png"
+    },
+    {
+        "name": "Advanced Threaded Shoes",
+        "inventory_icon": "Advanced Threaded Shoes_inventory.png",
+        "large_image": "Advanced Threaded Shoes_large.png"
+    },
+    {
+        "name": "Advanced Hunting Shoes",
+        "inventory_icon": "Advanced Hunting Shoes_inventory.png",
+        "large_image": "Advanced Hunting Shoes_large.png"
+    },
+    {
+        "name": "Expert Frayed Shoes",
+        "inventory_icon": "Expert Frayed Shoes_inventory.png",
+        "large_image": "Expert Frayed Shoes_large.png"
+    },
+    {
+        "name": "Expert Threaded Shoes",
+        "inventory_icon": "Expert Threaded Shoes_inventory.png",
+        "large_image": "Expert Threaded Shoes_large.png"
+    },
+    {
+        "name": "Expert Hunting Shoes",
+        "inventory_icon": "Expert Hunting Shoes_inventory.png",
+        "large_image": "Expert Hunting Shoes_large.png"
+    },
+    {
+        "name": "Stocky Mitts",
+        "inventory_icon": "Stocky Mitts_inventory.png",
+        "large_image": "Stocky Mitts_large.png"
+    },
+    {
+        "name": "Riveted Mitts",
+        "inventory_icon": "Riveted Mitts_inventory.png",
+        "large_image": "Riveted Mitts_large.png"
+    },
+    {
+        "name": "Tempered Mitts",
+        "inventory_icon": "Tempered Mitts_inventory.png",
+        "large_image": "Tempered Mitts_large.png"
+    },
+    {
+        "name": "Bolstered Mitts",
+        "inventory_icon": "Bolstered Mitts_inventory.png",
+        "large_image": "Bolstered Mitts_large.png"
+    },
+    {
+        "name": "Moulded Mitts",
+        "inventory_icon": "Moulded Mitts_inventory.png",
+        "large_image": "Moulded Mitts_large.png"
+    },
+    {
+        "name": "Advanced Riveted Mitts",
+        "inventory_icon": "Advanced Riveted Mitts_inventory.png",
+        "large_image": "Advanced Riveted Mitts_large.png"
+    },
+    {
+        "name": "Advanced Tempered Mitts",
+        "inventory_icon": "Advanced Tempered Mitts_inventory.png",
+        "large_image": "Advanced Tempered Mitts_large.png"
+    },
+    {
+        "name": "Advanced Bolstered Mitts",
+        "inventory_icon": "Advanced Bolstered Mitts_inventory.png",
+        "large_image": "Advanced Bolstered Mitts_large.png"
+    },
+    {
+        "name": "Advanced Moulded Mitts",
+        "inventory_icon": "Advanced Moulded Mitts_inventory.png",
+        "large_image": "Advanced Moulded Mitts_large.png"
+    },
+    {
+        "name": "Expert Riveted Mitts",
+        "inventory_icon": "Expert Riveted Mitts_inventory.png",
+        "large_image": "Expert Riveted Mitts_large.png"
+    },
+    {
+        "name": "Expert Bolstered Mitts",
+        "inventory_icon": "Expert Bolstered Mitts_inventory.png",
+        "large_image": "Expert Bolstered Mitts_large.png"
+    },
+    {
+        "name": "Expert Moulded Mitts",
+        "inventory_icon": "Expert Moulded Mitts_inventory.png",
+        "large_image": "Expert Moulded Mitts_large.png"
+    },
+    {
+        "name": "Suede Bracers",
+        "inventory_icon": "Suede Bracers_inventory.png",
+        "large_image": "Suede Bracers_large.png"
+    },
+    {
+        "name": "Firm Bracers",
+        "inventory_icon": "Firm Bracers_inventory.png",
+        "large_image": "Firm Bracers_large.png"
+    },
+    {
+        "name": "Bound Bracers",
+        "inventory_icon": "Bound Bracers_inventory.png",
+        "large_image": "Bound Bracers_large.png"
+    },
+    {
+        "name": "Sectioned Bracers",
+        "inventory_icon": "Sectioned Bracers_inventory.png",
+        "large_image": "Sectioned Bracers_large.png"
+    },
+    {
+        "name": "Spined Bracers",
+        "inventory_icon": "Spined Bracers_inventory.png",
+        "large_image": "Spined Bracers_large.png"
+    },
+    {
+        "name": "Advanced Firm Bracers",
+        "inventory_icon": "Advanced Firm Bracers_inventory.png",
+        "large_image": "Advanced Firm Bracers_large.png"
+    },
+    {
+        "name": "Fine Bracers",
+        "inventory_icon": "Fine Bracers_inventory.png",
+        "large_image": "Fine Bracers_large.png"
+    },
+    {
+        "name": "Advanced Bound Bracers",
+        "inventory_icon": "Advanced Bound Bracers_inventory.png",
+        "large_image": "Advanced Bound Bracers_large.png"
+    },
+    {
+        "name": "Advanced Sectioned Bracers",
+        "inventory_icon": "Advanced Sectioned Bracers_inventory.png",
+        "large_image": "Advanced Sectioned Bracers_large.png"
+    },
+    {
+        "name": "Advanced Spined Bracers",
+        "inventory_icon": "Advanced Spined Bracers_inventory.png",
+        "large_image": "Advanced Spined Bracers_large.png"
+    },
+    {
+        "name": "Expert Firm Bracers",
+        "inventory_icon": "Expert Firm Bracers_inventory.png",
+        "large_image": "Expert Firm Bracers_large.png"
+    },
+    {
+        "name": "Expert Sectioned Bracers",
+        "inventory_icon": "Expert Sectioned Bracers_inventory.png",
+        "large_image": "Expert Sectioned Bracers_large.png"
+    },
+    {
+        "name": "Expert Spined Bracers",
+        "inventory_icon": "Expert Spined Bracers_inventory.png",
+        "large_image": "Expert Spined Bracers_large.png"
+    },
+    {
+        "name": "Torn Gloves",
+        "inventory_icon": "Torn Gloves_inventory.png",
+        "large_image": "Torn Gloves_large.png"
+    },
+    {
+        "name": "Sombre Gloves",
+        "inventory_icon": "Sombre Gloves_inventory.png",
+        "large_image": "Sombre Gloves_large.png"
+    },
+    {
+        "name": "Stitched Gloves",
+        "inventory_icon": "Stitched Gloves_inventory.png",
+        "large_image": "Stitched Gloves_large.png"
+    },
+    {
+        "name": "Jewelled Gloves",
+        "inventory_icon": "Jewelled Gloves_inventory.png",
+        "large_image": "Jewelled Gloves_large.png"
+    },
+    {
+        "name": "Intricate Gloves",
+        "inventory_icon": "Intricate Gloves_inventory.png",
+        "large_image": "Intricate Gloves_large.png"
+    },
+    {
+        "name": "Advanced Sombre Gloves",
+        "inventory_icon": "Advanced Sombre Gloves_inventory.png",
+        "large_image": "Advanced Sombre Gloves_large.png"
+    },
+    {
+        "name": "Advanced Stitched Gloves",
+        "inventory_icon": "Advanced Stitched Gloves_inventory.png",
+        "large_image": "Advanced Stitched Gloves_large.png"
+    },
+    {
+        "name": "Advanced Jewelled Gloves",
+        "inventory_icon": "Advanced Jewelled Gloves_inventory.png",
+        "large_image": "Advanced Jewelled Gloves_large.png"
+    },
+    {
+        "name": "Advanced Intricate Gloves",
+        "inventory_icon": "Advanced Intricate Gloves_inventory.png",
+        "large_image": "Advanced Intricate Gloves_large.png"
+    },
+    {
+        "name": "Expert Sombre Gloves",
+        "inventory_icon": "Expert Sombre Gloves_inventory.png",
+        "large_image": "Expert Sombre Gloves_large.png"
+    },
+    {
+        "name": "Expert Jewelled Gloves",
+        "inventory_icon": "Expert Jewelled Gloves_inventory.png",
+        "large_image": "Expert Jewelled Gloves_large.png"
+    },
+    {
+        "name": "Expert Intricate Gloves",
+        "inventory_icon": "Expert Intricate Gloves_inventory.png",
+        "large_image": "Expert Intricate Gloves_large.png"
+    },
+    {
+        "name": "Ringmail Gauntlets",
+        "inventory_icon": "Ringmail Gauntlets_inventory.png",
+        "large_image": "Ringmail Gauntlets_large.png"
+    },
+    {
+        "name": "Layered Gauntlets",
+        "inventory_icon": "Layered Gauntlets_inventory.png",
+        "large_image": "Layered Gauntlets_large.png"
+    },
+    {
+        "name": "Doubled Gauntlets",
+        "inventory_icon": "Doubled Gauntlets_inventory.png",
+        "large_image": "Doubled Gauntlets_large.png"
+    },
+    {
+        "name": "Advanced Ringmail Gauntlets",
+        "inventory_icon": "Advanced Ringmail Gauntlets_inventory.png",
+        "large_image": "Advanced Ringmail Gauntlets_large.png"
+    },
+    {
+        "name": "Advanced Layered Gauntlets",
+        "inventory_icon": "Advanced Layered Gauntlets_inventory.png",
+        "large_image": "Advanced Layered Gauntlets_large.png"
+    },
+    {
+        "name": "Advanced Doubled Gauntlets",
+        "inventory_icon": "Advanced Doubled Gauntlets_inventory.png",
+        "large_image": "Advanced Doubled Gauntlets_large.png"
+    },
+    {
+        "name": "Expert Ringmail Gauntlets",
+        "inventory_icon": "Expert Ringmail Gauntlets_inventory.png",
+        "large_image": "Expert Ringmail Gauntlets_large.png"
+    },
+    {
+        "name": "Expert Layered Gauntlets",
+        "inventory_icon": "Expert Layered Gauntlets_inventory.png",
+        "large_image": "Expert Layered Gauntlets_large.png"
+    },
+    {
+        "name": "Expert Doubled Gauntlets",
+        "inventory_icon": "Expert Doubled Gauntlets_inventory.png",
+        "large_image": "Expert Doubled Gauntlets_large.png"
+    },
+    {
+        "name": "Rope Cuffs",
+        "inventory_icon": "Rope Cuffs_inventory.png",
+        "large_image": "Rope Cuffs_large.png"
+    },
+    {
+        "name": "Aged Cuffs",
+        "inventory_icon": "Aged Cuffs_inventory.png",
+        "large_image": "Aged Cuffs_large.png"
+    },
+    {
+        "name": "Goldcast Cuffs",
+        "inventory_icon": "Goldcast Cuffs_inventory.png",
+        "large_image": "Goldcast Cuffs_large.png"
+    },
+    {
+        "name": "Advanced Rope Cuffs",
+        "inventory_icon": "Advanced Rope Cuffs_inventory.png",
+        "large_image": "Advanced Rope Cuffs_large.png"
+    },
+    {
+        "name": "Advanced Aged Cuffs",
+        "inventory_icon": "Advanced Aged Cuffs_inventory.png",
+        "large_image": "Advanced Aged Cuffs_large.png"
+    },
+    {
+        "name": "Advanced Goldcast Cuffs",
+        "inventory_icon": "Advanced Goldcast Cuffs_inventory.png",
+        "large_image": "Advanced Goldcast Cuffs_large.png"
+    },
+    {
+        "name": "Expert Rope Cuffs",
+        "inventory_icon": "Expert Rope Cuffs_inventory.png",
+        "large_image": "Expert Rope Cuffs_large.png"
+    },
+    {
+        "name": "Expert Aged Cuffs",
+        "inventory_icon": "Expert Aged Cuffs_inventory.png",
+        "large_image": "Expert Aged Cuffs_large.png"
+    },
+    {
+        "name": "Expert Goldcast Cuffs",
+        "inventory_icon": "Expert Goldcast Cuffs_inventory.png",
+        "large_image": "Expert Goldcast Cuffs_large.png"
+    },
+    {
+        "name": "Gauze Wraps",
+        "inventory_icon": "Gauze Wraps_inventory.png",
+        "large_image": "Gauze Wraps_large.png"
+    },
+    {
+        "name": "Linen Wraps",
+        "inventory_icon": "Linen Wraps_inventory.png",
+        "large_image": "Linen Wraps_large.png"
+    },
+    {
+        "name": "Spiral Wraps",
+        "inventory_icon": "Spiral Wraps_inventory.png",
+        "large_image": "Spiral Wraps_large.png"
+    },
+    {
+        "name": "Advanced Gauze Wraps",
+        "inventory_icon": "Advanced Gauze Wraps_inventory.png",
+        "large_image": "Advanced Gauze Wraps_large.png"
+    },
+    {
+        "name": "Advanced Linen Wraps",
+        "inventory_icon": "Advanced Linen Wraps_inventory.png",
+        "large_image": "Advanced Linen Wraps_large.png"
+    },
+    {
+        "name": "Advanced Spiral Wraps",
+        "inventory_icon": "Advanced Spiral Wraps_inventory.png",
+        "large_image": "Advanced Spiral Wraps_large.png"
+    },
+    {
+        "name": "Expert Gauze Wraps",
+        "inventory_icon": "Expert Gauze Wraps_inventory.png",
+        "large_image": "Expert Gauze Wraps_large.png"
+    },
+    {
+        "name": "Expert Linen Wraps",
+        "inventory_icon": "Expert Linen Wraps_inventory.png",
+        "large_image": "Expert Linen Wraps_large.png"
+    },
+    {
+        "name": "Expert Spiral Wraps",
+        "inventory_icon": "Expert Spiral Wraps_inventory.png",
+        "large_image": "Expert Spiral Wraps_large.png"
+    },
+    {
+        "name": "Rusted Greathelm",
+        "inventory_icon": "Rusted Greathelm_inventory.png",
+        "large_image": "Rusted Greathelm_large.png"
+    },
+    {
+        "name": "Soldier Greathelm",
+        "inventory_icon": "Soldier Greathelm_inventory.png",
+        "large_image": "Soldier Greathelm_large.png"
+    },
+    {
+        "name": "Wrapped Greathelm",
+        "inventory_icon": "Wrapped Greathelm_inventory.png",
+        "large_image": "Wrapped Greathelm_large.png"
+    },
+    {
+        "name": "Spired Greathelm",
+        "inventory_icon": "Spired Greathelm_inventory.png",
+        "large_image": "Spired Greathelm_large.png"
+    },
+    {
+        "name": "Elite Greathelm",
+        "inventory_icon": "Elite Greathelm_inventory.png",
+        "large_image": "Elite Greathelm_large.png"
+    },
+    {
+        "name": "Warrior Greathelm",
+        "inventory_icon": "Warrior Greathelm_inventory.png",
+        "large_image": "Warrior Greathelm_large.png"
+    },
+    {
+        "name": "Advanced Rusted Greathelm",
+        "inventory_icon": "Advanced Rusted Greathelm_inventory.png",
+        "large_image": "Advanced Rusted Greathelm_large.png"
+    },
+    {
+        "name": "Advanced Soldier Greathelm",
+        "inventory_icon": "Advanced Soldier Greathelm_inventory.png",
+        "large_image": "Advanced Soldier Greathelm_large.png"
+    },
+    {
+        "name": "Advanced Wrapped Greathelm",
+        "inventory_icon": "Advanced Wrapped Greathelm_inventory.png",
+        "large_image": "Advanced Wrapped Greathelm_large.png"
+    },
+    {
+        "name": "Advanced Spired Greathelm",
+        "inventory_icon": "Advanced Spired Greathelm_inventory.png",
+        "large_image": "Advanced Spired Greathelm_large.png"
+    },
+    {
+        "name": "Advanced Elite Greathelm",
+        "inventory_icon": "Advanced Elite Greathelm_inventory.png",
+        "large_image": "Advanced Elite Greathelm_large.png"
+    },
+    {
+        "name": "Expert Soldier Greathelm",
+        "inventory_icon": "Expert Soldier Greathelm_inventory.png",
+        "large_image": "Expert Soldier Greathelm_large.png"
+    },
+    {
+        "name": "Expert Spired Greathelm",
+        "inventory_icon": "Expert Spired Greathelm_inventory.png",
+        "large_image": "Expert Spired Greathelm_large.png"
+    },
+    {
+        "name": "Expert Elite Greathelm",
+        "inventory_icon": "Expert Elite Greathelm_inventory.png",
+        "large_image": "Expert Elite Greathelm_large.png"
+    },
+    {
+        "name": "Shabby Hood",
+        "inventory_icon": "Shabby Hood_inventory.png",
+        "large_image": "Shabby Hood_large.png"
+    },
+    {
+        "name": "Felt Cap",
+        "inventory_icon": "Felt Cap_inventory.png",
+        "large_image": "Felt Cap_large.png"
+    },
+    {
+        "name": "Lace Hood",
+        "inventory_icon": "Lace Hood_inventory.png",
+        "large_image": "Lace Hood_large.png"
+    },
+    {
+        "name": "Swathed Cap",
+        "inventory_icon": "Swathed Cap_inventory.png",
+        "large_image": "Swathed Cap_large.png"
+    },
+    {
+        "name": "Hunter Hood",
+        "inventory_icon": "Hunter Hood_inventory.png",
+        "large_image": "Hunter Hood_large.png"
+    },
+    {
+        "name": "Viper Cap",
+        "inventory_icon": "Viper Cap_inventory.png",
+        "large_image": "Viper Cap_large.png"
+    },
+    {
+        "name": "Advanced Shabby Hood",
+        "inventory_icon": "Advanced Shabby Hood_inventory.png",
+        "large_image": "Advanced Shabby Hood_large.png"
+    },
+    {
+        "name": "Advanced Felt Cap",
+        "inventory_icon": "Advanced Felt Cap_inventory.png",
+        "large_image": "Advanced Felt Cap_large.png"
+    },
+    {
+        "name": "Advanced Lace Hood",
+        "inventory_icon": "Advanced Lace Hood_inventory.png",
+        "large_image": "Advanced Lace Hood_large.png"
+    },
+    {
+        "name": "Advanced Swathed Cap",
+        "inventory_icon": "Advanced Swathed Cap_inventory.png",
+        "large_image": "Advanced Swathed Cap_large.png"
+    },
+    {
+        "name": "Advanced Hunter Hood",
+        "inventory_icon": "Advanced Hunter Hood_inventory.png",
+        "large_image": "Advanced Hunter Hood_large.png"
+    },
+    {
+        "name": "Expert Felt Cap",
+        "inventory_icon": "Expert Felt Cap_inventory.png",
+        "large_image": "Expert Felt Cap_large.png"
+    },
+    {
+        "name": "Expert Swathed Cap",
+        "inventory_icon": "Expert Swathed Cap_inventory.png",
+        "large_image": "Expert Swathed Cap_large.png"
+    },
+    {
+        "name": "Expert Hunter Hood",
+        "inventory_icon": "Expert Hunter Hood_inventory.png",
+        "large_image": "Expert Hunter Hood_large.png"
+    },
+    {
+        "name": "Twig Circlet",
+        "inventory_icon": "Twig Circlet_inventory.png",
+        "large_image": "Twig Circlet_large.png"
+    },
+    {
+        "name": "Wicker Tiara",
+        "inventory_icon": "Wicker Tiara_inventory.png",
+        "large_image": "Wicker Tiara_large.png"
+    },
+    {
+        "name": "Beaded Circlet",
+        "inventory_icon": "Beaded Circlet_inventory.png",
+        "large_image": "Beaded Circlet_large.png"
+    },
+    {
+        "name": "Chain Tiara",
+        "inventory_icon": "Chain Tiara_inventory.png",
+        "large_image": "Chain Tiara_large.png"
+    },
+    {
+        "name": "Feathered Tiara",
+        "inventory_icon": "Feathered Tiara_inventory.png",
+        "large_image": "Feathered Tiara_large.png"
+    },
+    {
+        "name": "Gold Circlet",
+        "inventory_icon": "Gold Circlet_inventory.png",
+        "large_image": "Gold Circlet_large.png"
+    },
+    {
+        "name": "Advanced Twig Circlet",
+        "inventory_icon": "Advanced Twig Circlet_inventory.png",
+        "large_image": "Advanced Twig Circlet_large.png"
+    },
+    {
+        "name": "Advanced Wicker Tiara",
+        "inventory_icon": "Advanced Wicker Tiara_inventory.png",
+        "large_image": "Advanced Wicker Tiara_large.png"
+    },
+    {
+        "name": "Advanced Beaded Circlet",
+        "inventory_icon": "Advanced Beaded Circlet_inventory.png",
+        "large_image": "Advanced Beaded Circlet_large.png"
+    },
+    {
+        "name": "Advanced Chain Tiara",
+        "inventory_icon": "Advanced Chain Tiara_inventory.png",
+        "large_image": "Advanced Chain Tiara_large.png"
+    },
+    {
+        "name": "Advanced Feathered Tiara",
+        "inventory_icon": "Advanced Feathered Tiara_inventory.png",
+        "large_image": "Advanced Feathered Tiara_large.png"
+    },
+    {
+        "name": "Expert Wicker Tiara",
+        "inventory_icon": "Expert Wicker Tiara_inventory.png",
+        "large_image": "Expert Wicker Tiara_large.png"
+    },
+    {
+        "name": "Expert Chain Tiara",
+        "inventory_icon": "Expert Chain Tiara_inventory.png",
+        "large_image": "Expert Chain Tiara_large.png"
+    },
+    {
+        "name": "Expert Feathered Tiara",
+        "inventory_icon": "Expert Feathered Tiara_inventory.png",
+        "large_image": "Expert Feathered Tiara_large.png"
+    },
+    {
+        "name": "Brimmed Helm",
+        "inventory_icon": "Brimmed Helm_inventory.png",
+        "large_image": "Brimmed Helm_large.png"
+    },
+    {
+        "name": "Guarded Helm",
+        "inventory_icon": "Guarded Helm_inventory.png",
+        "large_image": "Guarded Helm_large.png"
+    },
+    {
+        "name": "Visored Helm",
+        "inventory_icon": "Visored Helm_inventory.png",
+        "large_image": "Visored Helm_large.png"
+    },
+    {
+        "name": "Cowled Helm",
+        "inventory_icon": "Cowled Helm_inventory.png",
+        "large_image": "Cowled Helm_large.png"
+    },
+    {
+        "name": "Shielded Helm",
+        "inventory_icon": "Shielded Helm_inventory.png",
+        "large_image": "Shielded Helm_large.png"
+    },
+    {
+        "name": "Advanced Brimmed Helm",
+        "inventory_icon": "Advanced Brimmed Helm_inventory.png",
+        "large_image": "Advanced Brimmed Helm_large.png"
+    },
+    {
+        "name": "Advanced Guarded Helm",
+        "inventory_icon": "Advanced Guarded Helm_inventory.png",
+        "large_image": "Advanced Guarded Helm_large.png"
+    },
+    {
+        "name": "Advanced Visored Helm",
+        "inventory_icon": "Advanced Visored Helm_inventory.png",
+        "large_image": "Advanced Visored Helm_large.png"
+    },
+    {
+        "name": "Advanced Cowled Helm",
+        "inventory_icon": "Advanced Cowled Helm_inventory.png",
+        "large_image": "Advanced Cowled Helm_large.png"
+    },
+    {
+        "name": "Advanced Shielded Helm",
+        "inventory_icon": "Advanced Shielded Helm_inventory.png",
+        "large_image": "Advanced Shielded Helm_large.png"
+    },
+    {
+        "name": "Expert Guarded Helm",
+        "inventory_icon": "Expert Guarded Helm_inventory.png",
+        "large_image": "Expert Guarded Helm_large.png"
+    },
+    {
+        "name": "Expert Cowled Helm",
+        "inventory_icon": "Expert Cowled Helm_inventory.png",
+        "large_image": "Expert Cowled Helm_large.png"
+    },
+    {
+        "name": "Expert Shielded Helm",
+        "inventory_icon": "Expert Shielded Helm_inventory.png",
+        "large_image": "Expert Shielded Helm_large.png"
+    },
+    {
+        "name": "Iron Crown",
+        "inventory_icon": "Iron Crown_inventory.png",
+        "large_image": "Iron Crown_large.png"
+    },
+    {
+        "name": "Horned Crown",
+        "inventory_icon": "Horned Crown_inventory.png",
+        "large_image": "Horned Crown_large.png"
+    },
+    {
+        "name": "Cultist Crown",
+        "inventory_icon": "Cultist Crown_inventory.png",
+        "large_image": "Cultist Crown_large.png"
+    },
+    {
+        "name": "Martyr Crown",
+        "inventory_icon": "Martyr Crown_inventory.png",
+        "large_image": "Martyr Crown_large.png"
+    },
+    {
+        "name": "Heavy Crown",
+        "inventory_icon": "Heavy Crown_inventory.png",
+        "large_image": "Heavy Crown_large.png"
+    },
+    {
+        "name": "Advanced Iron Crown",
+        "inventory_icon": "Advanced Iron Crown_inventory.png",
+        "large_image": "Advanced Iron Crown_large.png"
+    },
+    {
+        "name": "Advanced Horned Crown",
+        "inventory_icon": "Advanced Horned Crown_inventory.png",
+        "large_image": "Advanced Horned Crown_large.png"
+    },
+    {
+        "name": "Advanced Cultist Crown",
+        "inventory_icon": "Advanced Cultist Crown_inventory.png",
+        "large_image": "Advanced Cultist Crown_large.png"
+    },
+    {
+        "name": "Advanced Martyr Crown",
+        "inventory_icon": "Advanced Martyr Crown_inventory.png",
+        "large_image": "Advanced Martyr Crown_large.png"
+    },
+    {
+        "name": "Advanced Heavy Crown",
+        "inventory_icon": "Advanced Heavy Crown_inventory.png",
+        "large_image": "Advanced Heavy Crown_large.png"
+    },
+    {
+        "name": "Expert Horned Crown",
+        "inventory_icon": "Expert Horned Crown_inventory.png",
+        "large_image": "Expert Horned Crown_large.png"
+    },
+    {
+        "name": "Expert Martyr Crown",
+        "inventory_icon": "Expert Martyr Crown_inventory.png",
+        "large_image": "Expert Martyr Crown_large.png"
+    },
+    {
+        "name": "Expert Heavy Crown",
+        "inventory_icon": "Expert Heavy Crown_inventory.png",
+        "large_image": "Expert Heavy Crown_large.png"
+    },
+    {
+        "name": "Hewn Mask",
+        "inventory_icon": "Hewn Mask_inventory.png",
+        "large_image": "Hewn Mask_large.png"
+    },
+    {
+        "name": "Face Mask",
+        "inventory_icon": "Face Mask_inventory.png",
+        "large_image": "Face Mask_large.png"
+    },
+    {
+        "name": "Hooded Mask",
+        "inventory_icon": "Hooded Mask_inventory.png",
+        "large_image": "Hooded Mask_large.png"
+    },
+    {
+        "name": "Veiled Mask",
+        "inventory_icon": "Veiled Mask_inventory.png",
+        "large_image": "Veiled Mask_large.png"
+    },
+    {
+        "name": "Tribal Mask",
+        "inventory_icon": "Tribal Mask_inventory.png",
+        "large_image": "Tribal Mask_large.png"
+    },
+    {
+        "name": "Advanced Hewn Mask",
+        "inventory_icon": "Advanced Hewn Mask_inventory.png",
+        "large_image": "Advanced Hewn Mask_large.png"
+    },
+    {
+        "name": "Advanced Face Mask",
+        "inventory_icon": "Advanced Face Mask_inventory.png",
+        "large_image": "Advanced Face Mask_large.png"
+    },
+    {
+        "name": "Advanced Hooded Mask",
+        "inventory_icon": "Advanced Hooded Mask_inventory.png",
+        "large_image": "Advanced Hooded Mask_large.png"
+    },
+    {
+        "name": "Advanced Veiled Mask",
+        "inventory_icon": "Advanced Veiled Mask_inventory.png",
+        "large_image": "Advanced Veiled Mask_large.png"
+    },
+    {
+        "name": "Advanced Tribal Mask",
+        "inventory_icon": "Advanced Tribal Mask_inventory.png",
+        "large_image": "Advanced Tribal Mask_large.png"
+    },
+    {
+        "name": "Expert Face Mask",
+        "inventory_icon": "Expert Face Mask_inventory.png",
+        "large_image": "Expert Face Mask_large.png"
+    },
+    {
+        "name": "Expert Veiled Mask",
+        "inventory_icon": "Expert Veiled Mask_inventory.png",
+        "large_image": "Expert Veiled Mask_large.png"
+    },
+    {
+        "name": "Expert Tribal Mask",
+        "inventory_icon": "Expert Tribal Mask_inventory.png",
+        "large_image": "Expert Tribal Mask_large.png"
+    },
+    {
+        "name": "Azure Amulet",
+        "inventory_icon": "Azure Amulet_inventory.png",
+        "large_image": "Azure Amulet_large.png"
+    },
+    {
+        "name": "Crimson Amulet",
+        "inventory_icon": "Crimson Amulet_inventory.png",
+        "large_image": "Crimson Amulet_large.png"
+    },
+    {
+        "name": "Amber Amulet",
+        "inventory_icon": "Amber Amulet_inventory.png",
+        "large_image": "Amber Amulet_large.png"
+    },
+    {
+        "name": "Jade Amulet",
+        "inventory_icon": "Jade Amulet_inventory.png",
+        "large_image": "Jade Amulet_large.png"
+    },
+    {
+        "name": "Lapis Amulet",
+        "inventory_icon": "Lapis Amulet_inventory.png",
+        "large_image": "Lapis Amulet_large.png"
+    },
+    {
+        "name": "Lunar Amulet",
+        "inventory_icon": "Lunar Amulet_inventory.png",
+        "large_image": "Lunar Amulet_large.png"
+    },
+    {
+        "name": "Bloodstone Amulet",
+        "inventory_icon": "Bloodstone Amulet_inventory.png",
+        "large_image": "Bloodstone Amulet_large.png"
+    },
+    {
+        "name": "Stellar Amulet",
+        "inventory_icon": "Stellar Amulet_inventory.png",
+        "large_image": "Stellar Amulet_large.png"
+    },
+    {
+        "name": "Solar Amulet",
+        "inventory_icon": "Solar Amulet_inventory.png",
+        "large_image": "Solar Amulet_large.png"
+    },
+    {
+        "name": "Gold Amulet",
+        "inventory_icon": "Gold Amulet_inventory.png",
+        "large_image": "Gold Amulet_large.png"
+    },
+    {
+        "name": "Idol of Uldurn",
+        "inventory_icon": "Idol of Uldurn_inventory.png",
+        "large_image": "Idol of Uldurn_large.png"
+    },
+    {
+        "name": "Igniferis",
+        "inventory_icon": "Igniferis_inventory.png",
+        "large_image": "Igniferis_large.png"
+    },
+    {
+        "name": "The Everlasting Gaze",
+        "inventory_icon": "The Everlasting Gaze_inventory.png",
+        "large_image": "The Everlasting Gaze_large.png"
+    },
+    {
+        "name": "Carnage Heart",
+        "inventory_icon": "Carnage Heart_inventory.png",
+        "large_image": "Carnage Heart_large.png"
+    },
+    {
+        "name": "Defiance of Destiny",
+        "inventory_icon": "Defiance of Destiny_inventory.png",
+        "large_image": "Defiance of Destiny_large.png"
+    },
+    {
+        "name": "Revered Resin",
+        "inventory_icon": "Revered Resin_inventory.png",
+        "large_image": "Revered Resin_large.png"
+    },
+    {
+        "name": "Surefooted Sigil",
+        "inventory_icon": "Surefooted Sigil_inventory.png",
+        "large_image": "Surefooted Sigil_large.png"
+    },
+    {
+        "name": "Rondel of Fragility",
+        "inventory_icon": "Rondel of Fragility_inventory.png",
+        "large_image": "Rondel of Fragility_large.png"
+    },
+    {
+        "name": "The Anvil",
+        "inventory_icon": "The Anvil_inventory.png",
+        "large_image": "The Anvil_large.png"
+    },
+    {
+        "name": "Astramentis",
+        "inventory_icon": "Astramentis_inventory.png",
+        "large_image": "Astramentis_large.png"
+    },
+    {
+        "name": "Fixation of Yix",
+        "inventory_icon": "Fixation of Yix_inventory.png",
+        "large_image": "Fixation of Yix_large.png"
+    },
+    {
+        "name": "Ungil's Harmony",
+        "inventory_icon": "Ungils Harmony_inventory.png",
+        "large_image": "Ungils Harmony_large.png"
+    },
+    {
+        "name": "Beacon of Azis",
+        "inventory_icon": "Beacon of Azis_inventory.png",
+        "large_image": "Beacon of Azis_large.png"
+    },
+    {
+        "name": "Fireflower",
+        "inventory_icon": "Fireflower_inventory.png",
+        "large_image": "Fireflower_large.png"
+    },
+    {
+        "name": "Eye of Chayula",
+        "inventory_icon": "Eye of Chayula_inventory.png",
+        "large_image": "Eye of Chayula_large.png"
+    },
+    {
+        "name": "Ligurium Talisman",
+        "inventory_icon": "Ligurium Talisman_inventory.png",
+        "large_image": "Ligurium Talisman_large.png"
+    },
+    {
+        "name": "Serpent's Egg",
+        "inventory_icon": "Serpents Egg_inventory.png",
+        "large_image": "Serpents Egg_large.png"
+    },
+    {
+        "name": "Choir of the Storm",
+        "inventory_icon": "Choir of the Storm_inventory.png",
+        "large_image": "Choir of the Storm_large.png"
+    },
+    {
+        "name": "Strugglescream",
+        "inventory_icon": "Strugglescream_inventory.png",
+        "large_image": "Strugglescream_large.png"
+    },
+    {
+        "name": "The Pandemonius",
+        "inventory_icon": "The Pandemonius_inventory.png",
+        "large_image": "The Pandemonius_large.png"
+    },
+    {
+        "name": "Xoph's Blood",
+        "inventory_icon": "Xophs Blood_inventory.png",
+        "large_image": "Xophs Blood_large.png"
+    },
+    {
+        "name": "Linen Belt",
+        "inventory_icon": "Linen Belt_inventory.png",
+        "large_image": "Linen Belt_large.png"
+    },
+    {
+        "name": "Rawhide Belt",
+        "inventory_icon": "Rawhide Belt_inventory.png",
+        "large_image": "Rawhide Belt_large.png"
+    },
+    {
+        "name": "Wide Belt",
+        "inventory_icon": "Wide Belt_inventory.png",
+        "large_image": "Wide Belt_large.png"
+    },
+    {
+        "name": "Long Belt",
+        "inventory_icon": "Long Belt_inventory.png",
+        "large_image": "Long Belt_large.png"
+    },
+    {
+        "name": "Plate Belt",
+        "inventory_icon": "Plate Belt_inventory.png",
+        "large_image": "Plate Belt_large.png"
+    },
+    {
+        "name": "Ornate Belt",
+        "inventory_icon": "Ornate Belt_inventory.png",
+        "large_image": "Ornate Belt_large.png"
+    },
+    {
+        "name": "Mail Belt",
+        "inventory_icon": "Mail Belt_inventory.png",
+        "large_image": "Mail Belt_large.png"
+    },
+    {
+        "name": "Double Belt",
+        "inventory_icon": "Double Belt_inventory.png",
+        "large_image": "Double Belt_large.png"
+    },
+    {
+        "name": "Heavy Belt",
+        "inventory_icon": "Heavy Belt_inventory.png",
+        "large_image": "Heavy Belt_large.png"
+    },
+    {
+        "name": "Utility Belt",
+        "inventory_icon": "Utility Belt_inventory.png",
+        "large_image": "Utility Belt_large.png"
+    },
+    {
+        "name": "Fine Belt",
+        "inventory_icon": "Fine Belt_inventory.png",
+        "large_image": "Fine Belt_large.png"
+    },
+    {
+        "name": "Keelhaul",
+        "inventory_icon": "Keelhaul_inventory.png",
+        "large_image": "Keelhaul_large.png"
+    },
+    {
+        "name": "Meginord's Girdle",
+        "inventory_icon": "Meginords Girdle_inventory.png",
+        "large_image": "Meginords Girdle_large.png"
+    },
+    {
+        "name": "Midnight Braid",
+        "inventory_icon": "Midnight Braid_inventory.png",
+        "large_image": "Midnight Braid_large.png"
+    },
+    {
+        "name": "Birthright Buckle",
+        "inventory_icon": "Birthright Buckle_inventory.png",
+        "large_image": "Birthright Buckle_large.png"
+    },
+    {
+        "name": "Brynabas",
+        "inventory_icon": "Brynabas_inventory.png",
+        "large_image": "Brynabas_large.png"
+    },
+    {
+        "name": "Soul Tether",
+        "inventory_icon": "Soul Tether_inventory.png",
+        "large_image": "Soul Tether_large.png"
+    },
+    {
+        "name": "Infernoclasp",
+        "inventory_icon": "Infernoclasp_inventory.png",
+        "large_image": "Infernoclasp_large.png"
+    },
+    {
+        "name": "Ryslatha's Coil",
+        "inventory_icon": "Ryslathas Coil_inventory.png",
+        "large_image": "Ryslathas Coil_large.png"
+    },
+    {
+        "name": "Coward's Legacy",
+        "inventory_icon": "Cowards Legacy_inventory.png",
+        "large_image": "Cowards Legacy_large.png"
+    },
+    {
+        "name": "Headhunter",
+        "inventory_icon": "Headhunter_inventory.png",
+        "large_image": "Headhunter_large.png"
+    },
+    {
+        "name": "Ingenuity",
+        "inventory_icon": "Ingenuity_inventory.png",
+        "large_image": "Ingenuity_large.png"
+    },
+    {
+        "name": "Zerphi's Genesis",
+        "inventory_icon": "Zerphis Genesis_inventory.png",
+        "large_image": "Zerphis Genesis_large.png"
+    },
+    {
+        "name": "Shavronne's Satchel",
+        "inventory_icon": "Shavronnes Satchel_inventory.png",
+        "large_image": "Shavronnes Satchel_large.png"
+    },
+    {
+        "name": "Iron Ring",
+        "inventory_icon": "Iron Ring_inventory.png",
+        "large_image": "Iron Ring_large.png"
+    },
+    {
+        "name": "Lazuli Ring",
+        "inventory_icon": "Lazuli Ring_inventory.png",
+        "large_image": "Lazuli Ring_large.png"
+    },
+    {
+        "name": "Ruby Ring",
+        "inventory_icon": "Ruby Ring_inventory.png",
+        "large_image": "Ruby Ring_large.png"
+    },
+    {
+        "name": "Sapphire Ring",
+        "inventory_icon": "Sapphire Ring_inventory.png",
+        "large_image": "Sapphire Ring_large.png"
+    },
+    {
+        "name": "Topaz Ring",
+        "inventory_icon": "Topaz Ring_inventory.png",
+        "large_image": "Topaz Ring_large.png"
+    },
+    {
+        "name": "Amethyst Ring",
+        "inventory_icon": "Amethyst Ring_inventory.png",
+        "large_image": "Amethyst Ring_large.png"
+    },
+    {
+        "name": "Emerald Ring",
+        "inventory_icon": "Emerald Ring_inventory.png",
+        "large_image": "Emerald Ring_large.png"
+    },
+    {
+        "name": "Pearl Ring",
+        "inventory_icon": "Pearl Ring_inventory.png",
+        "large_image": "Pearl Ring_large.png"
+    },
+    {
+        "name": "Prismatic Ring",
+        "inventory_icon": "Prismatic Ring_inventory.png",
+        "large_image": "Prismatic Ring_large.png"
+    },
+    {
+        "name": "Breach Ring",
+        "inventory_icon": "Breach Ring_inventory.png",
+        "large_image": "Breach Ring_large.png"
+    },
+    {
+        "name": "Gold Ring",
+        "inventory_icon": "Gold Ring_inventory.png",
+        "large_image": "Gold Ring_large.png"
+    },
+    {
+        "name": "Unset Ring",
+        "inventory_icon": "Unset Ring_inventory.png",
+        "large_image": "Unset Ring_large.png"
+    },
+    {
+        "name": "Blackheart",
+        "inventory_icon": "Blackheart_inventory.png",
+        "large_image": "Blackheart_large.png"
+    },
+    {
+        "name": "Doedre's Damning",
+        "inventory_icon": "Doedres Damning_inventory.png",
+        "large_image": "Doedres Damning_large.png"
+    },
+    {
+        "name": "Glowswarm",
+        "inventory_icon": "Glowswarm_inventory.png",
+        "large_image": "Glowswarm_large.png"
+    },
+    {
+        "name": "Kalandra's Touch",
+        "inventory_icon": "Kalandras Touch_inventory.png",
+        "large_image": "Kalandras Touch_large.png"
+    },
+    {
+        "name": "Seed of Cataclysm",
+        "inventory_icon": "Seed of Cataclysm_inventory.png",
+        "large_image": "Seed of Cataclysm_large.png"
+    },
+    {
+        "name": "Blistering Bond",
+        "inventory_icon": "Blistering Bond_inventory.png",
+        "large_image": "Blistering Bond_large.png"
+    },
+    {
+        "name": "Cracklecreep",
+        "inventory_icon": "Cracklecreep_inventory.png",
+        "large_image": "Cracklecreep_large.png"
+    },
+    {
+        "name": "Dream Fragments",
+        "inventory_icon": "Dream Fragments_inventory.png",
+        "large_image": "Dream Fragments_large.png"
+    },
+    {
+        "name": "Polcirkeln",
+        "inventory_icon": "Polcirkeln_inventory.png",
+        "large_image": "Polcirkeln_large.png"
+    },
+    {
+        "name": "Levinstone",
+        "inventory_icon": "Levinstone_inventory.png",
+        "large_image": "Levinstone_large.png"
+    },
+    {
+        "name": "Blackflame",
+        "inventory_icon": "Blackflame_inventory.png",
+        "large_image": "Blackflame_large.png"
+    },
+    {
+        "name": "Ming's Heart",
+        "inventory_icon": "Mings Heart_inventory.png",
+        "large_image": "Mings Heart_large.png"
+    },
+    {
+        "name": "Original Sin",
+        "inventory_icon": "Original Sin_inventory.png",
+        "large_image": "Original Sin_large.png"
+    },
+    {
+        "name": "Death Rush",
+        "inventory_icon": "Death Rush_inventory.png",
+        "large_image": "Death Rush_large.png"
+    },
+    {
+        "name": "Thief's Torment",
+        "inventory_icon": "Thiefs Torment_inventory.png",
+        "large_image": "Thiefs Torment_large.png"
+    },
+    {
+        "name": "Call of the Brotherhood",
+        "inventory_icon": "Call of the Brotherhood_inventory.png",
+        "large_image": "Call of the Brotherhood_large.png"
+    },
+    {
+        "name": "Heartbound Loop",
+        "inventory_icon": "Heartbound Loop_inventory.png",
+        "large_image": "Heartbound Loop_large.png"
+    },
+    {
+        "name": "Snakepit",
+        "inventory_icon": "Snakepit_inventory.png",
+        "large_image": "Snakepit_large.png"
+    },
+    {
+        "name": "The Burrower",
+        "inventory_icon": "The Burrower_inventory.png",
+        "large_image": "The Burrower_large.png"
+    },
+    {
+        "name": "Whisper of the Brotherhood",
+        "inventory_icon": "Whisper of the Brotherhood_inventory.png",
+        "large_image": "Whisper of the Brotherhood_large.png"
+    },
+    {
+        "name": "Andvarius",
+        "inventory_icon": "Andvarius_inventory.png",
+        "large_image": "Andvarius_large.png"
+    },
+    {
+        "name": "Perandus Seal",
+        "inventory_icon": "Perandus Seal_inventory.png",
+        "large_image": "Perandus Seal_large.png"
+    },
+    {
+        "name": "Sekhema's Resolve (Cold)",
+        "inventory_icon": "Sekhemas Resolve Cold_inventory.png",
+        "large_image": "Sekhemas Resolve Cold_large.png"
+    },
+    {
+        "name": "Sekhema's Resolve (Fire)",
+        "inventory_icon": "Sekhemas Resolve Fire_inventory.png",
+        "large_image": "Sekhemas Resolve Fire_large.png"
+    },
+    {
+        "name": "Sekhema's Resolve (Lightning)",
+        "inventory_icon": "Sekhemas Resolve Lightning_inventory.png",
+        "large_image": "Sekhemas Resolve Lightning_large.png"
+    },
+    {
+        "name": "Ventor's Gamble",
+        "inventory_icon": "Ventors Gamble_inventory.png",
+        "large_image": "Ventors Gamble_large.png"
+    },
+    {
+        "name": "Lesser Life Flask",
+        "inventory_icon": "Lesser Life Flask_inventory.png",
+        "large_image": "Lesser Life Flask_large.png"
+    },
+    {
+        "name": "Medium Life Flask",
+        "inventory_icon": "Medium Life Flask_inventory.png",
+        "large_image": "Medium Life Flask_large.png"
+    },
+    {
+        "name": "Greater Life Flask",
+        "inventory_icon": "Greater Life Flask_inventory.png",
+        "large_image": "Greater Life Flask_large.png"
+    },
+    {
+        "name": "Grand Life Flask",
+        "inventory_icon": "Grand Life Flask_inventory.png",
+        "large_image": "Grand Life Flask_large.png"
+    },
+    {
+        "name": "Giant Life Flask",
+        "inventory_icon": "Giant Life Flask_inventory.png",
+        "large_image": "Giant Life Flask_large.png"
+    },
+    {
+        "name": "Colossal Life Flask",
+        "inventory_icon": "Colossal Life Flask_inventory.png",
+        "large_image": "Colossal Life Flask_large.png"
+    },
+    {
+        "name": "Gargantuan Life Flask",
+        "inventory_icon": "Gargantuan Life Flask_inventory.png",
+        "large_image": "Gargantuan Life Flask_large.png"
+    },
+    {
+        "name": "Transcendent Life Flask",
+        "inventory_icon": "Transcendent Life Flask_inventory.png",
+        "large_image": "Transcendent Life Flask_large.png"
+    },
+    {
+        "name": "Ultimate Life Flask",
+        "inventory_icon": "Ultimate Life Flask_inventory.png",
+        "large_image": "Ultimate Life Flask_large.png"
+    },
+    {
+        "name": "Olroth's Resolve",
+        "inventory_icon": "Olroths Resolve_inventory.png",
+        "large_image": "Olroths Resolve_large.png"
+    },
+    {
+        "name": "Lesser Mana Flask",
+        "inventory_icon": "Lesser Mana Flask_inventory.png",
+        "large_image": "Lesser Mana Flask_large.png"
+    },
+    {
+        "name": "Medium Mana Flask",
+        "inventory_icon": "Medium Mana Flask_inventory.png",
+        "large_image": "Medium Mana Flask_large.png"
+    },
+    {
+        "name": "Greater Mana Flask",
+        "inventory_icon": "Greater Mana Flask_inventory.png",
+        "large_image": "Greater Mana Flask_large.png"
+    },
+    {
+        "name": "Grand Mana Flask",
+        "inventory_icon": "Grand Mana Flask_inventory.png",
+        "large_image": "Grand Mana Flask_large.png"
+    },
+    {
+        "name": "Giant Mana Flask",
+        "inventory_icon": "Giant Mana Flask_inventory.png",
+        "large_image": "Giant Mana Flask_large.png"
+    },
+    {
+        "name": "Colossal Mana Flask",
+        "inventory_icon": "Colossal Mana Flask_inventory.png",
+        "large_image": "Colossal Mana Flask_large.png"
+    },
+    {
+        "name": "Gargantuan Mana Flask",
+        "inventory_icon": "Gargantuan Mana Flask_inventory.png",
+        "large_image": "Gargantuan Mana Flask_large.png"
+    },
+    {
+        "name": "Transcendent Mana Flask",
+        "inventory_icon": "Transcendent Mana Flask_inventory.png",
+        "large_image": "Transcendent Mana Flask_large.png"
+    },
+    {
+        "name": "Ultimate Mana Flask",
+        "inventory_icon": "Ultimate Mana Flask_inventory.png",
+        "large_image": "Ultimate Mana Flask_large.png"
+    },
+    {
+        "name": "Melting Maelstrom",
+        "inventory_icon": "Melting Maelstrom_inventory.png",
+        "large_image": "Melting Maelstrom_large.png"
+    },
+    {
+        "name": "Ruby Charm",
+        "inventory_icon": "Ruby Charm_inventory.png",
+        "large_image": "Ruby Charm_large.png"
+    },
+    {
+        "name": "Sapphire Charm",
+        "inventory_icon": "Sapphire Charm_inventory.png",
+        "large_image": "Sapphire Charm_large.png"
+    },
+    {
+        "name": "Topaz Charm",
+        "inventory_icon": "Topaz Charm_inventory.png",
+        "large_image": "Topaz Charm_large.png"
+    },
+    {
+        "name": "Stone Charm",
+        "inventory_icon": "Stone Charm_inventory.png",
+        "large_image": "Stone Charm_large.png"
+    },
+    {
+        "name": "Silver Charm",
+        "inventory_icon": "Silver Charm_inventory.png",
+        "large_image": "Silver Charm_large.png"
+    },
+    {
+        "name": "Thawing Charm",
+        "inventory_icon": "Thawing Charm_inventory.png",
+        "large_image": "Thawing Charm_large.png"
+    },
+    {
+        "name": "Staunching Charm",
+        "inventory_icon": "Staunching Charm_inventory.png",
+        "large_image": "Staunching Charm_large.png"
+    },
+    {
+        "name": "Antidote Charm",
+        "inventory_icon": "Antidote Charm_inventory.png",
+        "large_image": "Antidote Charm_large.png"
+    },
+    {
+        "name": "Dousing Charm",
+        "inventory_icon": "Dousing Charm_inventory.png",
+        "large_image": "Dousing Charm_large.png"
+    },
+    {
+        "name": "Grounding Charm",
+        "inventory_icon": "Grounding Charm_inventory.png",
+        "large_image": "Grounding Charm_large.png"
+    },
+    {
+        "name": "Amethyst Charm",
+        "inventory_icon": "Amethyst Charm_inventory.png",
+        "large_image": "Amethyst Charm_large.png"
+    },
+    {
+        "name": "Golden Charm",
+        "inventory_icon": "Golden Charm_inventory.png",
+        "large_image": "Golden Charm_large.png"
+    },
+    {
+        "name": "Elevore",
+        "inventory_icon": "Elevore_inventory.png",
+        "large_image": "Elevore_large.png"
+    },
+    {
+        "name": "Pragmatism",
+        "inventory_icon": "Pragmatism_inventory.png",
+        "large_image": "Pragmatism_large.png"
+    },
+    {
+        "name": "Zerphi's Genesis",
+        "inventory_icon": "Zerphis Genesis_inventory.png",
+        "large_image": "Zerphis Genesis_large.png"
+    },
+    {
+        "name": "Against the Darkness",
+        "inventory_icon": "Against the Darkness_inventory.png",
+        "large_image": "Against the Darkness_large.png"
+    },
+    {
+        "name": "Controlled Metamorphosis",
+        "inventory_icon": "Controlled Metamorphosis_inventory.png",
+        "large_image": "Controlled Metamorphosis_large.png"
+    },
+    {
+        "name": "From Nothing",
+        "inventory_icon": "From Nothing_inventory.png",
+        "large_image": "From Nothing_large.png"
+    },
+    {
+        "name": "Grand Spectrum (Ruby)",
+        "inventory_icon": "Grand Spectrum Ruby_inventory.png",
+        "large_image": "Grand Spectrum Ruby_large.png"
+    },
+    {
+        "name": "Grand Spectrum (Emerald)",
+        "inventory_icon": "Grand Spectrum Emerald_inventory.png",
+        "large_image": "Grand Spectrum Emerald_large.png"
+    },
+    {
+        "name": "Grand Spectrum (Sapphire)",
+        "inventory_icon": "Grand Spectrum Sapphire_inventory.png",
+        "large_image": "Grand Spectrum Sapphire_large.png"
+    },
+    {
+        "name": "Heroic Tragedy",
+        "inventory_icon": "Heroic Tragedy_inventory.png",
+        "large_image": "Heroic Tragedy_large.png"
+    },
+    {
+        "name": "Megalomaniac",
+        "inventory_icon": "Megalomaniac_inventory.png",
+        "large_image": "Megalomaniac_large.png"
+    },
+    {
+        "name": "Prism of Belief",
+        "inventory_icon": "Prism of Belief_inventory.png",
+        "large_image": "Prism of Belief_large.png"
+    },
+    {
+        "name": "The Adorned",
+        "inventory_icon": "The Adorned_inventory.png",
+        "large_image": "The Adorned_large.png"
+    },
+    {
+        "name": "Horns of Bynden",
+        "inventory_icon": "Horns of Bynden_inventory.png",
+        "large_image": "Horns of Bynden_large.png"
+    },
+    {
+        "name": "Wings of Caelyn",
+        "inventory_icon": "Wings of Caelyn_inventory.png",
+        "large_image": "Wings of Caelyn_large.png"
+    },
+    {
+        "name": "Ezomyte Peak",
+        "inventory_icon": "Ezomyte Peak_inventory.png",
+        "large_image": "Ezomyte Peak_large.png"
+    },
+    {
+        "name": "Black Sun Crest",
+        "inventory_icon": "Black Sun Crest_inventory.png",
+        "large_image": "Black Sun Crest_large.png"
+    },
+    {
+        "name": "Thrillsteel",
+        "inventory_icon": "Thrillsteel_inventory.png",
+        "large_image": "Thrillsteel_large.png"
+    },
+    {
+        "name": "Deidbell",
+        "inventory_icon": "Deidbell_inventory.png",
+        "large_image": "Deidbell_large.png"
+    },
+    {
+        "name": "Corona of the Red Sun",
+        "inventory_icon": "Corona of the Red Sun_inventory.png",
+        "large_image": "Corona of the Red Sun_large.png"
+    },
+    {
+        "name": "Innsmouth",
+        "inventory_icon": "Innsmouth_inventory.png",
+        "large_image": "Innsmouth_large.png"
+    },
+    {
+        "name": "Goldrim",
+        "inventory_icon": "Goldrim_inventory.png",
+        "large_image": "Goldrim_large.png"
+    },
+    {
+        "name": "Radiant Grief",
+        "inventory_icon": "Radiant Grief_inventory.png",
+        "large_image": "Radiant Grief_large.png"
+    },
+    {
+        "name": "Elevore",
+        "inventory_icon": "Elevore_inventory.png",
+        "large_image": "Elevore_large.png"
+    },
+    {
+        "name": "Myris Uxor",
+        "inventory_icon": "Myris Uxor_inventory.png",
+        "large_image": "Myris Uxor_large.png"
+    },
+    {
+        "name": "Alpha's Howl",
+        "inventory_icon": "Alphas Howl_inventory.png",
+        "large_image": "Alphas Howl_large.png"
+    },
+    {
+        "name": "Crown of Thorns",
+        "inventory_icon": "Crown of Thorns_inventory.png",
+        "large_image": "Crown of Thorns_large.png"
+    },
+    {
+        "name": "The Devouring Diadem",
+        "inventory_icon": "The Devouring Diadem_inventory.png",
+        "large_image": "The Devouring Diadem_large.png"
+    },
+    {
+        "name": "Visage of Ayah",
+        "inventory_icon": "Visage of Ayah_inventory.png",
+        "large_image": "Visage of Ayah_large.png"
+    },
+    {
+        "name": "Forbidden Gaze",
+        "inventory_icon": "Forbidden Gaze_inventory.png",
+        "large_image": "Forbidden Gaze_large.png"
+    },
+    {
+        "name": "Sandstorm Visage",
+        "inventory_icon": "Sandstorm Visage_inventory.png",
+        "large_image": "Sandstorm Visage_large.png"
+    },
+    {
+        "name": "Mask of the Stitched Demon",
+        "inventory_icon": "Mask of the Stitched Demon_inventory.png",
+        "large_image": "Mask of the Stitched Demon_large.png"
+    },
+    {
+        "name": "Atziri's Disdain",
+        "inventory_icon": "Atziris Disdain_inventory.png",
+        "large_image": "Atziris Disdain_large.png"
+    },
+    {
+        "name": "Greymake",
+        "inventory_icon": "Greymake_inventory.png",
+        "large_image": "Greymake_large.png"
+    },
+    {
+        "name": "Erian's Cobble",
+        "inventory_icon": "Erians Cobble_inventory.png",
+        "large_image": "Erians Cobble_large.png"
+    },
+    {
+        "name": "Ironride",
+        "inventory_icon": "Ironride_inventory.png",
+        "large_image": "Ironride_large.png"
+    },
+    {
+        "name": "The Smiling Knight",
+        "inventory_icon": "The Smiling Knight_inventory.png",
+        "large_image": "The Smiling Knight_large.png"
+    },
+    {
+        "name": "The Vile Knight",
+        "inventory_icon": "The Vile Knight_inventory.png",
+        "large_image": "The Vile Knight_large.png"
+    },
+    {
+        "name": "Assailum",
+        "inventory_icon": "Assailum_inventory.png",
+        "large_image": "Assailum_large.png"
+    },
+    {
+        "name": "Crown of the Victor",
+        "inventory_icon": "Crown of the Victor_inventory.png",
+        "large_image": "Crown of the Victor_large.png"
+    },
+    {
+        "name": "Bronzebeard",
+        "inventory_icon": "Bronzebeard_inventory.png",
+        "large_image": "Bronzebeard_large.png"
+    },
+    {
+        "name": "Crown of the Pale King",
+        "inventory_icon": "Crown of the Pale King_inventory.png",
+        "large_image": "Crown of the Pale King_large.png"
+    },
+    {
+        "name": "Veil of the Night",
+        "inventory_icon": "Veil of the Night_inventory.png",
+        "large_image": "Veil of the Night_large.png"
+    },
+    {
+        "name": "Cornathaum",
+        "inventory_icon": "Cornathaum_inventory.png",
+        "large_image": "Cornathaum_large.png"
+    },
+    {
+        "name": "Keeper of the Arc",
+        "inventory_icon": "Keeper of the Arc_inventory.png",
+        "large_image": "Keeper of the Arc_large.png"
+    },
+    {
+        "name": "The Hollow Mask",
+        "inventory_icon": "The Hollow Mask_inventory.png",
+        "large_image": "The Hollow Mask_large.png"
+    },
+    {
+        "name": "Mask of the Sanguimancer",
+        "inventory_icon": "Mask of the Sanguimancer_inventory.png",
+        "large_image": "Mask of the Sanguimancer_large.png"
+    },
+    {
+        "name": "Leer Cast",
+        "inventory_icon": "Leer Cast_inventory.png",
+        "large_image": "Leer Cast_large.png"
+    },
+    {
+        "name": "Atsak's Sight",
+        "inventory_icon": "Atsaks Sight_inventory.png",
+        "large_image": "Atsaks Sight_large.png"
+    },
+    {
+        "name": "The Vertex",
+        "inventory_icon": "The Vertex_inventory.png",
+        "large_image": "The Vertex_large.png"
+    },
+    {
+        "name": "The Three Dragons",
+        "inventory_icon": "The Three Dragons_inventory.png",
+        "large_image": "The Three Dragons_large.png"
+    },
+    {
+        "name": "Glimpse of Chaos",
+        "inventory_icon": "Glimpse of Chaos_inventory.png",
+        "large_image": "Glimpse of Chaos_large.png"
+    },
+    {
+        "name": "Solus Ipse",
+        "inventory_icon": "Solus Ipse_inventory.png",
+        "large_image": "Solus Ipse_large.png"
+    },
+    {
+        "name": "Blackbraid",
+        "inventory_icon": "Blackbraid_inventory.png",
+        "large_image": "Blackbraid_large.png"
+    },
+    {
+        "name": "Bramblejack",
+        "inventory_icon": "Bramblejack_inventory.png",
+        "large_image": "Bramblejack_large.png"
+    },
+    {
+        "name": "Edyrn's Tusks",
+        "inventory_icon": "Edyrns Tusks_inventory.png",
+        "large_image": "Edyrns Tusks_large.png"
+    },
+    {
+        "name": "The Road Warrior",
+        "inventory_icon": "The Road Warrior_inventory.png",
+        "large_image": "The Road Warrior_large.png"
+    },
+    {
+        "name": "Titanrot Cataphract",
+        "inventory_icon": "Titanrot Cataphract_inventory.png",
+        "large_image": "Titanrot Cataphract_large.png"
+    },
+    {
+        "name": "Wandering Reliquary",
+        "inventory_icon": "Wandering Reliquary_inventory.png",
+        "large_image": "Wandering Reliquary_large.png"
+    },
+    {
+        "name": "Kingsguard",
+        "inventory_icon": "Kingsguard_inventory.png",
+        "large_image": "Kingsguard_large.png"
+    },
+    {
+        "name": "Greed's Embrace",
+        "inventory_icon": "Greeds Embrace_inventory.png",
+        "large_image": "Greeds Embrace_large.png"
+    },
+    {
+        "name": "The Brass Dome",
+        "inventory_icon": "The Brass Dome_inventory.png",
+        "large_image": "The Brass Dome_large.png"
+    },
+    {
+        "name": "Kaom's Heart",
+        "inventory_icon": "Kaoms Heart_inventory.png",
+        "large_image": "Kaoms Heart_large.png"
+    },
+    {
+        "name": "Bristleboar",
+        "inventory_icon": "Bristleboar_inventory.png",
+        "large_image": "Bristleboar_large.png"
+    },
+    {
+        "name": "Foxshade",
+        "inventory_icon": "Foxshade_inventory.png",
+        "large_image": "Foxshade_large.png"
+    },
+    {
+        "name": "Ashrend",
+        "inventory_icon": "Ashrend_inventory.png",
+        "large_image": "Ashrend_large.png"
+    },
+    {
+        "name": "Briskwrap",
+        "inventory_icon": "Briskwrap_inventory.png",
+        "large_image": "Briskwrap_large.png"
+    },
+    {
+        "name": "Dustbloom",
+        "inventory_icon": "Dustbloom_inventory.png",
+        "large_image": "Dustbloom_large.png"
+    },
+    {
+        "name": "The Rat Cage",
+        "inventory_icon": "The Rat Cage_inventory.png",
+        "large_image": "The Rat Cage_large.png"
+    },
+    {
+        "name": "Quatl's Molt",
+        "inventory_icon": "Quatls Molt_inventory.png",
+        "large_image": "Quatls Molt_large.png"
+    },
+    {
+        "name": "Queen of the Forest",
+        "inventory_icon": "Queen of the Forest_inventory.png",
+        "large_image": "Queen of the Forest_large.png"
+    },
+    {
+        "name": "Ghostwrithe",
+        "inventory_icon": "Ghostwrithe_inventory.png",
+        "large_image": "Ghostwrithe_large.png"
+    },
+    {
+        "name": "Bitterbloom",
+        "inventory_icon": "Bitterbloom_inventory.png",
+        "large_image": "Bitterbloom_large.png"
+    },
+    {
+        "name": "The Black Doubt",
+        "inventory_icon": "The Black Doubt_inventory.png",
+        "large_image": "The Black Doubt_large.png"
+    },
+    {
+        "name": "Necromantle",
+        "inventory_icon": "Necromantle_inventory.png",
+        "large_image": "Necromantle_large.png"
+    },
+    {
+        "name": "Cloak of Flame",
+        "inventory_icon": "Cloak of Flame_inventory.png",
+        "large_image": "Cloak of Flame_large.png"
+    },
+    {
+        "name": "Prayers for Rain",
+        "inventory_icon": "Prayers for Rain_inventory.png",
+        "large_image": "Prayers for Rain_large.png"
+    },
+    {
+        "name": "Tetzlapokal's Desire",
+        "inventory_icon": "Tetzlapokals Desire_inventory.png",
+        "large_image": "Tetzlapokals Desire_large.png"
+    },
+    {
+        "name": "The Covenant",
+        "inventory_icon": "The Covenant_inventory.png",
+        "large_image": "The Covenant_large.png"
+    },
+    {
+        "name": "Temporalis",
+        "inventory_icon": "Temporalis_inventory.png",
+        "large_image": "Temporalis_large.png"
+    },
+    {
+        "name": "Coat of Red",
+        "inventory_icon": "Coat of Red_inventory.png",
+        "large_image": "Coat of Red_large.png"
+    },
+    {
+        "name": "The Barrow Dweller",
+        "inventory_icon": "The Barrow Dweller_inventory.png",
+        "large_image": "The Barrow Dweller_large.png"
+    },
+    {
+        "name": "Irongrasp",
+        "inventory_icon": "Irongrasp_inventory.png",
+        "large_image": "Irongrasp_large.png"
+    },
+    {
+        "name": "Pariah's Embrace",
+        "inventory_icon": "Pariahs Embrace_inventory.png",
+        "large_image": "Pariahs Embrace_large.png"
+    },
+    {
+        "name": "Belly of the Beast",
+        "inventory_icon": "Belly of the Beast_inventory.png",
+        "large_image": "Belly of the Beast_large.png"
+    },
+    {
+        "name": "Pragmatism",
+        "inventory_icon": "Pragmatism_inventory.png",
+        "large_image": "Pragmatism_large.png"
+    },
+    {
+        "name": "Doryani's Prototype",
+        "inventory_icon": "Doryanis Prototype_inventory.png",
+        "large_image": "Doryanis Prototype_large.png"
+    },
+    {
+        "name": "Perfidy",
+        "inventory_icon": "Perfidy_inventory.png",
+        "large_image": "Perfidy_large.png"
+    },
+    {
+        "name": "Enfolding Dawn",
+        "inventory_icon": "Enfolding Dawn_inventory.png",
+        "large_image": "Enfolding Dawn_large.png"
+    },
+    {
+        "name": "Icetomb",
+        "inventory_icon": "Icetomb_inventory.png",
+        "large_image": "Icetomb_large.png"
+    },
+    {
+        "name": "Husk of Dreams",
+        "inventory_icon": "Husk of Dreams_inventory.png",
+        "large_image": "Husk of Dreams_large.png"
+    },
+    {
+        "name": "Voll's Protector",
+        "inventory_icon": "Volls Protector_inventory.png",
+        "large_image": "Volls Protector_large.png"
+    },
+    {
+        "name": "Couture of Crimson",
+        "inventory_icon": "Couture of Crimson_inventory.png",
+        "large_image": "Couture of Crimson_large.png"
+    },
+    {
+        "name": "Apron of Emiran",
+        "inventory_icon": "Apron of Emiran_inventory.png",
+        "large_image": "Apron of Emiran_large.png"
+    },
+    {
+        "name": "Gloomform",
+        "inventory_icon": "Gloomform_inventory.png",
+        "large_image": "Gloomform_large.png"
+    },
+    {
+        "name": "Sierran Inheritance",
+        "inventory_icon": "Sierran Inheritance_inventory.png",
+        "large_image": "Sierran Inheritance_large.png"
+    },
+    {
+        "name": "The Dancing Mirage",
+        "inventory_icon": "The Dancing Mirage_inventory.png",
+        "large_image": "The Dancing Mirage_large.png"
+    },
+    {
+        "name": "Redflare Conduit",
+        "inventory_icon": "Redflare Conduit_inventory.png",
+        "large_image": "Redflare Conduit_large.png"
+    },
+    {
+        "name": "Morior Invictus",
+        "inventory_icon": "Morior Invictus_inventory.png",
+        "large_image": "Morior Invictus_large.png"
+    },
+    {
+        "name": "Legionstride",
+        "inventory_icon": "Legionstride_inventory.png",
+        "large_image": "Legionstride_large.png"
+    },
+    {
+        "name": "Corpsewade",
+        "inventory_icon": "Corpsewade_inventory.png",
+        "large_image": "Corpsewade_large.png"
+    },
+    {
+        "name": "The Infinite Pursuit",
+        "inventory_icon": "The Infinite Pursuit_inventory.png",
+        "large_image": "The Infinite Pursuit_large.png"
+    },
+    {
+        "name": "Trampletoe",
+        "inventory_icon": "Trampletoe_inventory.png",
+        "large_image": "Trampletoe_large.png"
+    },
+    {
+        "name": "Birth of Fury",
+        "inventory_icon": "Birth of Fury_inventory.png",
+        "large_image": "Birth of Fury_large.png"
+    },
+    {
+        "name": "Briarpatch",
+        "inventory_icon": "Briarpatch_inventory.png",
+        "large_image": "Briarpatch_large.png"
+    },
+    {
+        "name": "Gamblesprint",
+        "inventory_icon": "Gamblesprint_inventory.png",
+        "large_image": "Gamblesprint_large.png"
+    },
+    {
+        "name": "Thunderstep",
+        "inventory_icon": "Thunderstep_inventory.png",
+        "large_image": "Thunderstep_large.png"
+    },
+    {
+        "name": "Bushwhack",
+        "inventory_icon": "Bushwhack_inventory.png",
+        "large_image": "Bushwhack_large.png"
+    },
+    {
+        "name": "Luminous Pace",
+        "inventory_icon": "Luminous Pace_inventory.png",
+        "large_image": "Luminous Pace_large.png"
+    },
+    {
+        "name": "Wanderlust",
+        "inventory_icon": "Wanderlust_inventory.png",
+        "large_image": "Wanderlust_large.png"
+    },
+    {
+        "name": "Bones of Ullr",
+        "inventory_icon": "Bones of Ullr_inventory.png",
+        "large_image": "Bones of Ullr_large.png"
+    },
+    {
+        "name": "Wondertrap",
+        "inventory_icon": "Wondertrap_inventory.png",
+        "large_image": "Wondertrap_large.png"
+    },
+    {
+        "name": "Windscream",
+        "inventory_icon": "Windscream_inventory.png",
+        "large_image": "Windscream_large.png"
+    },
+    {
+        "name": "The Knight-errant",
+        "inventory_icon": "The Knight-errant_inventory.png",
+        "large_image": "The Knight-errant_large.png"
+    },
+    {
+        "name": "Darkray Vectors",
+        "inventory_icon": "Darkray Vectors_inventory.png",
+        "large_image": "Darkray Vectors_large.png"
+    },
+    {
+        "name": "Obern's Bastion",
+        "inventory_icon": "Oberns Bastion_inventory.png",
+        "large_image": "Oberns Bastion_large.png"
+    },
+    {
+        "name": "Wake of Destruction",
+        "inventory_icon": "Wake of Destruction_inventory.png",
+        "large_image": "Wake of Destruction_large.png"
+    },
+    {
+        "name": "Ghostmarch",
+        "inventory_icon": "Ghostmarch_inventory.png",
+        "large_image": "Ghostmarch_large.png"
+    },
+    {
+        "name": "Powertread",
+        "inventory_icon": "Powertread_inventory.png",
+        "large_image": "Powertread_large.png"
+    },
+    {
+        "name": "Beetlebite",
+        "inventory_icon": "Beetlebite_inventory.png",
+        "large_image": "Beetlebite_large.png"
+    },
+    {
+        "name": "Ab Aeterno",
+        "inventory_icon": "Ab Aeterno_inventory.png",
+        "large_image": "Ab Aeterno_large.png"
+    },
+    {
+        "name": "Treefingers",
+        "inventory_icon": "Treefingers_inventory.png",
+        "large_image": "Treefingers_large.png"
+    },
+    {
+        "name": "Lochtonial Caress",
+        "inventory_icon": "Lochtonial Caress_inventory.png",
+        "large_image": "Lochtonial Caress_large.png"
+    },
+    {
+        "name": "Atziri's Acuity",
+        "inventory_icon": "Atziris Acuity_inventory.png",
+        "large_image": "Atziris Acuity_large.png"
+    },
+    {
+        "name": "Hateforge",
+        "inventory_icon": "Hateforge_inventory.png",
+        "large_image": "Hateforge_large.png"
+    },
+    {
+        "name": "Northpaw",
+        "inventory_icon": "Northpaw_inventory.png",
+        "large_image": "Northpaw_large.png"
+    },
+    {
+        "name": "Grip of Winter",
+        "inventory_icon": "Grip of Winter_inventory.png",
+        "large_image": "Grip of Winter_large.png"
+    },
+    {
+        "name": "Idle Hands",
+        "inventory_icon": "Idle Hands_inventory.png",
+        "large_image": "Idle Hands_large.png"
+    },
+    {
+        "name": "Snakebite",
+        "inventory_icon": "Snakebite_inventory.png",
+        "large_image": "Snakebite_large.png"
+    },
+    {
+        "name": "Maligaro's Virtuosity",
+        "inventory_icon": "Maligaros Virtuosity_inventory.png",
+        "large_image": "Maligaros Virtuosity_large.png"
+    },
+    {
+        "name": "Painter's Servant",
+        "inventory_icon": "Painters Servant_inventory.png",
+        "large_image": "Painters Servant_large.png"
+    },
+    {
+        "name": "Candlemaker",
+        "inventory_icon": "Candlemaker_inventory.png",
+        "large_image": "Candlemaker_large.png"
+    },
+    {
+        "name": "Doedre's Tenure",
+        "inventory_icon": "Doedres Tenure_inventory.png",
+        "large_image": "Doedres Tenure_large.png"
+    },
+    {
+        "name": "Kitoko's Current",
+        "inventory_icon": "Kitokos Current_inventory.png",
+        "large_image": "Kitokos Current_large.png"
+    },
+    {
+        "name": "Demon Stitcher",
+        "inventory_icon": "Demon Stitcher_inventory.png",
+        "large_image": "Demon Stitcher_large.png"
+    },
+    {
+        "name": "Jarngreipr",
+        "inventory_icon": "Jarngreipr_inventory.png",
+        "large_image": "Jarngreipr_large.png"
+    },
+    {
+        "name": "Aurseize",
+        "inventory_icon": "Aurseize_inventory.png",
+        "large_image": "Aurseize_large.png"
+    },
+    {
+        "name": "Deathblow",
+        "inventory_icon": "Deathblow_inventory.png",
+        "large_image": "Deathblow_large.png"
+    },
+    {
+        "name": "Aerisvane's Wings",
+        "inventory_icon": "Aerisvanes Wings_inventory.png",
+        "large_image": "Aerisvanes Wings_large.png"
+    },
+    {
+        "name": "Gravebind",
+        "inventory_icon": "Gravebind_inventory.png",
+        "large_image": "Gravebind_large.png"
+    },
+    {
+        "name": "Shackles of the Wretched",
+        "inventory_icon": "Shackles of the Wretched_inventory.png",
+        "large_image": "Shackles of the Wretched_large.png"
+    },
+    {
+        "name": "Blueflame Bracers",
+        "inventory_icon": "Blueflame Bracers_inventory.png",
+        "large_image": "Blueflame Bracers_large.png"
+    },
+    {
+        "name": "Plaguefinger",
+        "inventory_icon": "Plaguefinger_inventory.png",
+        "large_image": "Plaguefinger_large.png"
+    },
+    {
+        "name": "Killjoy",
+        "inventory_icon": "Killjoy_inventory.png",
+        "large_image": "Killjoy_large.png"
+    },
+    {
+        "name": "Hand of Wisdom and Action",
+        "inventory_icon": "Hand of Wisdom and Action_inventory.png",
+        "large_image": "Hand of Wisdom and Action_large.png"
+    },
+    {
+        "name": "Blessed Bonds",
+        "inventory_icon": "Blessed Bonds_inventory.png",
+        "large_image": "Blessed Bonds_large.png"
+    },
+    {
+        "name": "Sine Aequo",
+        "inventory_icon": "Sine Aequo_inventory.png",
+        "large_image": "Sine Aequo_large.png"
+    },
+    {
+        "name": "Dionadair",
+        "inventory_icon": "Dionadair_inventory.png",
+        "large_image": "Dionadair_large.png"
+    },
+    {
+        "name": "Wulfsbane",
+        "inventory_icon": "Wulfsbane_inventory.png",
+        "large_image": "Wulfsbane_large.png"
+    },
+    {
+        "name": "Doomgate",
+        "inventory_icon": "Doomgate_inventory.png",
+        "large_image": "Doomgate_large.png"
+    },
+    {
+        "name": "The Wailing Wall",
+        "inventory_icon": "The Wailing Wall_inventory.png",
+        "large_image": "The Wailing Wall_large.png"
+    },
+    {
+        "name": "Lycosidae",
+        "inventory_icon": "Lycosidae_inventory.png",
+        "large_image": "Lycosidae_large.png"
+    },
+    {
+        "name": "The Surrender",
+        "inventory_icon": "The Surrender_inventory.png",
+        "large_image": "The Surrender_large.png"
+    },
+    {
+        "name": "Svalinn",
+        "inventory_icon": "Svalinn_inventory.png",
+        "large_image": "Svalinn_large.png"
+    },
+    {
+        "name": "Arvil's Wheel",
+        "inventory_icon": "Arvils Wheel_inventory.png",
+        "large_image": "Arvils Wheel_large.png"
+    },
+    {
+        "name": "Merit of Service",
+        "inventory_icon": "Merit of Service_inventory.png",
+        "large_image": "Merit of Service_large.png"
+    },
+    {
+        "name": "Feathered Fortress",
+        "inventory_icon": "Feathered Fortress_inventory.png",
+        "large_image": "Feathered Fortress_large.png"
+    },
+    {
+        "name": "Alkem Eira",
+        "inventory_icon": "Alkem Eira_inventory.png",
+        "large_image": "Alkem Eira_large.png"
+    },
+    {
+        "name": "Oaksworn",
+        "inventory_icon": "Oaksworn_inventory.png",
+        "large_image": "Oaksworn_large.png"
+    },
+    {
+        "name": "Saffell's Frame",
+        "inventory_icon": "Saffells Frame_inventory.png",
+        "large_image": "Saffells Frame_large.png"
+    },
+    {
+        "name": "Crest of Ardura",
+        "inventory_icon": "Crest of Ardura_inventory.png",
+        "large_image": "Crest of Ardura_large.png"
+    },
+    {
+        "name": "Rise of the Phoenix",
+        "inventory_icon": "Rise of the Phoenix_inventory.png",
+        "large_image": "Rise of the Phoenix_large.png"
+    },
+    {
+        "name": "Mahuxotl's Machination",
+        "inventory_icon": "Mahuxotls Machination_inventory.png",
+        "large_image": "Mahuxotls Machination_large.png"
+    },
+    {
+        "name": "Deathrattle",
+        "inventory_icon": "Deathrattle_inventory.png",
+        "large_image": "Deathrattle_large.png"
+    },
+    {
+        "name": "Threaded Light",
+        "inventory_icon": "Threaded Light_inventory.png",
+        "large_image": "Threaded Light_large.png"
+    },
+    {
+        "name": "Carrion Call",
+        "inventory_icon": "Carrion Call_inventory.png",
+        "large_image": "Carrion Call_large.png"
+    },
+    {
+        "name": "Serpent's Lesson",
+        "inventory_icon": "Serpents Lesson_inventory.png",
+        "large_image": "Serpents Lesson_large.png"
+    },
+    {
+        "name": "The Eternal Spark",
+        "inventory_icon": "The Eternal Spark_inventory.png",
+        "large_image": "The Eternal Spark_large.png"
+    },
+    {
+        "name": "Asphyxia's Wrath",
+        "inventory_icon": "Asphyxias Wrath_inventory.png",
+        "large_image": "Asphyxias Wrath_large.png"
+    },
+    {
+        "name": "Blackgleam",
+        "inventory_icon": "Blackgleam_inventory.png",
+        "large_image": "Blackgleam_large.png"
+    },
+    {
+        "name": "Beyond Reach",
+        "inventory_icon": "Beyond Reach_inventory.png",
+        "large_image": "Beyond Reach_large.png"
+    }
+]
