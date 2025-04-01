@@ -18,6 +18,84 @@ interface DivineCalculatorProps {
   onResult: (result: DivineResult) => void;
 }
 
+// Example items from the data file
+const exampleItems = [
+  { name: 'Agony Shelter', data: `Item Class: Body Armours
+Rarity: Rare
+Agony Shelter
+Expert Keth Raiment
+--------
+Energy Shield: 232 (augmented)
+--------
+Requires: Level 70, 157 Int
+--------
+Sockets: S 
+--------
+Item Level: 81
+--------
+{ Implicit Modifier — Mana }
+41(40-50)% increased Mana Regeneration Rate (implicit)
+--------
+{ Prefix Modifier "Glittering" (Tier: 3) — Defences }
++28(25-30) to maximum Energy Shield
+{ Prefix Modifier "Sanguine" (Tier: 3) — Life }
++39(30-39) to maximum Life
+{ Prefix Modifier "Bishop's" (Tier: 4) — Life, Defences }
+28(27-32)% increased Energy Shield
++26(26-32) to maximum Life
+{ Suffix Modifier "of the Walrus" (Tier: 5) — Elemental, Cold, Resistance }
++28(26-30)% to Cold Resistance
+{ Suffix Modifier "of the Philosopher" (Tier: 5) — Attribute }
++23(21-24) to Intelligence
+{ Suffix Modifier "of Assuaging" (Tier: 4) — Physical, Ailment }
+53(55-51)% reduced Bleeding Duration on you` },
+  { name: 'Mask of the Stitched Demon', data: `Item Class: Helmets
+Rarity: Unique
+Mask of the Stitched Demon
+Feathered Tiara
+--------
+Energy Shield: 118 (augmented)
+--------
+Requires: Level 33, 61 Int
+--------
+Item Level: 81
+--------
+{ Unique Modifier — Defences }
+131(120-160)% increased Energy Shield
+{ Unique Modifier — Defences }
+Cannot have Energy Shield — Unscalable Value
+{ Unique Modifier }
+Regenerate 0.05 Life per second per Maximum Energy Shield
+{ Unique Modifier — Chaos, Resistance }
++19(17-23)% to Chaos Resistance
+--------
+From the flesh of the gods, Xibaqua was born.
+From the carnage of Xibaqua, we were born.
+It is our duty to return to the gods what was once theirs.` },
+  { name: 'Havoc Call', data: `Item Class: Wands
+Rarity: Rare
+Havoc Call
+Siphoning Wand
+--------
+Requires: Level 78, 178 Int
+--------
+Item Level: 82
+--------
+{ Prefix Modifier "Aqua" (Tier: 6) — Mana }
++79(65-79) to maximum Mana
+{ Prefix Modifier "Warlock's" (Tier: 4) — Mana, Damage, Caster }
+30(30-34)% increased Spell Damage
++32(29-33) to maximum Mana
+{ Prefix Modifier "Clouded" (Tier: 3) — Damage, Chaos }
+49(45-54)% increased Chaos Damage
+{ Suffix Modifier "of Legerdemain" (Tier: 5) — Caster, Speed }
+26(25-28)% increased Cast Speed
+{ Suffix Modifier "of Ruin" (Tier: 3) — Chaos, Caster, Gem }
++3 to Level of all Chaos Spell Skills
+{ Suffix Modifier "of Disaster" (Tier: 3) — Caster, Critical }
+44(40-59)% increased Critical Hit Chance for Spells` }
+];
+
 export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) => {
   console.log('DivineCalculator component rendering');
   
@@ -29,10 +107,17 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
   const [stats, setStats] = useState<Stat[]>([]);
   const [itemName, setItemName] = useState('');
   const [itemImage, setItemImage] = useState<string | null>(null);
+  const [rarity, setRarity] = useState<'Normal' | 'Magic' | 'Rare' | 'Unique'>('Normal');
 
   const handleParseClick = () => {
     console.log('Parse button clicked');
     parseItemData();
+  };
+
+  const handleExampleClick = (exampleData: string) => {
+    setItemData(exampleData);
+    // Automatically parse the example data
+    setTimeout(() => parseItemData(), 0);
   };
 
   const parseItemData = () => {
@@ -41,13 +126,13 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
     console.log('Split lines:', lines);
     const newStats: Stat[] = [];
     let currentItemName = '';
-    let rarity = '';
+    let currentRarity: 'Normal' | 'Magic' | 'Rare' | 'Unique' = 'Normal';
 
     // Find rarity and item name
     for (const line of lines) {
       if (line.trim()) {
         if (line.includes('Rarity: Rare')) {
-          rarity = 'Rare';
+          currentRarity = 'Rare';
           // For Rare items, base item is on line 4 (index 3)
           const baseItemLine = lines[3];
           if (baseItemLine && baseItemLine.trim()) {
@@ -56,7 +141,7 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
             break;
           }
         } else if (line.includes('Rarity: Unique')) {
-          rarity = 'Unique';
+          currentRarity = 'Unique';
           // For Unique items, base item is on line 3 (index 2)
           const baseItemLine = lines[2];
           if (baseItemLine && baseItemLine.trim()) {
@@ -64,11 +149,21 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
             console.log('Found Unique item name:', currentItemName);
             break;
           }
+        } else if (line.includes('Rarity: Magic')) {
+          currentRarity = 'Magic';
+          // For Magic items, base item is on line 3 (index 2)
+          const baseItemLine = lines[2];
+          if (baseItemLine && baseItemLine.trim()) {
+            currentItemName = baseItemLine.trim();
+            console.log('Found Magic item name:', currentItemName);
+            break;
+          }
         }
       }
     }
 
     setItemName(currentItemName);
+    setRarity(currentRarity);
 
     // Find the item in the database
     const foundItem = itemDatabase.find(item => item.name === currentItemName);
@@ -151,6 +246,17 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
   return (
     <div className="space-y-4">
       <div className="flex flex-col space-y-4">
+        <div className="flex flex-wrap gap-2">
+          {exampleItems.map((item, index) => (
+            <button
+              key={index}
+              onClick={() => handleExampleClick(item.data)}
+              className="px-3 py-1 text-sm bg-slate-800 text-slate-300 rounded hover:bg-slate-700 transition-colors"
+            >
+              {item.name}
+            </button>
+          ))}
+        </div>
         <textarea
           value={itemData}
           onChange={(e) => {
@@ -164,11 +270,11 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
             }
           }}
           placeholder="Paste item data here... (Press Enter to parse)"
-          className="w-full h-32 p-2 border rounded"
+          className="w-full h-32 p-2 border rounded bg-slate-800 text-white border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
         />
         <button
           onClick={handleParseClick}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer transition-colors"
+          className="px-4 py-2 bg-blue-700 text-white font-semibold rounded hover:bg-blue-800 cursor-pointer transition-colors shadow-md hover:shadow-lg"
         >
           Parse Item Data
         </button>
@@ -191,10 +297,11 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
             }}
             itemImage={itemImage}
             onCalculate={calculateProbability}
+            rarity={rarity}
           />
           <button
             onClick={calculateProbability}
-            className="w-full px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 cursor-pointer transition-colors"
+            className="w-full px-4 py-2 bg-green-700 text-white font-semibold rounded hover:bg-green-800 cursor-pointer transition-colors shadow-md hover:shadow-lg"
           >
             Calculate Probability
           </button>

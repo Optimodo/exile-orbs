@@ -16,13 +16,13 @@ export default function HomePage() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <Link href="/calculator" className="group">
+          <Link href="/divine-calculator" className="group">
             <div className="bg-slate-900/80 border border-slate-800/50 rounded-lg p-6 transition-all duration-300 hover:border-amber-500/50 hover:bg-slate-900/90">
               <h2 className="text-2xl font-bold text-amber-500 font-cinzel tracking-wide mb-4">
-                Exalted Calculator
+                Divine Calculator
               </h2>
               <p className="text-slate-400">
-                Calculate the probability of getting your desired rolls with an Exalted Orb
+                Calculate the probability of getting your desired rolls with a Divine Orb
               </p>
             </div>
           </Link>

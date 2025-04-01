@@ -16,6 +16,7 @@ interface ItemDisplayProps {
   onDesiredValueChange: (index: number, value: number) => void;
   itemImage?: string | null;
   onCalculate: () => void;
+  rarity?: 'Normal' | 'Magic' | 'Rare' | 'Unique';
 }
 
 export const ItemDisplay: React.FC<ItemDisplayProps> = ({
@@ -24,10 +25,16 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
   onStatChange,
   onDesiredValueChange,
   itemImage,
-  onCalculate
+  onCalculate,
+  rarity = 'Normal'
 }) => {
   const [focusedIndex, setFocusedIndex] = useState<number | null>(null);
   const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
+
+  // Get indices of selected stats
+  const selectedStatIndices = stats
+    .map((stat, index) => stat.selected ? index : -1)
+    .filter(index => index !== -1);
 
   useEffect(() => {
     // Focus the input when it becomes visible
@@ -48,7 +55,10 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
       const stat = stats[index];
       const clampedValue = Math.min(Math.max(stat.desiredValue, stat.minValue), stat.maxValue);
       onDesiredValueChange(index, clampedValue);
-      const nextIndex = (index + 1) % stats.length;
+      
+      // Find the next selected stat index
+      const currentIndex = selectedStatIndices.indexOf(index);
+      const nextIndex = selectedStatIndices[(currentIndex + 1) % selectedStatIndices.length];
       setFocusedIndex(nextIndex);
     }
   };
@@ -66,88 +76,172 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
     setFocusedIndex(null);
   };
 
+  const handleSetMin = (index: number) => {
+    const stat = stats[index];
+    onDesiredValueChange(index, stat.minValue);
+  };
+
+  const handleSetMax = (index: number) => {
+    const stat = stats[index];
+    onDesiredValueChange(index, stat.maxValue);
+  };
+
+  const handleSelectAll = () => {
+    const allSelected = stats.every(stat => stat.selected);
+    stats.forEach((_, index) => onStatChange(index, !allSelected));
+  };
+
+  const handleSetAllMin = () => {
+    stats.forEach((stat, index) => onDesiredValueChange(index, stat.minValue));
+  };
+
+  const handleSetAllMax = () => {
+    stats.forEach((stat, index) => onDesiredValueChange(index, stat.maxValue));
+  };
+
+  const getRarityColor = () => {
+    switch (rarity) {
+      case 'Magic':
+        return 'border-[#6F9DFE]';
+      case 'Rare':
+        return 'border-[#FFD700]';
+      case 'Unique':
+        return 'border-[#D67F29]';
+      default:
+        return 'border-slate-700';
+    }
+  };
+
+  const handleSliderChange = (index: number, value: string) => {
+    const stat = stats[index];
+    const numValue = parseInt(value);
+    // For reversed ranges, we need to invert the value
+    if (stat.minValue > stat.maxValue) {
+      const range = stat.minValue - stat.maxValue;
+      const invertedValue = stat.minValue - (numValue - stat.maxValue);
+      onDesiredValueChange(index, invertedValue);
+    } else {
+      onDesiredValueChange(index, numValue);
+    }
+  };
+
+  const isReversedRange = (stat: Stat) => stat.minValue > stat.maxValue;
+
   return (
-    <div className="bg-slate-800 p-4 rounded-lg">
-      <div className="flex items-start space-x-4 mb-4">
+    <div className={`bg-slate-900 p-6 rounded-lg border-2 ${getRarityColor()}`}>
+      <div className="flex items-start space-x-4 mb-6">
         <div className="flex-shrink-0">
           {itemImage ? (
             <img
               src={`/images/items/${itemImage}`}
               alt={itemName}
-              className="w-16 h-16 object-contain"
+              className="w-16 h-16 rounded"
               onError={(e) => {
                 console.error('Failed to load image:', itemImage);
-                (e.target as HTMLImageElement).style.display = 'none';
+                e.currentTarget.style.display = 'none';
               }}
             />
           ) : (
-            <div className="w-16 h-16 bg-slate-700 rounded flex items-center justify-center">
-              <span className="text-slate-500 text-xs">No Image</span>
+            <div className="w-16 h-16 bg-slate-800 rounded flex items-center justify-center text-slate-600 text-sm">
+              No Image
             </div>
           )}
         </div>
         <div className="flex-grow">
-          <h3 className="text-lg font-bold text-white">{itemName}</h3>
-          <p className="text-sm text-slate-400">Select stats to calculate probability</p>
+          <h2 className="text-xl font-bold text-white mb-2">{itemName}</h2>
+          <p className="text-slate-400 text-sm">Select stats to calculate probability</p>
         </div>
       </div>
 
       <div className="space-y-4">
+        <div className="flex space-x-2 mb-4">
+          <button
+            onClick={handleSelectAll}
+            className="px-3 py-1 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-sm"
+          >
+            {stats.every(stat => stat.selected) ? 'Deselect All' : 'Select All'}
+          </button>
+          <button
+            onClick={handleSetAllMin}
+            className="px-3 py-1 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-sm"
+          >
+            Set All to Min
+          </button>
+          <button
+            onClick={handleSetAllMax}
+            className="px-3 py-1 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-sm"
+          >
+            Set All to Max
+          </button>
+        </div>
+
         {stats.map((stat, index) => (
           <div key={index} className="space-y-2">
-            <div className="flex items-center space-x-4">
-              <input
-                type="checkbox"
-                checked={stat.selected}
-                onChange={(e) => onStatChange(index, e.target.checked)}
-                className="w-4 h-4 text-amber-500 rounded focus:ring-amber-500"
-              />
-              <span className="text-white">{stat.name}</span>
-              <span className="text-slate-400">({stat.minValue} - {stat.maxValue})</span>
-            </div>
-            
-            {stat.selected && (
-              <div className="pl-8 space-y-1">
+            <div className="flex items-center justify-between">
+              <label className="flex items-center space-x-2">
                 <input
-                  type="range"
-                  value={stat.maxValue < stat.minValue ? stat.maxValue + stat.minValue - stat.desiredValue : stat.desiredValue}
-                  onChange={(e) => {
-                    const value = parseInt(e.target.value);
-                    // If max is less than min, reverse the value back
-                    const actualValue = stat.maxValue < stat.minValue 
-                      ? stat.maxValue + stat.minValue - value 
-                      : value;
-                    onDesiredValueChange(index, actualValue);
-                  }}
-                  min={Math.min(stat.minValue, stat.maxValue)}
-                  max={Math.max(stat.minValue, stat.maxValue)}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                  type="checkbox"
+                  checked={stat.selected}
+                  onChange={(e) => onStatChange(index, e.target.checked)}
+                  className="rounded border-slate-600 text-blue-500 focus:ring-blue-500"
                 />
-                <div className="flex justify-between text-sm text-slate-400">
-                  <span>Min: {stat.minValue}</span>
-                  {focusedIndex === index ? (
-                    <input
-                      ref={el => {
-                        inputRefs.current[index] = el;
-                      }}
-                      type="number"
-                      value={stat.desiredValue}
-                      onChange={(e) => handleInputChange(index, e.target.value)}
-                      onKeyDown={(e) => handleKeyDown(e, index)}
-                      onBlur={() => handleInputBlur(index)}
-                      className="w-20 bg-slate-700 text-white rounded px-1 text-center"
-                      min={Math.min(stat.minValue, stat.maxValue)}
-                      max={Math.max(stat.minValue, stat.maxValue)}
-                    />
-                  ) : (
-                    <span 
-                      className="cursor-pointer hover:text-white"
-                      onClick={() => setFocusedIndex(index)}
-                    >
-                      Current: {stat.desiredValue}
-                    </span>
-                  )}
-                  <span>Max: {stat.maxValue}</span>
+                <span className="text-white">{stat.name}</span>
+              </label>
+              <span className="text-slate-400">
+                Current: {stat.currentValue} ({stat.minValue}-{stat.maxValue})
+              </span>
+            </div>
+            {stat.selected && (
+              <div className="flex items-center space-x-4">
+                {focusedIndex === index ? (
+                  <input
+                    ref={el => {
+                      inputRefs.current[index] = el;
+                    }}
+                    type="number"
+                    value={stat.desiredValue}
+                    onChange={(e) => handleInputChange(index, e.target.value)}
+                    onKeyDown={(e) => handleKeyDown(e, index)}
+                    onBlur={() => handleInputBlur(index)}
+                    className="w-20 px-2 py-1 bg-slate-800 border border-slate-700 rounded text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
+                    min={Math.min(stat.minValue, stat.maxValue)}
+                    max={Math.max(stat.minValue, stat.maxValue)}
+                  />
+                ) : (
+                  <span 
+                    className="w-20 px-2 py-1 bg-slate-800 border border-slate-700 rounded text-white cursor-pointer hover:bg-slate-700"
+                    onClick={() => setFocusedIndex(index)}
+                  >
+                    {stat.desiredValue}
+                  </span>
+                )}
+                <div className="flex items-center flex-grow">
+                  <button
+                    onClick={() => handleSetMin(index)}
+                    className="p-1 text-slate-400 hover:text-white transition-colors"
+                    title="Set to minimum"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                  <input
+                    type="range"
+                    value={stat.minValue > stat.maxValue ? stat.maxValue + (stat.minValue - stat.desiredValue) : stat.desiredValue}
+                    onChange={(e) => handleSliderChange(index, e.target.value)}
+                    min={Math.min(stat.minValue, stat.maxValue)}
+                    max={Math.max(stat.minValue, stat.maxValue)}
+                    className="flex-grow h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500 mx-2"
+                  />
+                  <button
+                    onClick={() => handleSetMax(index)}
+                    className="p-1 text-slate-400 hover:text-white transition-colors"
+                    title="Set to maximum"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             )}

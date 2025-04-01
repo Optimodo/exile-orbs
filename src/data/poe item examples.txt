@@ -1,0 +1,230 @@
+Item Class: Body Armours
+Rarity: Rare
+Agony Shelter
+Expert Keth Raiment
+--------
+Energy Shield: 232 (augmented)
+--------
+Requires: Level 70, 157 Int
+--------
+Sockets: S 
+--------
+Item Level: 81
+--------
+{ Implicit Modifier — Mana }
+41(40-50)% increased Mana Regeneration Rate (implicit)
+--------
+{ Prefix Modifier "Glittering" (Tier: 3) — Defences }
++28(25-30) to maximum Energy Shield
+{ Prefix Modifier "Sanguine" (Tier: 3) — Life }
++39(30-39) to maximum Life
+{ Prefix Modifier "Bishop's" (Tier: 4) — Life, Defences }
+28(27-32)% increased Energy Shield
++26(26-32) to maximum Life
+{ Suffix Modifier "of the Walrus" (Tier: 5) — Elemental, Cold, Resistance }
++28(26-30)% to Cold Resistance
+{ Suffix Modifier "of the Philosopher" (Tier: 5) — Attribute }
++23(21-24) to Intelligence
+{ Suffix Modifier "of Assuaging" (Tier: 4) — Physical, Ailment }
+53(55-51)% reduced Bleeding Duration on you
+
+
+
+
+Item Class: Helmets
+Rarity: Unique
+Mask of the Stitched Demon
+Feathered Tiara
+--------
+Energy Shield: 118 (augmented)
+--------
+Requires: Level 33, 61 Int
+--------
+Item Level: 81
+--------
+{ Unique Modifier — Defences }
+131(120-160)% increased Energy Shield
+{ Unique Modifier — Defences }
+Cannot have Energy Shield — Unscalable Value
+{ Unique Modifier }
+Regenerate 0.05 Life per second per Maximum Energy Shield
+{ Unique Modifier — Chaos, Resistance }
++19(17-23)% to Chaos Resistance
+--------
+From the flesh of the gods, Xibaqua was born.
+From the carnage of Xibaqua, we were born.
+It is our duty to return to the gods what was once theirs.
+
+
+
+
+Item Class: Wands
+Rarity: Rare
+Havoc Call
+Siphoning Wand
+--------
+Requires: Level 78, 178 Int
+--------
+Item Level: 82
+--------
+{ Prefix Modifier "Aqua" (Tier: 6) — Mana }
++79(65-79) to maximum Mana
+{ Prefix Modifier "Warlock's" (Tier: 4) — Mana, Damage, Caster }
+30(30-34)% increased Spell Damage
++32(29-33) to maximum Mana
+{ Prefix Modifier "Clouded" (Tier: 3) — Damage, Chaos }
+49(45-54)% increased Chaos Damage
+{ Suffix Modifier "of Legerdemain" (Tier: 5) — Caster, Speed }
+26(25-28)% increased Cast Speed
+{ Suffix Modifier "of Ruin" (Tier: 3) — Chaos, Caster, Gem }
++3 to Level of all Chaos Spell Skills
+{ Suffix Modifier "of Disaster" (Tier: 3) — Caster, Critical }
+44(40-59)% increased Critical Hit Chance for Spells
+--------
+Note: ~b/o 40 exalted
+
+
+
+
+
+
+Item Class: Amulets
+Rarity: Rare
+Pandemonium Idol
+Stellar Amulet
+--------
+Requires: Level 56
+--------
+Item Level: 80
+--------
+{ Implicit Modifier — Attribute }
++6(5-7) to all Attributes (implicit)
+--------
+{ Prefix Modifier "Girded" (Tier: 6) — Defences }
+41(39-44)% increased Armour
+{ Prefix Modifier "Chalybeous" (Tier: 9) — Mana }
++113(105-124) to maximum Mana
+{ Suffix Modifier "of Havoc" (Tier: 2) — Critical }
+16(15-19)% increased Critical Hit Chance
+{ Suffix Modifier "of Expulsion" (Tier: 4) — Chaos, Resistance }
++19(16-19)% to Chaos Resistance
+{ Suffix Modifier "of the Fox" (Tier: 3) — Attribute }
++13(13-16) to Dexterity
+--------
+Note: ~b/o 100 exalted
+
+
+
+
+
+
+Item Class: Rings
+Rarity: Rare
+Dusk Grip
+Sapphire Ring
+--------
+Requires: Level 61
+--------
+Item Level: 82
+--------
+{ Implicit Modifier — Elemental, Cold, Resistance }
++26(20-30)% to Cold Resistance (implicit)
+--------
+{ Prefix Modifier "Zaffre" (Tier: 12) — Mana }
++173(165-179) to maximum Mana
+{ Prefix Modifier "Hoarder's" (Tier: 3) }
+20(18-22)% increased Rarity of Items found
+{ Prefix Modifier "Bitter" (Tier: 1) — Damage, Elemental, Cold }
+4(3-7)% increased Cold Damage
+{ Suffix Modifier "of Variegation" (Tier: 4) — Elemental, Fire, Cold, Lightning, Resistance }
++13(12-14)% to all Elemental Resistances
+{ Suffix Modifier "of the Jaguar" (Tier: 7) — Attribute }
++28(28-30) to Dexterity
+{ Suffix Modifier "of Excavation" (Tier: 4) }
+25(21-25)% increased Rarity of Items found
+--------
+Note: ~price 13 divine
+
+
+
+
+
+
+
+Item Class: Jewels
+Rarity: Rare
+Entropy Splinter
+Sapphire
+--------
+Item Level: 80
+--------
+{ Prefix Modifier "Authoritative" — Damage, Minion }
+Minions deal 8(5-15)% increased Damage
+{ Prefix Modifier "Sacrificial" }
+Offerings have 19(15-25)% increased Maximum Life
+{ Suffix Modifier "of Energy" — Mana }
+9(5-15)% increased Mana Regeneration Rate
+{ Suffix Modifier "of Gripping" — Damage, Minion, Critical }
+Minions have 25(15-25)% increased Critical Damage Bonus
+--------
+Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.
+--------
+Note: ~b/o 250 exalted
+
+
+
+
+
+
+
+Item Class: Jewels
+Rarity: Magic
+Venomous Emerald of Pinning
+--------
+Item Level: 81
+--------
+{ Prefix Modifier "Venomous" — Damage, Ailment }
+15(5-15)% increased Magnitude of Poison you inflict
+{ Suffix Modifier "of Pinning" }
+19(10-20)% increased Pin Buildup
+--------
+Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.
+--------
+Note: ~b/o 75 exalted
+
+
+
+
+
+
+
+Item Class: Shields
+Rarity: Unique
+Mahuxotl's Machination
+Omen Crest Shield
+--------
+Quality: +20% (augmented)
+Block chance: 25%
+Armour: 395 (augmented)
+Energy Shield: 150 (augmented)
+--------
+Requires: Level 48, 32 (augmented) Str, 32 (augmented) Int
+--------
+Sockets: S S 
+--------
+Item Level: 82
+--------
+13% reduced Attribute Requirements (enchant)
+--------
+20% increased Rarity of Items found (rune)
+--------
+{ Unique Modifier }
+627(333-666)% increased effect of Socketed Soul Cores
+{ Unique Modifier — Defences }
+559(333-666)% increased Armour and Energy Shield
+--------
+The Banished Architect sought to employ the darkest secrets of the Vaal.
+--------
+Corrupted
+--------
+Note: ~b/o 6 divine
