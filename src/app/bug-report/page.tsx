@@ -1,3 +1,10 @@
+/**
+ * Bug Report Page
+ * 
+ * This page provides a form for users to report bugs or issues.
+ * It includes guidelines for submitting bug reports and what information to include.
+ */
+
 'use client';
 
 import React from 'react';
@@ -5,7 +12,7 @@ import Link from 'next/link';
 
 export default function BugReportPage() {
   return (
-    <div className="container mx-auto px-2 sm:px-4 py-4">
+    <div className="container mx-auto px-4 py-8">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-2xl font-bold text-white font-cinzel tracking-wide mb-4">
           Report a Bug

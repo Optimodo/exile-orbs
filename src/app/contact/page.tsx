@@ -1,3 +1,10 @@
+/**
+ * Contact Page
+ * 
+ * This page provides contact information and a form for users to get in touch.
+ * It includes email contact information and social media links.
+ */
+
 'use client';
 
 import React from 'react';
@@ -17,7 +24,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="container mx-auto px-2 sm:px-4 py-4">
+    <div className="container mx-auto px-4 py-8">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-2xl font-bold text-white font-cinzel tracking-wide mb-4">
           Contact Us

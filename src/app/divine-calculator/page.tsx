@@ -1,3 +1,10 @@
+/**
+ * Divine Orb Calculator Page
+ * 
+ * This page contains the main Divine Orb Calculator tool.
+ * It allows users to calculate probabilities and costs for crafting with Divine Orbs.
+ */
+
 'use client';
 
 import React, { useState } from 'react';

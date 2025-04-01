@@ -1,3 +1,11 @@
+/**
+ * Terms of Service Page
+ * 
+ * This page displays the Terms of Service for ExileOrbs.
+ * It includes sections for agreement, intellectual property, user responsibilities,
+ * and other legal terms.
+ */
+
 'use client';
 
 import React from 'react';
@@ -5,13 +13,13 @@ import Link from 'next/link';
 
 export default function TermsPage() {
   return (
-    <div className="container mx-auto px-2 sm:px-4 py-4">
+    <div className="container mx-auto px-4 py-8">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-2xl font-bold text-white font-cinzel tracking-wide mb-4">
           Terms of Service
         </h1>
 
-        <div className="space-y-6 text-slate-400">
+        <div className="bg-slate-900/80 border border-slate-800/50 rounded-lg p-6 space-y-6 text-slate-400">
           <section>
             <h2 className="text-xl font-bold text-amber-500 font-cinzel tracking-wide mb-3">
               Agreement to Terms

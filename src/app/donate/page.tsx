@@ -1,3 +1,10 @@
+/**
+ * Donate Page
+ * 
+ * This page provides information about supporting the project through donations.
+ * It includes donation options and information about how donations are used.
+ */
+
 'use client';
 
 import React from 'react';

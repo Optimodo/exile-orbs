@@ -1,3 +1,10 @@
+/**
+ * Home Page
+ * 
+ * This is the main landing page for ExileOrbs.
+ * It displays the main navigation cards for different tools and features.
+ */
+
 'use client';
 
 import Link from 'next/link';
