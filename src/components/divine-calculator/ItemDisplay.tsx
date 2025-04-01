@@ -128,55 +128,55 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
   const isReversedRange = (stat: Stat) => stat.minValue > stat.maxValue;
 
   return (
-    <div className={`bg-slate-900 p-6 rounded-lg border-2 ${getRarityColor()}`}>
-      <div className="flex items-start space-x-4 mb-6">
+    <div className={`bg-slate-900 p-4 rounded-lg border-2 ${getRarityColor()}`}>
+      <div className="flex items-start space-x-4 mb-3">
         <div className="flex-shrink-0">
           {itemImage ? (
             <img
               src={`/images/items/${itemImage}`}
               alt={itemName}
-              className="w-16 h-16 rounded"
+              className="w-14 h-14 rounded"
               onError={(e) => {
                 console.error('Failed to load image:', itemImage);
                 e.currentTarget.style.display = 'none';
               }}
             />
           ) : (
-            <div className="w-16 h-16 bg-slate-800 rounded flex items-center justify-center text-slate-600 text-sm">
+            <div className="w-14 h-14 bg-slate-800 rounded flex items-center justify-center text-slate-600 text-sm">
               No Image
             </div>
           )}
         </div>
         <div className="flex-grow">
-          <h2 className="text-xl font-bold text-white mb-2">{itemName}</h2>
-          <p className="text-slate-400 text-sm">Select stats to calculate probability</p>
+          <h2 className="text-lg font-bold text-white mb-1">{itemName}</h2>
+          <p className="text-slate-400 text-xs">Select stats to calculate probability</p>
         </div>
       </div>
 
-      <div className="space-y-4">
-        <div className="flex space-x-2 mb-4">
+      <div className="space-y-3">
+        <div className="flex space-x-2 mb-2">
           <button
             onClick={handleSelectAll}
-            className="px-3 py-1 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-sm"
+            className="px-2 py-0.5 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-xs"
           >
             {stats.every(stat => stat.selected) ? 'Deselect All' : 'Select All'}
           </button>
           <button
             onClick={handleSetAllMin}
-            className="px-3 py-1 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-sm"
+            className="px-2 py-0.5 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-xs"
           >
             Set All to Min
           </button>
           <button
             onClick={handleSetAllMax}
-            className="px-3 py-1 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-sm"
+            className="px-2 py-0.5 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-xs"
           >
             Set All to Max
           </button>
         </div>
 
         {stats.map((stat, index) => (
-          <div key={index} className="space-y-2">
+          <div key={index} className="space-y-1.5">
             <div className="flex items-center justify-between">
               <label className="flex items-center space-x-2">
                 <input
@@ -185,9 +185,9 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
                   onChange={(e) => onStatChange(index, e.target.checked)}
                   className="rounded border-slate-600 text-blue-500 focus:ring-blue-500"
                 />
-                <span className="text-white">{stat.name}</span>
+                <span className="text-white text-sm">{stat.name}</span>
               </label>
-              <span className="text-slate-400">
+              <span className="text-slate-400 text-sm">
                 Current: {stat.currentValue} ({stat.minValue}-{stat.maxValue})
               </span>
             </div>
@@ -203,13 +203,13 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
                     onChange={(e) => handleInputChange(index, e.target.value)}
                     onKeyDown={(e) => handleKeyDown(e, index)}
                     onBlur={() => handleInputBlur(index)}
-                    className="w-20 px-2 py-1 bg-slate-800 border border-slate-700 rounded text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
+                    className="w-20 px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-white text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
                     min={Math.min(stat.minValue, stat.maxValue)}
                     max={Math.max(stat.minValue, stat.maxValue)}
                   />
                 ) : (
                   <span 
-                    className="w-20 px-2 py-1 bg-slate-800 border border-slate-700 rounded text-white cursor-pointer hover:bg-slate-700"
+                    className="w-20 px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-white text-sm cursor-pointer hover:bg-slate-700"
                     onClick={() => setFocusedIndex(index)}
                   >
                     {stat.desiredValue}
@@ -218,10 +218,10 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
                 <div className="flex items-center flex-grow">
                   <button
                     onClick={() => handleSetMin(index)}
-                    className="p-1 text-slate-400 hover:text-white transition-colors"
+                    className="p-0.5 text-slate-400 hover:text-white transition-colors"
                     title="Set to minimum"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </button>
@@ -231,14 +231,14 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
                     onChange={(e) => handleSliderChange(index, e.target.value)}
                     min={Math.min(stat.minValue, stat.maxValue)}
                     max={Math.max(stat.minValue, stat.maxValue)}
-                    className="flex-grow h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500 mx-2"
+                    className="flex-grow h-1.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500 mx-2"
                   />
                   <button
                     onClick={() => handleSetMax(index)}
-                    className="p-1 text-slate-400 hover:text-white transition-colors"
+                    className="p-0.5 text-slate-400 hover:text-white transition-colors"
                     title="Set to maximum"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                     </svg>
                   </button>

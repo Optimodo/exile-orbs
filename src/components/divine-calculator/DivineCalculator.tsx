@@ -108,16 +108,21 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
   const [itemName, setItemName] = useState('');
   const [itemImage, setItemImage] = useState<string | null>(null);
   const [rarity, setRarity] = useState<'Normal' | 'Magic' | 'Rare' | 'Unique'>('Normal');
+  const [isInputVisible, setIsInputVisible] = useState(true);
 
   const handleParseClick = () => {
     console.log('Parse button clicked');
     parseItemData();
+    setIsInputVisible(false);
   };
 
   const handleExampleClick = (exampleData: string) => {
     setItemData(exampleData);
     // Automatically parse the example data
-    setTimeout(() => parseItemData(), 0);
+    setTimeout(() => {
+      parseItemData();
+      setIsInputVisible(false);
+    }, 0);
   };
 
   const parseItemData = () => {
@@ -212,17 +217,10 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
 
   const calculateProbability = () => {
     const selectedStats = stats.filter(stat => stat.selected);
-    if (selectedStats.length === 0) {
-      onResult({
-        probability: 0,
-        averageAttempts: 0,
-        costEstimate: 0
-      });
-      return;
-    }
+    const statsToCalculate = selectedStats.length > 0 ? selectedStats : stats;
 
     let totalProbability = 1;
-    for (const stat of selectedStats) {
+    for (const stat of statsToCalculate) {
       // For reversed ranges (where higher is worse), we need to count outcomes differently
       const isReversed = stat.maxValue < stat.minValue;
       const favorableOutcomes = isReversed 
@@ -257,27 +255,42 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
             </button>
           ))}
         </div>
-        <textarea
-          value={itemData}
-          onChange={(e) => {
-            console.log('Textarea changed:', e.target.value);
-            setItemData(e.target.value);
-          }}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' && !e.shiftKey) {
-              e.preventDefault();
-              handleParseClick();
-            }
-          }}
-          placeholder="Paste item data here... (Press Enter to parse)"
-          className="w-full h-32 p-2 border rounded bg-slate-800 text-white border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
-        />
-        <button
-          onClick={handleParseClick}
-          className="px-4 py-2 bg-blue-700 text-white font-semibold rounded hover:bg-blue-800 cursor-pointer transition-colors shadow-md hover:shadow-lg"
-        >
-          Parse Item Data
-        </button>
+
+        {isInputVisible ? (
+          <>
+            <textarea
+              value={itemData}
+              onChange={(e) => {
+                console.log('Textarea changed:', e.target.value);
+                setItemData(e.target.value);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault();
+                  handleParseClick();
+                }
+              }}
+              placeholder="Paste item data here... (Press Enter to parse)"
+              className="w-full h-32 p-2 border rounded bg-slate-800 text-white border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
+            />
+            <button
+              onClick={handleParseClick}
+              className="px-4 py-2 bg-blue-700 text-white font-semibold rounded hover:bg-blue-800 cursor-pointer transition-colors shadow-md hover:shadow-lg"
+            >
+              Parse Item Data
+            </button>
+          </>
+        ) : (
+          <button
+            onClick={() => setIsInputVisible(true)}
+            className="flex items-center space-x-2 px-3 py-1.5 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-sm"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
+            </svg>
+            <span>Show Item Data Input</span>
+          </button>
+        )}
       </div>
 
       {stats.length > 0 && (
