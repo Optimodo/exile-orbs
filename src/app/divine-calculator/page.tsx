@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { DivineCalculator } from '@/app/components/DivineCalculator';
-import { DivineResults } from '@/app/components/DivineResults';
+import { DivineCalculator } from '@/components/divine-calculator/DivineCalculator';
+import { DivineResults } from '@/components//divine-calculator/DivineResults';
 import { DivineResult } from '@/app/types/divine';
 
 export default function CalculatorPage() {

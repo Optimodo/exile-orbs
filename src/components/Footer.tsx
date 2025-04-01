@@ -19,6 +19,12 @@ export default function Footer() {
           <Link href="/bug-report" className="hover:text-blue-200 transition-colors">
             Report a Bug
           </Link>
+          <Link href="/privacy" className="hover:text-blue-200 transition-colors">
+            Privacy Policy
+          </Link>
+          <Link href="/terms" className="hover:text-blue-200 transition-colors">
+            Terms of Service
+          </Link>
         </div>
         <div className="text-center mt-4 text-sm text-blue-300">
           © {currentYear} Exile Orbs. Not affiliated with Grinding Gear Games.
