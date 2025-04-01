@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { ExaltedResult } from '../types/calculator';
+import { DivineResult } from '@/app/types/divine';
 import { ItemDisplay } from './ItemDisplay';
 import itemDatabase from '../../data/items_data.json';
 
@@ -14,15 +14,15 @@ interface Stat {
   desiredValue: number;
 }
 
-interface ExaltedCalculatorProps {
-  onResult: (result: ExaltedResult) => void;
+interface DivineCalculatorProps {
+  onResult: (result: DivineResult) => void;
 }
 
-export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }) => {
-  console.log('ExaltedCalculator component rendering');
+export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) => {
+  console.log('DivineCalculator component rendering');
   
   useEffect(() => {
-    console.log('ExaltedCalculator component mounted');
+    console.log('DivineCalculator component mounted');
   }, []);
 
   const [itemData, setItemData] = useState('');
@@ -121,38 +121,30 @@ export const ExaltedCalculator: React.FC<ExaltedCalculatorProps> = ({ onResult }
       onResult({
         probability: 0,
         averageAttempts: 0,
-        costEstimate: 0,
-        standardDeviation: 0,
-        confidenceInterval: { min: 0, max: 0 }
+        costEstimate: 0
       });
       return;
     }
 
     let totalProbability = 1;
     for (const stat of selectedStats) {
-      const isReversed = stat.maxValue < stat.minValue; // For reversed ranges (where higher is worse), we need to count outcomes differently
+      // For reversed ranges (where higher is worse), we need to count outcomes differently
+      const isReversed = stat.maxValue < stat.minValue;
       const favorableOutcomes = isReversed 
-        ? Math.abs(stat.maxValue - stat.desiredValue) + 1  // Count from desired value up to min - reversed stats
-        : stat.maxValue - stat.desiredValue + 1; // Count from desired value up to max - normal stats
+        ? Math.abs(stat.maxValue - stat.desiredValue) + 1  // Count from desired value up to max
+        : stat.maxValue - stat.desiredValue + 1; // Count from desired value up to max
       const totalRange = Math.abs(stat.maxValue - stat.minValue) + 1;
       const probability = favorableOutcomes / totalRange;
       totalProbability *= probability;
     }
 
     const averageAttempts = 1 / totalProbability;
-    const costEstimate = averageAttempts * 1; // Assuming 1 Exalted Orb per attempt
-    const standardDeviation = Math.sqrt((1 - totalProbability) / (totalProbability * totalProbability));
-    const confidenceInterval = {
-      min: Math.max(0, averageAttempts - 2 * standardDeviation),
-      max: averageAttempts + 2 * standardDeviation
-    };
+    const costEstimate = averageAttempts * 1; // Assuming 1 Divine Orb per attempt
 
     onResult({
       probability: totalProbability,
       averageAttempts,
-      costEstimate,
-      standardDeviation,
-      confidenceInterval
+      costEstimate
     });
   };
 
