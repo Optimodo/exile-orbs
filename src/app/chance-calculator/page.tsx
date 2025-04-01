@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import chanceData from '@/data/chance_orb_outcomes.json';
+import ItemHoverBox from '@/components/ItemHoverBox';
+import '@/styles/hover-box.css';
 
 interface ChanceItem {
   baseItem: string;
@@ -19,6 +21,8 @@ interface ChanceItem {
 
 export default function ChanceCalculator() {
   const [selectedLetter, setSelectedLetter] = useState<string>('A');
+  const [hoveredItem, setHoveredItem] = useState<ChanceItem | null>(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [sortConfig, setSortConfig] = useState<{
     key: keyof ChanceItem;
     direction: 'asc' | 'desc';
@@ -54,7 +58,7 @@ export default function ChanceCalculator() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-amber-500 mb-8 font-cinzel">Orb of Chance Calculator</h1>
       
       {/* Alphabetical Navigation */}
@@ -77,7 +81,7 @@ export default function ChanceCalculator() {
       </div>
 
       {/* Items Table */}
-      <div className="bg-slate-800 rounded-lg overflow-hidden">
+      <div className="mt-8 bg-slate-800 rounded-lg overflow-hidden">
         <table className="min-w-full divide-y divide-slate-700">
           <thead className="bg-slate-900">
             <tr>
@@ -118,13 +122,22 @@ export default function ChanceCalculator() {
             {sortedItems.map((item, index) => (
               <tr key={index} className="hover:bg-slate-700/50 transition-colors">
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-300">
-                  {item.name}
+                  <div
+                    className="font-medium cursor-pointer hover:text-amber-500 transition-colors"
+                    onMouseEnter={(e) => {
+                      setHoveredItem(item);
+                      setMousePosition({ x: e.clientX, y: e.clientY });
+                    }}
+                    onMouseLeave={() => setHoveredItem(null)}
+                  >
+                    {item.name}
+                  </div>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-300">
                   {item.baseItem}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-300">
-                  {item.chance}
+                  {parseFloat(item.chance).toFixed(2)}%
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-300">
                   {item.averageOrbs.toFixed(1)}
@@ -144,6 +157,36 @@ export default function ChanceCalculator() {
           </tbody>
         </table>
       </div>
+
+      {hoveredItem && (
+        <div
+          className="uniqueHover"
+          style={{
+            left: `${mousePosition.x + 10}px`,
+            top: `${mousePosition.y + 10}px`,
+          }}
+        >
+          <ItemHoverBox
+            name={hoveredItem.name}
+            baseItem={hoveredItem.baseItem}
+            itemType={hoveredItem.baseItemDisambiguation || ''}
+            levelReq={hoveredItem.minILvl || 0}
+            attributes={[
+              `Chance: ${parseFloat(hoveredItem.chance).toFixed(2)}%`,
+              `Average Orbs: ${Number(hoveredItem.averageOrbs).toFixed(1)}`,
+              `Destruction Chance: ${parseFloat(hoveredItem.destructionChance).toFixed(2)}%`
+            ]}
+            mods={[
+              {
+                text: `Tier: ${hoveredItem.tier}`,
+                description: "Item tier in the unique item pool"
+              }
+            ]}
+            flavorText=""
+            imagePath={`/images/items/${hoveredItem.name.replace(/['"]/g, '').replace(/[^a-zA-Z0-9]/g, ' ')}_large.png`}
+          />
+        </div>
+      )}
     </div>
   );
 } 

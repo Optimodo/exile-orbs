@@ -1,0 +1,92 @@
+.uniqueHover {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  min-width: 350px;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.uniqueHover .banner {
+  background: url(https://web.poecdn.com/protected/image/item/popup/header-double-unique-left.png?v=1682897765566&key=wWot3i-c3fi9mITi48Vl9g) top left no-repeat,
+              url(https://web.poecdn.com/protected/image/item/popup/header-double-unique-right.png?v=1682897765566&key=-dfCEOleavUZZdgllVgSsQ) top right no-repeat,
+              url(https://web.poecdn.com/protected/image/item/popup/header-double-unique-middle.png?v=1682897765566&key=eZIr40k4fczlgGEz5heqLA) top center repeat-x;
+  color: #af6025;
+  height: 52px;
+  text-align: center;
+}
+
+.uniqueHover .banner .name {
+  padding-top: 4px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.uniqueHover .banner .baseItem {
+  margin-top: -1px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.uniqueHover .detail {
+  padding: 0.4em 0 0.5em;
+  vertical-align: baseline;
+  font-size: 70%;
+  text-align: center;
+}
+
+.uniqueHover .detail .prop {
+  color: #7f7f7f;
+  text-align: center;
+}
+
+.uniqueHover .detail em {
+  color: #88f;
+}
+
+.uniqueHover .detail strong {
+  color: #fff;
+}
+
+.uniqueHover .detail .req:before,
+.uniqueHover .detail .impl:before,
+.uniqueHover .detail .mod:before,
+.uniqueHover .detail .flav:before {
+  background: url(https://web.poecdn.com/protected/image/item/popup/separator-unique.png?v=1690324640931&key=KxJv36tBZx3tAvjfi8x4vQ) center no-repeat;
+  height: 10px;
+  display: block;
+  content: "";
+  margin: 0 auto;
+}
+
+.uniqueHover .detail .mod {
+  color: #88f;
+  text-align: center;
+}
+
+.uniqueHover .detail .mod em {
+  color: #fff;
+}
+
+.uniqueHover .detail .mod .desc {
+  color: #7f7f7f;
+  text-align: center;
+}
+
+.uniqueHover .detail .flav {
+  font-style: italic;
+  color: #af6025;
+  text-align: center;
+}
+
+.uniqueHover .detail .flav em {
+  color: #7f7f7f;
+}
+
+.uniqueHover .item-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  height: auto;
+  padding: 10px 0;
+} 
