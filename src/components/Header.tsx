@@ -14,6 +14,9 @@ export default function Header() {
             <Link href="/divine-calculator" className="text-slate-400 hover:text-amber-500 transition-colors font-cinzel text-sm">
               Divine Orb Calculator
             </Link>
+            <Link href="/chance-calculator" className="text-slate-400 hover:text-amber-500 transition-colors font-cinzel text-sm">
+              Chance Calculator
+            </Link>
             <Link href="/currency" className="text-slate-400 hover:text-amber-500 transition-colors font-cinzel text-sm">
               Currency
             </Link>
