@@ -129,31 +129,31 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
 
   return (
     <div className={`bg-slate-900 p-4 rounded-lg border-2 ${getRarityColor()}`}>
-      <div className="flex items-start space-x-4 mb-3">
+      <div className="flex items-start space-x-3 mb-2">
         <div className="flex-shrink-0">
           {itemImage ? (
             <img
               src={`/images/items/${itemImage}`}
               alt={itemName}
-              className="w-14 h-14 rounded"
+              className="w-12 h-12 rounded"
               onError={(e) => {
                 console.error('Failed to load image:', itemImage);
                 e.currentTarget.style.display = 'none';
               }}
             />
           ) : (
-            <div className="w-14 h-14 bg-slate-800 rounded flex items-center justify-center text-slate-600 text-sm">
+            <div className="w-12 h-12 bg-slate-800 rounded flex items-center justify-center text-slate-600 text-sm">
               No Image
             </div>
           )}
         </div>
         <div className="flex-grow">
-          <h2 className="text-lg font-bold text-white mb-1">{itemName}</h2>
+          <h2 className="text-base font-bold text-white mb-1">{itemName}</h2>
           <p className="text-slate-400 text-xs">Select stats to calculate probability</p>
         </div>
       </div>
 
-      <div className="space-y-3">
+      <div className="space-y-2">
         <div className="flex space-x-2 mb-2">
           <button
             onClick={handleSelectAll}
@@ -176,23 +176,23 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
         </div>
 
         {stats.map((stat, index) => (
-          <div key={index} className="space-y-1.5">
+          <div key={index} className="space-y-1">
             <div className="flex items-center justify-between">
-              <label className="flex items-center space-x-2">
+              <label className="flex items-center space-x-1.5">
                 <input
                   type="checkbox"
                   checked={stat.selected}
                   onChange={(e) => onStatChange(index, e.target.checked)}
                   className="rounded border-slate-600 text-blue-500 focus:ring-blue-500"
                 />
-                <span className="text-white text-sm">{stat.name}</span>
+                <span className="text-white text-xs">{stat.name}</span>
               </label>
-              <span className="text-slate-400 text-sm">
+              <span className="text-slate-400 text-xs">
                 Current: {stat.currentValue} ({stat.minValue}-{stat.maxValue})
               </span>
             </div>
             {stat.selected && (
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2">
                 {focusedIndex === index ? (
                   <input
                     ref={el => {
@@ -203,13 +203,13 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
                     onChange={(e) => handleInputChange(index, e.target.value)}
                     onKeyDown={(e) => handleKeyDown(e, index)}
                     onBlur={() => handleInputBlur(index)}
-                    className="w-20 px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-white text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
+                    className="w-16 px-1.5 py-0.5 bg-slate-800 border border-slate-700 rounded text-white text-xs focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
                     min={Math.min(stat.minValue, stat.maxValue)}
                     max={Math.max(stat.minValue, stat.maxValue)}
                   />
                 ) : (
                   <span 
-                    className="w-20 px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-white text-sm cursor-pointer hover:bg-slate-700"
+                    className="w-16 px-1.5 py-0.5 bg-slate-800 border border-slate-700 rounded text-white text-xs cursor-pointer hover:bg-slate-700"
                     onClick={() => setFocusedIndex(index)}
                   >
                     {stat.desiredValue}
@@ -221,7 +221,7 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
                     className="p-0.5 text-slate-400 hover:text-white transition-colors"
                     title="Set to minimum"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </button>
@@ -231,14 +231,14 @@ export const ItemDisplay: React.FC<ItemDisplayProps> = ({
                     onChange={(e) => handleSliderChange(index, e.target.value)}
                     min={Math.min(stat.minValue, stat.maxValue)}
                     max={Math.max(stat.minValue, stat.maxValue)}
-                    className="flex-grow h-1.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500 mx-2"
+                    className="flex-grow h-1 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500 mx-1"
                   />
                   <button
                     onClick={() => handleSetMax(index)}
                     className="p-0.5 text-slate-400 hover:text-white transition-colors"
                     title="Set to maximum"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                     </svg>
                   </button>

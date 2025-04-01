@@ -15,7 +15,7 @@ interface Stat {
 }
 
 interface DivineCalculatorProps {
-  onResult: (result: DivineResult) => void;
+  onResult: (result: DivineResult | null) => void;
 }
 
 // Example items from the data file
@@ -241,6 +241,16 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
     });
   };
 
+  const handleReset = () => {
+    setItemData('');
+    setStats([]);
+    setItemName('');
+    setItemImage(null);
+    setRarity('Normal');
+    setIsInputVisible(true);
+    onResult(null);
+  };
+
   return (
     <div className="space-y-4">
       <div className="flex flex-col space-y-4">
@@ -271,25 +281,36 @@ export const DivineCalculator: React.FC<DivineCalculatorProps> = ({ onResult }) 
                 }
               }}
               placeholder="Paste item data here... (Press Enter to parse)"
-              className="w-full h-32 p-2 border rounded bg-slate-800 text-white border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
+              className="w-full h-20 p-2 border rounded bg-slate-800 text-white border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-sm"
             />
             <button
               onClick={handleParseClick}
-              className="px-4 py-2 bg-blue-700 text-white font-semibold rounded hover:bg-blue-800 cursor-pointer transition-colors shadow-md hover:shadow-lg"
+              className="px-3 py-1.5 bg-blue-700 text-white font-semibold rounded hover:bg-blue-800 cursor-pointer transition-colors shadow-md hover:shadow-lg text-sm"
             >
               Parse Item Data
             </button>
           </>
         ) : (
-          <button
-            onClick={() => setIsInputVisible(true)}
-            className="flex items-center space-x-2 px-3 py-1.5 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-sm"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
-            </svg>
-            <span>Show Item Data Input</span>
-          </button>
+          <div className="flex justify-between items-center">
+            <button
+              onClick={() => setIsInputVisible(true)}
+              className="flex items-center space-x-2 px-3 py-1.5 bg-slate-800 text-white rounded hover:bg-slate-700 transition-colors text-sm"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
+              </svg>
+              <span>Show Input</span>
+            </button>
+            <button
+              onClick={handleReset}
+              className="flex items-center space-x-2 px-3 py-1.5 bg-red-700 text-white rounded hover:bg-red-800 transition-colors text-sm"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clipRule="evenodd" />
+              </svg>
+              <span>Reset</span>
+            </button>
+          </div>
         )}
       </div>
 
