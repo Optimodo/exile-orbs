@@ -8,9 +8,9 @@
 }
 
 .uniqueHover .banner {
-  background: url(https://web.poecdn.com/protected/image/item/popup/header-double-unique-left.png?v=1682897765566&key=wWot3i-c3fi9mITi48Vl9g) top left no-repeat,
-              url(https://web.poecdn.com/protected/image/item/popup/header-double-unique-right.png?v=1682897765566&key=-dfCEOleavUZZdgllVgSsQ) top right no-repeat,
-              url(https://web.poecdn.com/protected/image/item/popup/header-double-unique-middle.png?v=1682897765566&key=eZIr40k4fczlgGEz5heqLA) top center repeat-x;
+  background: url(/images/header-double-unique-left.png) top left no-repeat,
+              url(/images/header-double-unique-right.png) top right no-repeat,
+              url(/images/header-double-unique-middle.png) top center repeat-x;
   color: #af6025;
   height: 52px;
   text-align: center;
@@ -52,7 +52,7 @@
 .uniqueHover .detail .impl:before,
 .uniqueHover .detail .mod:before,
 .uniqueHover .detail .flav:before {
-  background: url(https://web.poecdn.com/protected/image/item/popup/separator-unique.png?v=1690324640931&key=KxJv36tBZx3tAvjfi8x4vQ) center no-repeat;
+  background: url(/images/separator-unique.png) center no-repeat;
   height: 10px;
   display: block;
   content: "";
@@ -86,7 +86,10 @@
 .uniqueHover .item-image {
   display: block;
   margin: 0 auto;
-  max-width: 200px;
+  max-width: 180px;
+  max-height: 180px;
+  width: auto;
   height: auto;
   padding: 10px 0;
+  object-fit: contain;
 } 

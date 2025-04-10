@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import ItemStatsDisplay from '@/components/ItemStatsDisplay';
 import chanceData from '@/data/chance_orb_outcomes.json';
 import ItemHoverBox from '@/components/ItemHoverBox';
 import '@/styles/hover-box.css';
@@ -23,6 +24,7 @@ export default function ChanceCalculator() {
   const [selectedLetter, setSelectedLetter] = useState<string>('A');
   const [hoveredItem, setHoveredItem] = useState<ChanceItem | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [hoverBoxDimensions, setHoverBoxDimensions] = useState({ width: 0, height: 0 });
   const [sortConfig, setSortConfig] = useState<{
     key: keyof ChanceItem;
     direction: 'asc' | 'desc';
@@ -55,6 +57,38 @@ export default function ChanceCalculator() {
       key,
       direction: current.key === key && current.direction === 'asc' ? 'desc' : 'asc'
     }));
+  };
+
+  // Function to calculate hover box position
+  const calculateHoverPosition = (mouseX: number, mouseY: number) => {
+    if (typeof window === 'undefined') return { left: 0, top: 0 };
+
+    const padding = 10; // Space between cursor and hover box
+    const screenPadding = 10; // Minimum space from screen edges
+    
+    // Get viewport dimensions
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Calculate initial position (default: right and below cursor)
+    let left = mouseX + padding;
+    let top = mouseY + padding;
+
+    // Check right edge
+    if (left + hoverBoxDimensions.width + screenPadding > viewportWidth) {
+      left = mouseX - hoverBoxDimensions.width - padding;
+    }
+
+    // Check bottom edge
+    if (top + hoverBoxDimensions.height + screenPadding > viewportHeight) {
+      top = mouseY - hoverBoxDimensions.height - padding;
+    }
+
+    // Ensure we don't go off the left or top edge
+    left = Math.max(screenPadding, left);
+    top = Math.max(screenPadding, top);
+
+    return { left, top };
   };
 
   return (
@@ -113,6 +147,13 @@ export default function ChanceCalculator() {
               >
                 Avg Orbs {sortConfig.key === 'averageOrbs' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
               </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-slate-300 uppercase tracking-wider cursor-pointer hover:text-amber-500"
+                onClick={() => handleSort('tier')}
+              >
+                Tier {sortConfig.key === 'tier' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
+              </th>
               <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-slate-300 uppercase tracking-wider">
                 Wiki
               </th>
@@ -142,6 +183,9 @@ export default function ChanceCalculator() {
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-300">
                   {item.averageOrbs.toFixed(1)}
                 </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-300">
+                  {item.tier}
+                </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm">
                   <a
                     href={item.poeWikiLink}
@@ -161,30 +205,19 @@ export default function ChanceCalculator() {
       {hoveredItem && (
         <div
           className="uniqueHover"
+          ref={(el) => {
+            if (el && (hoverBoxDimensions.width === 0 || hoverBoxDimensions.height === 0)) {
+              setHoverBoxDimensions({
+                width: el.offsetWidth,
+                height: el.offsetHeight
+              });
+            }
+          }}
           style={{
-            left: `${mousePosition.x + 10}px`,
-            top: `${mousePosition.y + 10}px`,
+            ...calculateHoverPosition(mousePosition.x, mousePosition.y)
           }}
         >
-          <ItemHoverBox
-            name={hoveredItem.name}
-            baseItem={hoveredItem.baseItem}
-            itemType={hoveredItem.baseItemDisambiguation || ''}
-            levelReq={hoveredItem.minILvl || 0}
-            attributes={[
-              `Chance: ${parseFloat(hoveredItem.chance).toFixed(2)}%`,
-              `Average Orbs: ${Number(hoveredItem.averageOrbs).toFixed(1)}`,
-              `Destruction Chance: ${parseFloat(hoveredItem.destructionChance).toFixed(2)}%`
-            ]}
-            mods={[
-              {
-                text: `Tier: ${hoveredItem.tier}`,
-                description: "Item tier in the unique item pool"
-              }
-            ]}
-            flavorText=""
-            imagePath={`/images/items/${hoveredItem.name.replace(/['"]/g, '').replace(/[^a-zA-Z0-9]/g, ' ')}_large.png`}
-          />
+          <ItemStatsDisplay itemName={hoveredItem.name} />
         </div>
       )}
     </div>
